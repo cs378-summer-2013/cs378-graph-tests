@@ -1,0 +1,171 @@
+Running main() from gtest_main.cc
+[==========] Running 78 tests from 3 test cases.
+[----------] Global test environment set-up.
+[----------] 6 tests from ImplementationTest
+[ RUN      ] ImplementationTest.DefaultConstructor
+[       OK ] ImplementationTest.DefaultConstructor (26 ms)
+[ RUN      ] ImplementationTest.AddEdgeTest1
+[       OK ] ImplementationTest.AddEdgeTest1 (42 ms)
+[ RUN      ] ImplementationTest.AddEdgeTest2
+[       OK ] ImplementationTest.AddEdgeTest2 (19 ms)
+[ RUN      ] ImplementationTest.HasCycle1
+[       OK ] ImplementationTest.HasCycle1 (108 ms)
+[ RUN      ] ImplementationTest.HasCycle2
+[       OK ] ImplementationTest.HasCycle2 (25 ms)
+[ RUN      ] ImplementationTest.HasCycle3
+[       OK ] ImplementationTest.HasCycle3 (15 ms)
+[----------] 6 tests from ImplementationTest (250 ms total)
+
+[----------] 36 tests from InterfaceTest/0, where TypeParam = Graph
+[ RUN      ] InterfaceTest/0.AddVertexTest1
+[       OK ] InterfaceTest/0.AddVertexTest1 (20 ms)
+[ RUN      ] InterfaceTest/0.AddVertexTest2
+[       OK ] InterfaceTest/0.AddVertexTest2 (8 ms)
+[ RUN      ] InterfaceTest/0.AddVertexTest3
+[       OK ] InterfaceTest/0.AddVertexTest3 (9 ms)
+[ RUN      ] InterfaceTest/0.AddEdgeTest1
+[       OK ] InterfaceTest/0.AddEdgeTest1 (8 ms)
+[ RUN      ] InterfaceTest/0.AddEdgeTest2
+[       OK ] InterfaceTest/0.AddEdgeTest2 (10 ms)
+[ RUN      ] InterfaceTest/0.AddEdgeTest3
+[       OK ] InterfaceTest/0.AddEdgeTest3 (8 ms)
+[ RUN      ] InterfaceTest/0.AdjacentVerticesTest1
+[       OK ] InterfaceTest/0.AdjacentVerticesTest1 (12 ms)
+[ RUN      ] InterfaceTest/0.AdjacentVerticesTest2
+[       OK ] InterfaceTest/0.AdjacentVerticesTest2 (12 ms)
+[ RUN      ] InterfaceTest/0.AdjacentVerticesTest3
+[       OK ] InterfaceTest/0.AdjacentVerticesTest3 (12 ms)
+[ RUN      ] InterfaceTest/0.EdgeTest1
+[       OK ] InterfaceTest/0.EdgeTest1 (18 ms)
+[ RUN      ] InterfaceTest/0.EdgeTest2
+[       OK ] InterfaceTest/0.EdgeTest2 (8 ms)
+[ RUN      ] InterfaceTest/0.EdgeTest3
+[       OK ] InterfaceTest/0.EdgeTest3 (10 ms)
+[ RUN      ] InterfaceTest/0.EdgesTest1
+[       OK ] InterfaceTest/0.EdgesTest1 (15 ms)
+[ RUN      ] InterfaceTest/0.EdgesTest2
+[       OK ] InterfaceTest/0.EdgesTest2 (15 ms)
+[ RUN      ] InterfaceTest/0.EdgesTest3
+[       OK ] InterfaceTest/0.EdgesTest3 (17 ms)
+[ RUN      ] InterfaceTest/0.NumEdges1
+[       OK ] InterfaceTest/0.NumEdges1 (7 ms)
+[ RUN      ] InterfaceTest/0.NumEdges2
+[       OK ] InterfaceTest/0.NumEdges2 (7 ms)
+[ RUN      ] InterfaceTest/0.NumEdges3
+[       OK ] InterfaceTest/0.NumEdges3 (8 ms)
+[ RUN      ] InterfaceTest/0.NumVertices1
+[       OK ] InterfaceTest/0.NumVertices1 (10 ms)
+[ RUN      ] InterfaceTest/0.NumVertices2
+[       OK ] InterfaceTest/0.NumVertices2 (7 ms)
+[ RUN      ] InterfaceTest/0.NumVertices3
+[       OK ] InterfaceTest/0.NumVertices3 (7 ms)
+[ RUN      ] InterfaceTest/0.Source1
+[       OK ] InterfaceTest/0.Source1 (6 ms)
+[ RUN      ] InterfaceTest/0.Source2
+[       OK ] InterfaceTest/0.Source2 (6 ms)
+[ RUN      ] InterfaceTest/0.Source3
+[       OK ] InterfaceTest/0.Source3 (9 ms)
+[ RUN      ] InterfaceTest/0.Target1
+[       OK ] InterfaceTest/0.Target1 (7 ms)
+[ RUN      ] InterfaceTest/0.Target2
+[       OK ] InterfaceTest/0.Target2 (6 ms)
+[ RUN      ] InterfaceTest/0.Target3
+[       OK ] InterfaceTest/0.Target3 (9 ms)
+[ RUN      ] InterfaceTest/0.Vertex1
+[       OK ] InterfaceTest/0.Vertex1 (7 ms)
+[ RUN      ] InterfaceTest/0.Vertex2
+[       OK ] InterfaceTest/0.Vertex2 (6 ms)
+[ RUN      ] InterfaceTest/0.Vertex3
+[       OK ] InterfaceTest/0.Vertex3 (6 ms)
+[ RUN      ] InterfaceTest/0.Vertices1
+[       OK ] InterfaceTest/0.Vertices1 (12 ms)
+[ RUN      ] InterfaceTest/0.Vertices2
+[       OK ] InterfaceTest/0.Vertices2 (12 ms)
+[ RUN      ] InterfaceTest/0.Vertices3
+[       OK ] InterfaceTest/0.Vertices3 (16 ms)
+[ RUN      ] InterfaceTest/0.TopologicalSort1
+[       OK ] InterfaceTest/0.TopologicalSort1 (70 ms)
+[ RUN      ] InterfaceTest/0.TopologicalSort2
+[       OK ] InterfaceTest/0.TopologicalSort2 (117 ms)
+[ RUN      ] InterfaceTest/0.TopologicalSort3
+[       OK ] InterfaceTest/0.TopologicalSort3 (9 ms)
+[----------] 36 tests from InterfaceTest/0 (541 ms total)
+
+[----------] 36 tests from InterfaceTest/1, where TypeParam = boost::adjacency_list<boost::setS, boost::vecS, boost::directedS, boost::no_property, boost::no_property, boost::no_property, boost::listS>
+[ RUN      ] InterfaceTest/1.AddVertexTest1
+[       OK ] InterfaceTest/1.AddVertexTest1 (84 ms)
+[ RUN      ] InterfaceTest/1.AddVertexTest2
+[       OK ] InterfaceTest/1.AddVertexTest2 (4 ms)
+[ RUN      ] InterfaceTest/1.AddVertexTest3
+[       OK ] InterfaceTest/1.AddVertexTest3 (5 ms)
+[ RUN      ] InterfaceTest/1.AddEdgeTest1
+[       OK ] InterfaceTest/1.AddEdgeTest1 (7 ms)
+[ RUN      ] InterfaceTest/1.AddEdgeTest2
+[       OK ] InterfaceTest/1.AddEdgeTest2 (4 ms)
+[ RUN      ] InterfaceTest/1.AddEdgeTest3
+[       OK ] InterfaceTest/1.AddEdgeTest3 (6 ms)
+[ RUN      ] InterfaceTest/1.AdjacentVerticesTest1
+[       OK ] InterfaceTest/1.AdjacentVerticesTest1 (28 ms)
+[ RUN      ] InterfaceTest/1.AdjacentVerticesTest2
+[       OK ] InterfaceTest/1.AdjacentVerticesTest2 (10 ms)
+[ RUN      ] InterfaceTest/1.AdjacentVerticesTest3
+[       OK ] InterfaceTest/1.AdjacentVerticesTest3 (7 ms)
+[ RUN      ] InterfaceTest/1.EdgeTest1
+[       OK ] InterfaceTest/1.EdgeTest1 (15 ms)
+[ RUN      ] InterfaceTest/1.EdgeTest2
+[       OK ] InterfaceTest/1.EdgeTest2 (5 ms)
+[ RUN      ] InterfaceTest/1.EdgeTest3
+[       OK ] InterfaceTest/1.EdgeTest3 (4 ms)
+[ RUN      ] InterfaceTest/1.EdgesTest1
+[       OK ] InterfaceTest/1.EdgesTest1 (32 ms)
+[ RUN      ] InterfaceTest/1.EdgesTest2
+[       OK ] InterfaceTest/1.EdgesTest2 (12 ms)
+[ RUN      ] InterfaceTest/1.EdgesTest3
+[       OK ] InterfaceTest/1.EdgesTest3 (18 ms)
+[ RUN      ] InterfaceTest/1.NumEdges1
+[       OK ] InterfaceTest/1.NumEdges1 (11 ms)
+[ RUN      ] InterfaceTest/1.NumEdges2
+[       OK ] InterfaceTest/1.NumEdges2 (4 ms)
+[ RUN      ] InterfaceTest/1.NumEdges3
+[       OK ] InterfaceTest/1.NumEdges3 (5 ms)
+[ RUN      ] InterfaceTest/1.NumVertices1
+[       OK ] InterfaceTest/1.NumVertices1 (4 ms)
+[ RUN      ] InterfaceTest/1.NumVertices2
+[       OK ] InterfaceTest/1.NumVertices2 (5 ms)
+[ RUN      ] InterfaceTest/1.NumVertices3
+[       OK ] InterfaceTest/1.NumVertices3 (4 ms)
+[ RUN      ] InterfaceTest/1.Source1
+[       OK ] InterfaceTest/1.Source1 (4 ms)
+[ RUN      ] InterfaceTest/1.Source2
+[       OK ] InterfaceTest/1.Source2 (3 ms)
+[ RUN      ] InterfaceTest/1.Source3
+[       OK ] InterfaceTest/1.Source3 (3 ms)
+[ RUN      ] InterfaceTest/1.Target1
+[       OK ] InterfaceTest/1.Target1 (4 ms)
+[ RUN      ] InterfaceTest/1.Target2
+[       OK ] InterfaceTest/1.Target2 (3 ms)
+[ RUN      ] InterfaceTest/1.Target3
+[       OK ] InterfaceTest/1.Target3 (4 ms)
+[ RUN      ] InterfaceTest/1.Vertex1
+[       OK ] InterfaceTest/1.Vertex1 (3 ms)
+[ RUN      ] InterfaceTest/1.Vertex2
+[       OK ] InterfaceTest/1.Vertex2 (3 ms)
+[ RUN      ] InterfaceTest/1.Vertex3
+[       OK ] InterfaceTest/1.Vertex3 (4 ms)
+[ RUN      ] InterfaceTest/1.Vertices1
+[       OK ] InterfaceTest/1.Vertices1 (9 ms)
+[ RUN      ] InterfaceTest/1.Vertices2
+[       OK ] InterfaceTest/1.Vertices2 (9 ms)
+[ RUN      ] InterfaceTest/1.Vertices3
+[       OK ] InterfaceTest/1.Vertices3 (12 ms)
+[ RUN      ] InterfaceTest/1.TopologicalSort1
+[       OK ] InterfaceTest/1.TopologicalSort1 (150 ms)
+[ RUN      ] InterfaceTest/1.TopologicalSort2
+[       OK ] InterfaceTest/1.TopologicalSort2 (15 ms)
+[ RUN      ] InterfaceTest/1.TopologicalSort3
+[       OK ] InterfaceTest/1.TopologicalSort3 (6 ms)
+[----------] 36 tests from InterfaceTest/1 (515 ms total)
+
+[----------] Global test environment tear-down
+[==========] 78 tests from 3 test cases ran. (1347 ms total)
+[  PASSED  ] 78 tests.
