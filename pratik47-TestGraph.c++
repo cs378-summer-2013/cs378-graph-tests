@@ -39,6 +39,7 @@ template <typename T>
 class TestCases : public testing::Test {
 protected:
     // --- typedefs ---
+    
 
     typedef T                                       graph_type;
 
