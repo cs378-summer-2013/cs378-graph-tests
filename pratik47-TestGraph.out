@@ -1,0 +1,250 @@
+==4185== Memcheck, a memory error detector
+==4185== Copyright (C) 2002-2011, and GNU GPL'd, by Julian Seward et al.
+==4185== Using Valgrind-3.7.0 and LibVEX; rerun with -h for copyright info
+==4185== Command: TestGraph
+==4185== 
+Running main() from gtest_main.cc
+[==========] Running 112 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 56 tests from TestCases/0, where TypeParam = Graph
+[ RUN      ] TestCases/0.weird_test_1
+[       OK ] TestCases/0.weird_test_1 (80 ms)
+[ RUN      ] TestCases/0.weird_test_2
+[       OK ] TestCases/0.weird_test_2 (5 ms)
+[ RUN      ] TestCases/0.weird_test_3
+[       OK ] TestCases/0.weird_test_3 (5 ms)
+[ RUN      ] TestCases/0.has_cycle_1
+[       OK ] TestCases/0.has_cycle_1 (36 ms)
+[ RUN      ] TestCases/0.has_cycle_2
+[       OK ] TestCases/0.has_cycle_2 (13 ms)
+[ RUN      ] TestCases/0.has_cycle_3
+[       OK ] TestCases/0.has_cycle_3 (11 ms)
+[ RUN      ] TestCases/0.has_cycle_4
+[       OK ] TestCases/0.has_cycle_4 (10 ms)
+[ RUN      ] TestCases/0.add_vertex_test_1
+[       OK ] TestCases/0.add_vertex_test_1 (11 ms)
+[ RUN      ] TestCases/0.add_vertex_test_2
+[       OK ] TestCases/0.add_vertex_test_2 (4 ms)
+[ RUN      ] TestCases/0.add_vertex_test_3
+[       OK ] TestCases/0.add_vertex_test_3 (6 ms)
+[ RUN      ] TestCases/0.add_vertex_test_4
+[       OK ] TestCases/0.add_vertex_test_4 (10 ms)
+[ RUN      ] TestCases/0.add_edge_test_1
+[       OK ] TestCases/0.add_edge_test_1 (6 ms)
+[ RUN      ] TestCases/0.add_edge_test_2
+[       OK ] TestCases/0.add_edge_test_2 (4 ms)
+[ RUN      ] TestCases/0.add_edge_test_3
+[       OK ] TestCases/0.add_edge_test_3 (6 ms)
+[ RUN      ] TestCases/0.add_edge_test_4
+[       OK ] TestCases/0.add_edge_test_4 (6 ms)
+[ RUN      ] TestCases/0.add_edge_test_5
+[       OK ] TestCases/0.add_edge_test_5 (6 ms)
+[ RUN      ] TestCases/0.adjacent_vertices_test_1
+[       OK ] TestCases/0.adjacent_vertices_test_1 (7 ms)
+[ RUN      ] TestCases/0.adjacent_vertices_test_2
+[       OK ] TestCases/0.adjacent_vertices_test_2 (9 ms)
+[ RUN      ] TestCases/0.adjacent_vertices_test_3
+[       OK ] TestCases/0.adjacent_vertices_test_3 (7 ms)
+[ RUN      ] TestCases/0.adjacent_vertices_test_4
+[       OK ] TestCases/0.adjacent_vertices_test_4 (6 ms)
+[ RUN      ] TestCases/0.edge_test_1
+[       OK ] TestCases/0.edge_test_1 (10 ms)
+[ RUN      ] TestCases/0.edge_test_2
+[       OK ] TestCases/0.edge_test_2 (5 ms)
+[ RUN      ] TestCases/0.edge_test_3
+[       OK ] TestCases/0.edge_test_3 (5 ms)
+[ RUN      ] TestCases/0.edge_test_4
+[       OK ] TestCases/0.edge_test_4 (4 ms)
+[ RUN      ] TestCases/0.edges_test_1
+[       OK ] TestCases/0.edges_test_1 (11 ms)
+[ RUN      ] TestCases/0.edges_test_2
+[       OK ] TestCases/0.edges_test_2 (9 ms)
+[ RUN      ] TestCases/0.edges_test_3
+[       OK ] TestCases/0.edges_test_3 (11 ms)
+[ RUN      ] TestCases/0.edges_test_4
+[       OK ] TestCases/0.edges_test_4 (4 ms)
+[ RUN      ] TestCases/0.Num_Edges_1
+[       OK ] TestCases/0.Num_Edges_1 (3 ms)
+[ RUN      ] TestCases/0.Num_Edges_2
+[       OK ] TestCases/0.Num_Edges_2 (5 ms)
+[ RUN      ] TestCases/0.Num_Edges_3
+[       OK ] TestCases/0.Num_Edges_3 (5 ms)
+[ RUN      ] TestCases/0.Num_Edges_4
+[       OK ] TestCases/0.Num_Edges_4 (3 ms)
+[ RUN      ] TestCases/0.Num_Vertices_1
+[       OK ] TestCases/0.Num_Vertices_1 (3 ms)
+[ RUN      ] TestCases/0.Num_Vertices_2
+[       OK ] TestCases/0.Num_Vertices_2 (5 ms)
+[ RUN      ] TestCases/0.Num_Vertices_3
+[       OK ] TestCases/0.Num_Vertices_3 (4 ms)
+[ RUN      ] TestCases/0.Num_Vertices_4
+[       OK ] TestCases/0.Num_Vertices_4 (3 ms)
+[ RUN      ] TestCases/0.Source_1
+[       OK ] TestCases/0.Source_1 (3 ms)
+[ RUN      ] TestCases/0.Source_2
+[       OK ] TestCases/0.Source_2 (3 ms)
+[ RUN      ] TestCases/0.Source_3
+[       OK ] TestCases/0.Source_3 (4 ms)
+[ RUN      ] TestCases/0.Source_4
+[       OK ] TestCases/0.Source_4 (3 ms)
+[ RUN      ] TestCases/0.Target_1
+[       OK ] TestCases/0.Target_1 (3 ms)
+[ RUN      ] TestCases/0.Target_2
+[       OK ] TestCases/0.Target_2 (4 ms)
+[ RUN      ] TestCases/0.Target_3
+[       OK ] TestCases/0.Target_3 (4 ms)
+[ RUN      ] TestCases/0.Target_4
+[       OK ] TestCases/0.Target_4 (3 ms)
+[ RUN      ] TestCases/0.Vertex_1
+[       OK ] TestCases/0.Vertex_1 (4 ms)
+[ RUN      ] TestCases/0.Vertex_2
+[       OK ] TestCases/0.Vertex_2 (4 ms)
+[ RUN      ] TestCases/0.Vertex_3
+[       OK ] TestCases/0.Vertex_3 (4 ms)
+[ RUN      ] TestCases/0.Vertex_4
+[       OK ] TestCases/0.Vertex_4 (4 ms)
+[ RUN      ] TestCases/0.Vertices_1
+[       OK ] TestCases/0.Vertices_1 (7 ms)
+[ RUN      ] TestCases/0.Vertices_2
+[       OK ] TestCases/0.Vertices_2 (8 ms)
+[ RUN      ] TestCases/0.Vertices_3
+[       OK ] TestCases/0.Vertices_3 (10 ms)
+[ RUN      ] TestCases/0.Vertices_4
+[       OK ] TestCases/0.Vertices_4 (18 ms)
+[ RUN      ] TestCases/0.TopologicalSort_1
+[       OK ] TestCases/0.TopologicalSort_1 (60 ms)
+[ RUN      ] TestCases/0.TopologicalSort_2
+[       OK ] TestCases/0.TopologicalSort_2 (21 ms)
+[ RUN      ] TestCases/0.TopologicalSort_3
+[       OK ] TestCases/0.TopologicalSort_3 (5 ms)
+[ RUN      ] TestCases/0.TopologicalSort_4
+[       OK ] TestCases/0.TopologicalSort_4 (6 ms)
+[----------] 56 tests from TestCases/0 (549 ms total)
+
+[----------] 56 tests from TestCases/1, where TypeParam = boost::adjacency_list<boost::setS, boost::vecS, boost::directedS, boost::no_property, boost::no_property, boost::no_property, boost::listS>
+[ RUN      ] TestCases/1.weird_test_1
+[       OK ] TestCases/1.weird_test_1 (65 ms)
+[ RUN      ] TestCases/1.weird_test_2
+[       OK ] TestCases/1.weird_test_2 (3 ms)
+[ RUN      ] TestCases/1.weird_test_3
+[       OK ] TestCases/1.weird_test_3 (14 ms)
+[ RUN      ] TestCases/1.has_cycle_1
+[       OK ] TestCases/1.has_cycle_1 (59 ms)
+[ RUN      ] TestCases/1.has_cycle_2
+[       OK ] TestCases/1.has_cycle_2 (10 ms)
+[ RUN      ] TestCases/1.has_cycle_3
+[       OK ] TestCases/1.has_cycle_3 (8 ms)
+[ RUN      ] TestCases/1.has_cycle_4
+[       OK ] TestCases/1.has_cycle_4 (10 ms)
+[ RUN      ] TestCases/1.add_vertex_test_1
+[       OK ] TestCases/1.add_vertex_test_1 (11 ms)
+[ RUN      ] TestCases/1.add_vertex_test_2
+[       OK ] TestCases/1.add_vertex_test_2 (4 ms)
+[ RUN      ] TestCases/1.add_vertex_test_3
+[       OK ] TestCases/1.add_vertex_test_3 (5 ms)
+[ RUN      ] TestCases/1.add_vertex_test_4
+[       OK ] TestCases/1.add_vertex_test_4 (10 ms)
+[ RUN      ] TestCases/1.add_edge_test_1
+[       OK ] TestCases/1.add_edge_test_1 (7 ms)
+[ RUN      ] TestCases/1.add_edge_test_2
+[       OK ] TestCases/1.add_edge_test_2 (5 ms)
+[ RUN      ] TestCases/1.add_edge_test_3
+[       OK ] TestCases/1.add_edge_test_3 (6 ms)
+[ RUN      ] TestCases/1.add_edge_test_4
+[       OK ] TestCases/1.add_edge_test_4 (7 ms)
+[ RUN      ] TestCases/1.add_edge_test_5
+[       OK ] TestCases/1.add_edge_test_5 (6 ms)
+[ RUN      ] TestCases/1.adjacent_vertices_test_1
+[       OK ] TestCases/1.adjacent_vertices_test_1 (8 ms)
+[ RUN      ] TestCases/1.adjacent_vertices_test_2
+[       OK ] TestCases/1.adjacent_vertices_test_2 (9 ms)
+[ RUN      ] TestCases/1.adjacent_vertices_test_3
+[       OK ] TestCases/1.adjacent_vertices_test_3 (7 ms)
+[ RUN      ] TestCases/1.adjacent_vertices_test_4
+[       OK ] TestCases/1.adjacent_vertices_test_4 (7 ms)
+[ RUN      ] TestCases/1.edge_test_1
+[       OK ] TestCases/1.edge_test_1 (14 ms)
+[ RUN      ] TestCases/1.edge_test_2
+[       OK ] TestCases/1.edge_test_2 (5 ms)
+[ RUN      ] TestCases/1.edge_test_3
+[       OK ] TestCases/1.edge_test_3 (5 ms)
+[ RUN      ] TestCases/1.edge_test_4
+[       OK ] TestCases/1.edge_test_4 (4 ms)
+[ RUN      ] TestCases/1.edges_test_1
+[       OK ] TestCases/1.edges_test_1 (30 ms)
+[ RUN      ] TestCases/1.edges_test_2
+[       OK ] TestCases/1.edges_test_2 (11 ms)
+[ RUN      ] TestCases/1.edges_test_3
+[       OK ] TestCases/1.edges_test_3 (17 ms)
+[ RUN      ] TestCases/1.edges_test_4
+[       OK ] TestCases/1.edges_test_4 (7 ms)
+[ RUN      ] TestCases/1.Num_Edges_1
+[       OK ] TestCases/1.Num_Edges_1 (4 ms)
+[ RUN      ] TestCases/1.Num_Edges_2
+[       OK ] TestCases/1.Num_Edges_2 (4 ms)
+[ RUN      ] TestCases/1.Num_Edges_3
+[       OK ] TestCases/1.Num_Edges_3 (5 ms)
+[ RUN      ] TestCases/1.Num_Edges_4
+[       OK ] TestCases/1.Num_Edges_4 (3 ms)
+[ RUN      ] TestCases/1.Num_Vertices_1
+[       OK ] TestCases/1.Num_Vertices_1 (4 ms)
+[ RUN      ] TestCases/1.Num_Vertices_2
+[       OK ] TestCases/1.Num_Vertices_2 (4 ms)
+[ RUN      ] TestCases/1.Num_Vertices_3
+[       OK ] TestCases/1.Num_Vertices_3 (4 ms)
+[ RUN      ] TestCases/1.Num_Vertices_4
+[       OK ] TestCases/1.Num_Vertices_4 (3 ms)
+[ RUN      ] TestCases/1.Source_1
+[       OK ] TestCases/1.Source_1 (3 ms)
+[ RUN      ] TestCases/1.Source_2
+[       OK ] TestCases/1.Source_2 (4 ms)
+[ RUN      ] TestCases/1.Source_3
+[       OK ] TestCases/1.Source_3 (3 ms)
+[ RUN      ] TestCases/1.Source_4
+[       OK ] TestCases/1.Source_4 (4 ms)
+[ RUN      ] TestCases/1.Target_1
+[       OK ] TestCases/1.Target_1 (3 ms)
+[ RUN      ] TestCases/1.Target_2
+[       OK ] TestCases/1.Target_2 (4 ms)
+[ RUN      ] TestCases/1.Target_3
+[       OK ] TestCases/1.Target_3 (3 ms)
+[ RUN      ] TestCases/1.Target_4
+[       OK ] TestCases/1.Target_4 (3 ms)
+[ RUN      ] TestCases/1.Vertex_1
+[       OK ] TestCases/1.Vertex_1 (3 ms)
+[ RUN      ] TestCases/1.Vertex_2
+[       OK ] TestCases/1.Vertex_2 (3 ms)
+[ RUN      ] TestCases/1.Vertex_3
+[       OK ] TestCases/1.Vertex_3 (4 ms)
+[ RUN      ] TestCases/1.Vertex_4
+[       OK ] TestCases/1.Vertex_4 (4 ms)
+[ RUN      ] TestCases/1.Vertices_1
+[       OK ] TestCases/1.Vertices_1 (6 ms)
+[ RUN      ] TestCases/1.Vertices_2
+[       OK ] TestCases/1.Vertices_2 (8 ms)
+[ RUN      ] TestCases/1.Vertices_3
+[       OK ] TestCases/1.Vertices_3 (10 ms)
+[ RUN      ] TestCases/1.Vertices_4
+[       OK ] TestCases/1.Vertices_4 (19 ms)
+[ RUN      ] TestCases/1.TopologicalSort_1
+[       OK ] TestCases/1.TopologicalSort_1 (6 ms)
+[ RUN      ] TestCases/1.TopologicalSort_2
+[       OK ] TestCases/1.TopologicalSort_2 (18 ms)
+[ RUN      ] TestCases/1.TopologicalSort_3
+[       OK ] TestCases/1.TopologicalSort_3 (5 ms)
+[ RUN      ] TestCases/1.TopologicalSort_4
+[       OK ] TestCases/1.TopologicalSort_4 (7 ms)
+[----------] 56 tests from TestCases/1 (516 ms total)
+
+[----------] Global test environment tear-down
+[==========] 112 tests from 2 test cases ran. (1102 ms total)
+[  PASSED  ] 112 tests.
+==4185== 
+==4185== HEAP SUMMARY:
+==4185==     in use at exit: 0 bytes in 0 blocks
+==4185==   total heap usage: 7,796 allocs, 7,796 frees, 524,517 bytes allocated
+==4185== 
+==4185== All heap blocks were freed -- no leaks are possible
+==4185== 
+==4185== For counts of detected and suppressed errors, rerun with: -v
+==4185== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 2 from 2)

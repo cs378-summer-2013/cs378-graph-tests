@@ -1,0 +1,196 @@
+Running main() from gtest_main.cc
+[==========] Running 92 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 46 tests from TestGraph/0, where TypeParam = boost::adjacency_list<boost::setS, boost::vecS, boost::directedS, boost::no_property, boost::no_property, boost::no_property, boost::listS>
+[ RUN      ] TestGraph/0.add_edge_1
+[       OK ] TestGraph/0.add_edge_1 (127 ms)
+[ RUN      ] TestGraph/0.add_edge_2
+[       OK ] TestGraph/0.add_edge_2 (6 ms)
+[ RUN      ] TestGraph/0.add_edge_3
+[       OK ] TestGraph/0.add_edge_3 (5 ms)
+[ RUN      ] TestGraph/0.add_edge_4
+[       OK ] TestGraph/0.add_edge_4 (12 ms)
+[ RUN      ] TestGraph/0.adjacent_vertices_1
+[       OK ] TestGraph/0.adjacent_vertices_1 (29 ms)
+[ RUN      ] TestGraph/0.adjacent_vertices_2
+[       OK ] TestGraph/0.adjacent_vertices_2 (12 ms)
+[ RUN      ] TestGraph/0.edge_1
+[       OK ] TestGraph/0.edge_1 (19 ms)
+[ RUN      ] TestGraph/0.edge_2
+[       OK ] TestGraph/0.edge_2 (6 ms)
+[ RUN      ] TestGraph/0.edge_3
+[       OK ] TestGraph/0.edge_3 (6 ms)
+[ RUN      ] TestGraph/0.edge_4
+[       OK ] TestGraph/0.edge_4 (6 ms)
+[ RUN      ] TestGraph/0.edges_1
+[       OK ] TestGraph/0.edges_1 (38 ms)
+[ RUN      ] TestGraph/0.edges_2
+[       OK ] TestGraph/0.edges_2 (18 ms)
+[ RUN      ] TestGraph/0.edges_3
+[       OK ] TestGraph/0.edges_3 (11 ms)
+[ RUN      ] TestGraph/0.num_edges_1
+[       OK ] TestGraph/0.num_edges_1 (12 ms)
+[ RUN      ] TestGraph/0.num_edges_2
+[       OK ] TestGraph/0.num_edges_2 (6 ms)
+[ RUN      ] TestGraph/0.num_edges_3
+[       OK ] TestGraph/0.num_edges_3 (6 ms)
+[ RUN      ] TestGraph/0.num_edges_4
+[       OK ] TestGraph/0.num_edges_4 (7 ms)
+[ RUN      ] TestGraph/0.num_vertices_1
+[       OK ] TestGraph/0.num_vertices_1 (3 ms)
+[ RUN      ] TestGraph/0.num_vertices_2
+[       OK ] TestGraph/0.num_vertices_2 (5 ms)
+[ RUN      ] TestGraph/0.num_vertices_3
+[       OK ] TestGraph/0.num_vertices_3 (6 ms)
+[ RUN      ] TestGraph/0.num_vertices_4
+[       OK ] TestGraph/0.num_vertices_4 (6 ms)
+[ RUN      ] TestGraph/0.source_1
+[       OK ] TestGraph/0.source_1 (5 ms)
+[ RUN      ] TestGraph/0.source_2
+[       OK ] TestGraph/0.source_2 (4 ms)
+[ RUN      ] TestGraph/0.source_3
+[       OK ] TestGraph/0.source_3 (6 ms)
+[ RUN      ] TestGraph/0.source_4
+[       OK ] TestGraph/0.source_4 (7 ms)
+[ RUN      ] TestGraph/0.target_1
+[       OK ] TestGraph/0.target_1 (4 ms)
+[ RUN      ] TestGraph/0.target_2
+[       OK ] TestGraph/0.target_2 (4 ms)
+[ RUN      ] TestGraph/0.target_3
+[       OK ] TestGraph/0.target_3 (6 ms)
+[ RUN      ] TestGraph/0.target_4
+[       OK ] TestGraph/0.target_4 (7 ms)
+[ RUN      ] TestGraph/0.vertex_1
+[       OK ] TestGraph/0.vertex_1 (4 ms)
+[ RUN      ] TestGraph/0.vertex_2
+[       OK ] TestGraph/0.vertex_2 (5 ms)
+[ RUN      ] TestGraph/0.vertex_3
+[       OK ] TestGraph/0.vertex_3 (4 ms)
+[ RUN      ] TestGraph/0.vertex_4
+[       OK ] TestGraph/0.vertex_4 (6 ms)
+[ RUN      ] TestGraph/0.vertex_5
+[       OK ] TestGraph/0.vertex_5 (6 ms)
+[ RUN      ] TestGraph/0.vertices_1
+[       OK ] TestGraph/0.vertices_1 (7 ms)
+[ RUN      ] TestGraph/0.vertices_2
+[       OK ] TestGraph/0.vertices_2 (9 ms)
+[ RUN      ] TestGraph/0.has_cycle_1
+[       OK ] TestGraph/0.has_cycle_1 (22 ms)
+[ RUN      ] TestGraph/0.has_cycle_2
+[       OK ] TestGraph/0.has_cycle_2 (4 ms)
+[ RUN      ] TestGraph/0.has_cycle_3
+[       OK ] TestGraph/0.has_cycle_3 (10 ms)
+[ RUN      ] TestGraph/0.has_cycle_4
+[       OK ] TestGraph/0.has_cycle_4 (12 ms)
+[ RUN      ] TestGraph/0.has_cycle_5
+[       OK ] TestGraph/0.has_cycle_5 (6 ms)
+[ RUN      ] TestGraph/0.has_cycle_6
+[       OK ] TestGraph/0.has_cycle_6 (10 ms)
+[ RUN      ] TestGraph/0.topological_sort_1
+[       OK ] TestGraph/0.topological_sort_1 (191 ms)
+[ RUN      ] TestGraph/0.topological_sort_2
+[       OK ] TestGraph/0.topological_sort_2 (10 ms)
+[ RUN      ] TestGraph/0.topological_sort_3
+[       OK ] TestGraph/0.topological_sort_3 (6 ms)
+[ RUN      ] TestGraph/0.topological_sort_4
+[       OK ] TestGraph/0.topological_sort_4 (6 ms)
+[----------] 46 tests from TestGraph/0 (742 ms total)
+
+[----------] 46 tests from TestGraph/1, where TypeParam = Graph
+[ RUN      ] TestGraph/1.add_edge_1
+[       OK ] TestGraph/1.add_edge_1 (123 ms)
+[ RUN      ] TestGraph/1.add_edge_2
+[       OK ] TestGraph/1.add_edge_2 (5 ms)
+[ RUN      ] TestGraph/1.add_edge_3
+[       OK ] TestGraph/1.add_edge_3 (5 ms)
+[ RUN      ] TestGraph/1.add_edge_4
+[       OK ] TestGraph/1.add_edge_4 (17 ms)
+[ RUN      ] TestGraph/1.adjacent_vertices_1
+[       OK ] TestGraph/1.adjacent_vertices_1 (13 ms)
+[ RUN      ] TestGraph/1.adjacent_vertices_2
+[       OK ] TestGraph/1.adjacent_vertices_2 (8 ms)
+[ RUN      ] TestGraph/1.edge_1
+[       OK ] TestGraph/1.edge_1 (12 ms)
+[ RUN      ] TestGraph/1.edge_2
+[       OK ] TestGraph/1.edge_2 (11 ms)
+[ RUN      ] TestGraph/1.edge_3
+[       OK ] TestGraph/1.edge_3 (7 ms)
+[ RUN      ] TestGraph/1.edge_4
+[       OK ] TestGraph/1.edge_4 (6 ms)
+[ RUN      ] TestGraph/1.edges_1
+[       OK ] TestGraph/1.edges_1 (12 ms)
+[ RUN      ] TestGraph/1.edges_2
+[       OK ] TestGraph/1.edges_2 (11 ms)
+[ RUN      ] TestGraph/1.edges_3
+[       OK ] TestGraph/1.edges_3 (4 ms)
+[ RUN      ] TestGraph/1.num_edges_1
+[       OK ] TestGraph/1.num_edges_1 (4 ms)
+[ RUN      ] TestGraph/1.num_edges_2
+[       OK ] TestGraph/1.num_edges_2 (4 ms)
+[ RUN      ] TestGraph/1.num_edges_3
+[       OK ] TestGraph/1.num_edges_3 (6 ms)
+[ RUN      ] TestGraph/1.num_edges_4
+[       OK ] TestGraph/1.num_edges_4 (8 ms)
+[ RUN      ] TestGraph/1.num_vertices_1
+[       OK ] TestGraph/1.num_vertices_1 (3 ms)
+[ RUN      ] TestGraph/1.num_vertices_2
+[       OK ] TestGraph/1.num_vertices_2 (5 ms)
+[ RUN      ] TestGraph/1.num_vertices_3
+[       OK ] TestGraph/1.num_vertices_3 (6 ms)
+[ RUN      ] TestGraph/1.num_vertices_4
+[       OK ] TestGraph/1.num_vertices_4 (9 ms)
+[ RUN      ] TestGraph/1.source_1
+[       OK ] TestGraph/1.source_1 (5 ms)
+[ RUN      ] TestGraph/1.source_2
+[       OK ] TestGraph/1.source_2 (5 ms)
+[ RUN      ] TestGraph/1.source_3
+[       OK ] TestGraph/1.source_3 (6 ms)
+[ RUN      ] TestGraph/1.source_4
+[       OK ] TestGraph/1.source_4 (7 ms)
+[ RUN      ] TestGraph/1.target_1
+[       OK ] TestGraph/1.target_1 (5 ms)
+[ RUN      ] TestGraph/1.target_2
+[       OK ] TestGraph/1.target_2 (4 ms)
+[ RUN      ] TestGraph/1.target_3
+[       OK ] TestGraph/1.target_3 (7 ms)
+[ RUN      ] TestGraph/1.target_4
+[       OK ] TestGraph/1.target_4 (7 ms)
+[ RUN      ] TestGraph/1.vertex_1
+[       OK ] TestGraph/1.vertex_1 (5 ms)
+[ RUN      ] TestGraph/1.vertex_2
+[       OK ] TestGraph/1.vertex_2 (4 ms)
+[ RUN      ] TestGraph/1.vertex_3
+[       OK ] TestGraph/1.vertex_3 (4 ms)
+[ RUN      ] TestGraph/1.vertex_4
+[       OK ] TestGraph/1.vertex_4 (6 ms)
+[ RUN      ] TestGraph/1.vertex_5
+[       OK ] TestGraph/1.vertex_5 (7 ms)
+[ RUN      ] TestGraph/1.vertices_1
+[       OK ] TestGraph/1.vertices_1 (8 ms)
+[ RUN      ] TestGraph/1.vertices_2
+[       OK ] TestGraph/1.vertices_2 (8 ms)
+[ RUN      ] TestGraph/1.has_cycle_1
+[       OK ] TestGraph/1.has_cycle_1 (13 ms)
+[ RUN      ] TestGraph/1.has_cycle_2
+[       OK ] TestGraph/1.has_cycle_2 (4 ms)
+[ RUN      ] TestGraph/1.has_cycle_3
+[       OK ] TestGraph/1.has_cycle_3 (12 ms)
+[ RUN      ] TestGraph/1.has_cycle_4
+[       OK ] TestGraph/1.has_cycle_4 (11 ms)
+[ RUN      ] TestGraph/1.has_cycle_5
+[       OK ] TestGraph/1.has_cycle_5 (7 ms)
+[ RUN      ] TestGraph/1.has_cycle_6
+[       OK ] TestGraph/1.has_cycle_6 (12 ms)
+[ RUN      ] TestGraph/1.topological_sort_1
+[       OK ] TestGraph/1.topological_sort_1 (9 ms)
+[ RUN      ] TestGraph/1.topological_sort_2
+[       OK ] TestGraph/1.topological_sort_2 (13 ms)
+[ RUN      ] TestGraph/1.topological_sort_3
+[       OK ] TestGraph/1.topological_sort_3 (5 ms)
+[ RUN      ] TestGraph/1.topological_sort_4
+[       OK ] TestGraph/1.topological_sort_4 (6 ms)
+[----------] 46 tests from TestGraph/1 (470 ms total)
+
+[----------] Global test environment tear-down
+[==========] 92 tests from 2 test cases ran. (1292 ms total)
+[  PASSED  ] 92 tests.

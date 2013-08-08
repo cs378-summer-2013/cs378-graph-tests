@@ -1,0 +1,89 @@
+Running main() from gtest_main.cc
+[==========] Running 40 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 40 tests from GraphTester
+[ RUN      ] GraphTester.DefaultConstructorTest1
+[       OK ] GraphTester.DefaultConstructorTest1 (108 ms)
+[ RUN      ] GraphTester.AddEdgeTest1
+[       OK ] GraphTester.AddEdgeTest1 (10 ms)
+[ RUN      ] GraphTester.AddEdgeTest2
+[       OK ] GraphTester.AddEdgeTest2 (9 ms)
+[ RUN      ] GraphTester.AddEdgeTest3
+[       OK ] GraphTester.AddEdgeTest3 (9 ms)
+[ RUN      ] GraphTester.AddEdgeTest4
+[       OK ] GraphTester.AddEdgeTest4 (11 ms)
+[ RUN      ] GraphTester.AddVertexTest1
+[       OK ] GraphTester.AddVertexTest1 (9 ms)
+[ RUN      ] GraphTester.AddVertexTest2
+[       OK ] GraphTester.AddVertexTest2 (6 ms)
+[ RUN      ] GraphTester.AddVertexTest3
+[       OK ] GraphTester.AddVertexTest3 (6 ms)
+[ RUN      ] GraphTester.AdjacenctVerticesTest1
+[       OK ] GraphTester.AdjacenctVerticesTest1 (27 ms)
+[ RUN      ] GraphTester.AdjacenctVerticesTest2
+[       OK ] GraphTester.AdjacenctVerticesTest2 (5 ms)
+[ RUN      ] GraphTester.AdjacenctVerticesTest3
+[       OK ] GraphTester.AdjacenctVerticesTest3 (9 ms)
+[ RUN      ] GraphTester.EdgeTest1
+[       OK ] GraphTester.EdgeTest1 (14 ms)
+[ RUN      ] GraphTester.EdgeTest2
+[       OK ] GraphTester.EdgeTest2 (9 ms)
+[ RUN      ] GraphTester.EdgeTest3
+[       OK ] GraphTester.EdgeTest3 (9 ms)
+[ RUN      ] GraphTester.EdgesTest1
+[       OK ] GraphTester.EdgesTest1 (20 ms)
+[ RUN      ] GraphTester.EdgesTest2
+[       OK ] GraphTester.EdgesTest2 (18 ms)
+[ RUN      ] GraphTester.EdgesTest3
+[       OK ] GraphTester.EdgesTest3 (14 ms)
+[ RUN      ] GraphTester.NumEdgesTest1
+[       OK ] GraphTester.NumEdgesTest1 (4 ms)
+[ RUN      ] GraphTester.NumEdgesTest2
+[       OK ] GraphTester.NumEdgesTest2 (4 ms)
+[ RUN      ] GraphTester.NumEdgesTest3
+[       OK ] GraphTester.NumEdgesTest3 (6 ms)
+[ RUN      ] GraphTester.NumVerticesTest1
+[       OK ] GraphTester.NumVerticesTest1 (7 ms)
+[ RUN      ] GraphTester.NumVerticesTest2
+[       OK ] GraphTester.NumVerticesTest2 (9 ms)
+[ RUN      ] GraphTester.NumVerticesTest3
+[       OK ] GraphTester.NumVerticesTest3 (7 ms)
+[ RUN      ] GraphTester.SourceAndTargetTest1
+[       OK ] GraphTester.SourceAndTargetTest1 (9 ms)
+[ RUN      ] GraphTester.SourceAndTargetTest2
+[       OK ] GraphTester.SourceAndTargetTest2 (5 ms)
+[ RUN      ] GraphTester.SourceAndTargetTest3
+[       OK ] GraphTester.SourceAndTargetTest3 (5 ms)
+[ RUN      ] GraphTester.VertexTest1
+[       OK ] GraphTester.VertexTest1 (7 ms)
+[ RUN      ] GraphTester.VertexTest2
+[       OK ] GraphTester.VertexTest2 (4 ms)
+[ RUN      ] GraphTester.VertexTest3
+[       OK ] GraphTester.VertexTest3 (5 ms)
+[ RUN      ] GraphTester.VerticesTest1
+[       OK ] GraphTester.VerticesTest1 (5 ms)
+[ RUN      ] GraphTester.VerticesTest2
+[       OK ] GraphTester.VerticesTest2 (9 ms)
+[ RUN      ] GraphTester.VerticesTest3
+[       OK ] GraphTester.VerticesTest3 (7 ms)
+[ RUN      ] GraphTester.HasCycleTest1
+[       OK ] GraphTester.HasCycleTest1 (10 ms)
+[ RUN      ] GraphTester.HasCycleTest2
+[       OK ] GraphTester.HasCycleTest2 (30 ms)
+[ RUN      ] GraphTester.HasCycleTest3
+[       OK ] GraphTester.HasCycleTest3 (7 ms)
+[ RUN      ] GraphTester.HasCycleTest4
+[       OK ] GraphTester.HasCycleTest4 (9 ms)
+[ RUN      ] GraphTester.TopologicalSortTest1
+[       OK ] GraphTester.TopologicalSortTest1 (12 ms)
+[ RUN      ] GraphTester.TopologicalSortTest2
+[       OK ] GraphTester.TopologicalSortTest2 (147 ms)
+[ RUN      ] GraphTester.TopologicalSortTest3
+[       OK ] GraphTester.TopologicalSortTest3 (9 ms)
+[ RUN      ] GraphTester.TopologicalSortTest4
+[       OK ] GraphTester.TopologicalSortTest4 (7 ms)
+[----------] 40 tests from GraphTester (643 ms total)
+
+[----------] Global test environment tear-down
+[==========] 40 tests from 1 test case ran. (683 ms total)
+[  PASSED  ] 40 tests.

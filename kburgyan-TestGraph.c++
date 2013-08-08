@@ -460,10 +460,8 @@ protected:
 	vertex_descriptor q = add_vertex(g2);
 	vertex_descriptor r = add_vertex(g2);
 	std::pair<edge_descriptor, bool> p2 = add_edge(q, r, g2);
-	ASSERT_EQ(0, p2.first.m_source);
-	ASSERT_EQ(1, p2.first.m_target);
-	ASSERT_EQ(0, edQR.m_source);
-	ASSERT_EQ(1, edQR.m_target);
+	ASSERT_EQ(source(edQR, g2), source(p2.first, g2));
+	ASSERT_EQ(target(edQR, g2), target(p2.first, g2));
 	//ASSERT_EQ(edQR, p2.first);
 	ASSERT_EQ(true, p2.second);
 	ASSERT_EQ(1, num_edges(g2));
@@ -472,10 +470,8 @@ protected:
 	vertex_descriptor2 q2 = add_vertex(g22);
 	vertex_descriptor2 r2 = add_vertex(g22);
 	std::pair<edge_descriptor2, bool> p22 = add_edge(q2, r2, g22);
-	ASSERT_EQ(0, p22.first.first);
-	ASSERT_EQ(1, p22.first.second);
-	ASSERT_EQ(0, edQR2.first);
-	ASSERT_EQ(1, edQR2.second);
+	ASSERT_EQ(source(edQR2, g22), source(p22.first, g22));
+	ASSERT_EQ(target(edQR2, g22), target(p22.first, g22));
 	//ASSERT_EQ(false, p22.first == edQR2);
 	ASSERT_EQ(true, p22.second);
 	ASSERT_EQ(1, num_edges(g22));
@@ -578,15 +574,15 @@ protected:
  TEST_F(MyGraphTest, AddEdgeTest7) {
 	ASSERT_EQ(11, num_edges(g1));
 	std::pair<edge_descriptor, bool> p = add_edge(vdA, vdA, g1);
-	ASSERT_EQ(0, p.first.m_source);
-	ASSERT_EQ(0, p.first.m_target);
+	ASSERT_EQ(0, source(p.first, g1));
+	ASSERT_EQ(0, target(p.first, g1));
 	ASSERT_EQ(true, p.second == true);
 	ASSERT_EQ(12, num_edges(g1));
 	//#######################################
 	ASSERT_EQ(11, num_edges(g12));
 	std::pair<edge_descriptor2, bool> p2 = add_edge(vdA2, vdA2, g12);
-	ASSERT_EQ(0, p2.first.first);
-	ASSERT_EQ(0, p2.first.second);
+	ASSERT_EQ(0, source(p2.first, g12));
+	ASSERT_EQ(0, target(p2.first, g12));
 	ASSERT_EQ(true, p2.second == true);
 	ASSERT_EQ(12, num_edges(g12));
 }
@@ -719,31 +715,31 @@ protected:
 }
 
  TEST_F(MyGraphTest, EdgeTest2) {
-	ASSERT_EQ(0, edAB.m_source);
-	ASSERT_EQ(1, edAB.m_target);
+	ASSERT_EQ(0, source(edAB, g1));
+	ASSERT_EQ(1, target(edAB, g1));
 	ASSERT_EQ(11, num_edges(g1));
 	ASSERT_EQ(8, num_vertices(g1));
         std::pair<edge_descriptor, bool> p = edge(vdA, vdB, g1);
 	ASSERT_EQ(11, num_edges(g1));
 	ASSERT_EQ(8, num_vertices(g1));
-        ASSERT_EQ(0, p.first.m_source);
-        ASSERT_EQ(1, p.first.m_target);
-	ASSERT_EQ(0, edAB.m_source);
-	ASSERT_EQ(1, edAB.m_target);
+        ASSERT_EQ(source(edAB, g1), source(p.first, g1));
+        ASSERT_EQ(target(edAB, g1), target(p.first, g1));
+	ASSERT_EQ(0, source(edAB, g1));
+	ASSERT_EQ(1, target(edAB, g1));
         ASSERT_EQ(true, p.first  == edAB);
         ASSERT_EQ(true, p.second == true);
 	//#######################################
-	ASSERT_EQ(0, edAB2.first);
-	ASSERT_EQ(1, edAB2.second);
+	ASSERT_EQ(0, source(edAB2, g12));
+	ASSERT_EQ(1, target(edAB2, g12));
 	ASSERT_EQ(11, num_edges(g12));
 	ASSERT_EQ(8, num_vertices(g12));
         std::pair<edge_descriptor2, bool> p2 = edge(vdA2, vdB2, g12);
 	ASSERT_EQ(11, num_edges(g12));
 	ASSERT_EQ(8, num_vertices(g12));
-        ASSERT_EQ(0, p2.first.first);
-        ASSERT_EQ(1, p2.first.second);
-	ASSERT_EQ(0, edAB2.first);
-	ASSERT_EQ(1, edAB2.second);
+        ASSERT_EQ(source(edAB2, g12), source(p2.first, g12));
+        ASSERT_EQ(target(edAB2, g12), target(p2.first, g12));
+	ASSERT_EQ(0, source(edAB2, g12));
+	ASSERT_EQ(1, target(edAB2, g12));
         ASSERT_EQ(true, p2.first  == edAB2);
         ASSERT_EQ(true, p2.second == true);
 }
@@ -756,10 +752,10 @@ protected:
         //std::pair<edge_descriptor, bool> p = edge(vdBB, vdCC, g1);
 	// ___ASSERT_EQ(11, num_edges(g1));
 	//ASSERT_EQ(8, num_vertices(g1));
-        //ASSERT_EQ(9, p.first.m_source);
-        //ASSERT_EQ(10, p.first.m_target);
-	//ASSERT_EQ(9, edBBCC.m_source);
-	//ASSERT_EQ(10, edBBCC.m_target);
+        //ASSERT_EQ(source(edBBCC, g1), source(p.first, g1));
+        //ASSERT_EQ(target(edBBCC, g1), target(p.first, g1));
+	//ASSERT_EQ(9, source(edBBCC, g1));
+	//ASSERT_EQ(10, target(edBBCC, g1));
 	
 	// extra wrinkle/detail of edge_descriptor: why does/should the ASSERT_EQ below work??
         //ASSERT_EQ(false, p.first == edBBCC);
@@ -773,10 +769,10 @@ protected:
         //std::pair<edge_descriptor2, bool> p2 = edge(vdBB2, vdCC2, g12);
 	//ASSERT_EQ(11, num_edges(g12));
 	//ASSERT_EQ(8, num_vertices(g12));
-        //ASSERT_EQ(9, p2.first.first);
-        //ASSERT_EQ(10, p2.first.second);
-	//ASSERT_EQ(9, edBBCC2.first);
-	//ASSERT_EQ(10, edBBCC2.second);
+        //ASSERT_EQ(source(edBBCC2, g12), source(p2.first, g12));
+        //ASSERT_EQ(target(edBBCC2, g12), target(p2.first, g12));
+	//ASSERT_EQ(9, source(edBBCC2, g12));
+	//ASSERT_EQ(10, target(edBBCC2, g12));
 	// NOTICE: the assertion below fails b/c p2.first == edBBCC2 is true
         // ASSERT_EQ(false, p2.first == edBBCC2);
         //ASSERT_EQ(true, p2.second == false);
@@ -1051,8 +1047,8 @@ protected:
 	ASSERT_EQ(10, num_edges(g6));
 	ASSERT_EQ(8, num_vertices(g6));
 	std::pair<edge_descriptor, bool> p = add_edge(vdAAA, vdAAA, g6);
-	ASSERT_EQ(0, p.first.m_source);
-	ASSERT_EQ(0, p.first.m_target);
+	ASSERT_EQ(0, source(p.first, g6));
+	ASSERT_EQ(0, target(p.first, g6));
 	ASSERT_EQ(true, p.second == true);
 	ASSERT_EQ(11, num_edges(g6));
 	ASSERT_EQ(8, num_vertices(g6));
@@ -1069,8 +1065,8 @@ protected:
 	ASSERT_EQ(10, num_edges(g62));
 	ASSERT_EQ(8, num_vertices(g62));
 	std::pair<edge_descriptor2, bool> p2 = add_edge(vdAAA2, vdAAA2, g62);
-	ASSERT_EQ(0, p2.first.first);
-	ASSERT_EQ(0, p2.first.second);
+	ASSERT_EQ(0, source(p2.first, g62));
+	ASSERT_EQ(0, target(p2.first, g62));
 	ASSERT_EQ(true, p2.second == true);
 	ASSERT_EQ(11, num_edges(g62));
 	ASSERT_EQ(8, num_vertices(g62));

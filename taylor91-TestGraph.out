@@ -1,0 +1,132 @@
+Running main() from gtest_main.cc
+[==========] Running 60 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 44 tests from Graph
+[ RUN      ] Graph.test_setup
+[       OK ] Graph.test_setup (0 ms)
+[ RUN      ] Graph.test_add_edge1
+[       OK ] Graph.test_add_edge1 (0 ms)
+[ RUN      ] Graph.test_add_edge2
+[       OK ] Graph.test_add_edge2 (0 ms)
+[ RUN      ] Graph.test_add_edge3
+[       OK ] Graph.test_add_edge3 (0 ms)
+[ RUN      ] Graph.test_add_edge4
+[       OK ] Graph.test_add_edge4 (0 ms)
+[ RUN      ] Graph.test_add_edge5
+[       OK ] Graph.test_add_edge5 (0 ms)
+[ RUN      ] Graph.test_add_edge6
+[       OK ] Graph.test_add_edge6 (0 ms)
+[ RUN      ] Graph.test_add_edge7
+[       OK ] Graph.test_add_edge7 (0 ms)
+[ RUN      ] Graph.test_adjacent_vertices1
+[       OK ] Graph.test_adjacent_vertices1 (0 ms)
+[ RUN      ] Graph.test_adjacent_vertices2
+[       OK ] Graph.test_adjacent_vertices2 (0 ms)
+[ RUN      ] Graph.test_adjacent_vertices3
+[       OK ] Graph.test_adjacent_vertices3 (1 ms)
+[ RUN      ] Graph.test_edge1
+[       OK ] Graph.test_edge1 (0 ms)
+[ RUN      ] Graph.test_edge2
+[       OK ] Graph.test_edge2 (0 ms)
+[ RUN      ] Graph.test_edge3
+[       OK ] Graph.test_edge3 (0 ms)
+[ RUN      ] Graph.test_edges1
+[       OK ] Graph.test_edges1 (0 ms)
+[ RUN      ] Graph.test_edges2
+[       OK ] Graph.test_edges2 (0 ms)
+[ RUN      ] Graph.test_num_edges1
+[       OK ] Graph.test_num_edges1 (0 ms)
+[ RUN      ] Graph.test_num_edges2
+[       OK ] Graph.test_num_edges2 (0 ms)
+[ RUN      ] Graph.test_num_edges3
+[       OK ] Graph.test_num_edges3 (0 ms)
+[ RUN      ] Graph.test_num_vertices1
+[       OK ] Graph.test_num_vertices1 (0 ms)
+[ RUN      ] Graph.test_num_vertices2
+[       OK ] Graph.test_num_vertices2 (0 ms)
+[ RUN      ] Graph.test_num_vertices3
+[       OK ] Graph.test_num_vertices3 (0 ms)
+[ RUN      ] Graph.test_source1
+[       OK ] Graph.test_source1 (0 ms)
+[ RUN      ] Graph.test_source2
+[       OK ] Graph.test_source2 (0 ms)
+[ RUN      ] Graph.test_source3
+[       OK ] Graph.test_source3 (0 ms)
+[ RUN      ] Graph.test_source4
+[       OK ] Graph.test_source4 (0 ms)
+[ RUN      ] Graph.test_target1
+[       OK ] Graph.test_target1 (0 ms)
+[ RUN      ] Graph.test_target2
+[       OK ] Graph.test_target2 (0 ms)
+[ RUN      ] Graph.test_target3
+[       OK ] Graph.test_target3 (0 ms)
+[ RUN      ] Graph.test_target4
+[       OK ] Graph.test_target4 (0 ms)
+[ RUN      ] Graph.test_vertex1
+[       OK ] Graph.test_vertex1 (0 ms)
+[ RUN      ] Graph.test_vertex2
+[       OK ] Graph.test_vertex2 (0 ms)
+[ RUN      ] Graph.test_vertex3
+[       OK ] Graph.test_vertex3 (0 ms)
+[ RUN      ] Graph.test_vertices1
+[       OK ] Graph.test_vertices1 (0 ms)
+[ RUN      ] Graph.test_vertices2
+[       OK ] Graph.test_vertices2 (0 ms)
+[ RUN      ] Graph.test_vertices3
+[       OK ] Graph.test_vertices3 (0 ms)
+[ RUN      ] Graph.test_has_cycle1
+[       OK ] Graph.test_has_cycle1 (0 ms)
+[ RUN      ] Graph.test_has_cycle2
+[       OK ] Graph.test_has_cycle2 (0 ms)
+[ RUN      ] Graph.test_has_cycle3
+[       OK ] Graph.test_has_cycle3 (0 ms)
+[ RUN      ] Graph.test_has_cycle4
+[       OK ] Graph.test_has_cycle4 (0 ms)
+[ RUN      ] Graph.test_topological_sort1
+[       OK ] Graph.test_topological_sort1 (0 ms)
+[ RUN      ] Graph.test_topological_sort2
+[       OK ] Graph.test_topological_sort2 (0 ms)
+[ RUN      ] Graph.test_topological_sort3
+[       OK ] Graph.test_topological_sort3 (0 ms)
+[ RUN      ] Graph.test_topological_sort4
+[       OK ] Graph.test_topological_sort4 (0 ms)
+[----------] 44 tests from Graph (1 ms total)
+
+[----------] 16 tests from ConstIterator
+[ RUN      ] ConstIterator.Constructor1
+[       OK ] ConstIterator.Constructor1 (0 ms)
+[ RUN      ] ConstIterator.Constructor2
+[       OK ] ConstIterator.Constructor2 (0 ms)
+[ RUN      ] ConstIterator.Constructor3
+[       OK ] ConstIterator.Constructor3 (0 ms)
+[ RUN      ] ConstIterator.Dereference1
+[       OK ] ConstIterator.Dereference1 (1 ms)
+[ RUN      ] ConstIterator.Dereference2
+[       OK ] ConstIterator.Dereference2 (0 ms)
+[ RUN      ] ConstIterator.Dereference3
+[       OK ] ConstIterator.Dereference3 (0 ms)
+[ RUN      ] ConstIterator.Equality1
+[       OK ] ConstIterator.Equality1 (0 ms)
+[ RUN      ] ConstIterator.Equality2
+[       OK ] ConstIterator.Equality2 (0 ms)
+[ RUN      ] ConstIterator.Equality3
+[       OK ] ConstIterator.Equality3 (0 ms)
+[ RUN      ] ConstIterator.Increment1
+[       OK ] ConstIterator.Increment1 (0 ms)
+[ RUN      ] ConstIterator.Increment2
+[       OK ] ConstIterator.Increment2 (0 ms)
+[ RUN      ] ConstIterator.Increment3
+[       OK ] ConstIterator.Increment3 (0 ms)
+[ RUN      ] ConstIterator.Increment4
+[       OK ] ConstIterator.Increment4 (0 ms)
+[ RUN      ] ConstIterator.Decrement1
+[       OK ] ConstIterator.Decrement1 (0 ms)
+[ RUN      ] ConstIterator.Decrement2
+[       OK ] ConstIterator.Decrement2 (0 ms)
+[ RUN      ] ConstIterator.Decrement3
+[       OK ] ConstIterator.Decrement3 (0 ms)
+[----------] 16 tests from ConstIterator (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 60 tests from 2 test cases ran. (2 ms total)
+[  PASSED  ] 60 tests.
