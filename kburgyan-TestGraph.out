@@ -3,97 +3,97 @@ Running main() from gtest_main.cc
 [----------] Global test environment set-up.
 [----------] 45 tests from MyGraphTest
 [ RUN      ] MyGraphTest.AddVertexTest1
-[       OK ] MyGraphTest.AddVertexTest1 (253 ms)
+[       OK ] MyGraphTest.AddVertexTest1 (157 ms)
 [ RUN      ] MyGraphTest.AddVertexTest2
-[       OK ] MyGraphTest.AddVertexTest2 (20 ms)
+[       OK ] MyGraphTest.AddVertexTest2 (13 ms)
 [ RUN      ] MyGraphTest.NumVerticesTest1
-[       OK ] MyGraphTest.NumVerticesTest1 (11 ms)
+[       OK ] MyGraphTest.NumVerticesTest1 (7 ms)
 [ RUN      ] MyGraphTest.NumVerticesTest2
-[       OK ] MyGraphTest.NumVerticesTest2 (11 ms)
+[       OK ] MyGraphTest.NumVerticesTest2 (6 ms)
 [ RUN      ] MyGraphTest.NumEdgesTest1
-[       OK ] MyGraphTest.NumEdgesTest1 (19 ms)
+[       OK ] MyGraphTest.NumEdgesTest1 (12 ms)
 [ RUN      ] MyGraphTest.NumEdgesTest2
-[       OK ] MyGraphTest.NumEdgesTest2 (14 ms)
+[       OK ] MyGraphTest.NumEdgesTest2 (8 ms)
 [ RUN      ] MyGraphTest.AddEdgeTest1
-[       OK ] MyGraphTest.AddEdgeTest1 (22 ms)
+[       OK ] MyGraphTest.AddEdgeTest1 (13 ms)
 [ RUN      ] MyGraphTest.AddEdgeTest2
-[       OK ] MyGraphTest.AddEdgeTest2 (23 ms)
+[       OK ] MyGraphTest.AddEdgeTest2 (14 ms)
 [ RUN      ] MyGraphTest.AddEdgeTest3
-[       OK ] MyGraphTest.AddEdgeTest3 (23 ms)
+[       OK ] MyGraphTest.AddEdgeTest3 (14 ms)
 [ RUN      ] MyGraphTest.AddEdgeTest4
-[       OK ] MyGraphTest.AddEdgeTest4 (22 ms)
+[       OK ] MyGraphTest.AddEdgeTest4 (14 ms)
 [ RUN      ] MyGraphTest.AddEdgeTest5
-[       OK ] MyGraphTest.AddEdgeTest5 (22 ms)
+[       OK ] MyGraphTest.AddEdgeTest5 (14 ms)
 [ RUN      ] MyGraphTest.AddEdgeTest6
-[       OK ] MyGraphTest.AddEdgeTest6 (23 ms)
+[       OK ] MyGraphTest.AddEdgeTest6 (14 ms)
 [ RUN      ] MyGraphTest.AddEdgeTest7
-[       OK ] MyGraphTest.AddEdgeTest7 (17 ms)
+[       OK ] MyGraphTest.AddEdgeTest7 (12 ms)
 [ RUN      ] MyGraphTest.AdjacenctVerticesTest1
-[       OK ] MyGraphTest.AdjacenctVerticesTest1 (41 ms)
+[       OK ] MyGraphTest.AdjacenctVerticesTest1 (25 ms)
 [ RUN      ] MyGraphTest.AdjacenctVerticesTest2
-[       OK ] MyGraphTest.AdjacenctVerticesTest2 (27 ms)
+[       OK ] MyGraphTest.AdjacenctVerticesTest2 (16 ms)
 [ RUN      ] MyGraphTest.EdgeTest1
-[       OK ] MyGraphTest.EdgeTest1 (12 ms)
+[       OK ] MyGraphTest.EdgeTest1 (7 ms)
 [ RUN      ] MyGraphTest.EdgeTest2
-[       OK ] MyGraphTest.EdgeTest2 (41 ms)
+[       OK ] MyGraphTest.EdgeTest2 (30 ms)
 [ RUN      ] MyGraphTest.EdgeTest3
-[       OK ] MyGraphTest.EdgeTest3 (12 ms)
+[       OK ] MyGraphTest.EdgeTest3 (7 ms)
 [ RUN      ] MyGraphTest.EdgesTest1
-[       OK ] MyGraphTest.EdgesTest1 (29 ms)
+[       OK ] MyGraphTest.EdgesTest1 (18 ms)
 [ RUN      ] MyGraphTest.EdgesTest2
-[       OK ] MyGraphTest.EdgesTest2 (28 ms)
+[       OK ] MyGraphTest.EdgesTest2 (18 ms)
 [ RUN      ] MyGraphTest.SourceTest1
-[       OK ] MyGraphTest.SourceTest1 (17 ms)
+[       OK ] MyGraphTest.SourceTest1 (11 ms)
 [ RUN      ] MyGraphTest.SourceTest2
-[       OK ] MyGraphTest.SourceTest2 (10 ms)
+[       OK ] MyGraphTest.SourceTest2 (7 ms)
 [ RUN      ] MyGraphTest.TargetTest1
-[       OK ] MyGraphTest.TargetTest1 (17 ms)
+[       OK ] MyGraphTest.TargetTest1 (10 ms)
 [ RUN      ] MyGraphTest.TargetTest2
-[       OK ] MyGraphTest.TargetTest2 (11 ms)
+[       OK ] MyGraphTest.TargetTest2 (7 ms)
 [ RUN      ] MyGraphTest.VertexTest1
-[       OK ] MyGraphTest.VertexTest1 (18 ms)
+[       OK ] MyGraphTest.VertexTest1 (12 ms)
 [ RUN      ] MyGraphTest.VertexTest2
-[       OK ] MyGraphTest.VertexTest2 (11 ms)
+[       OK ] MyGraphTest.VertexTest2 (7 ms)
 [ RUN      ] MyGraphTest.VertexTest3
-[       OK ] MyGraphTest.VertexTest3 (16 ms)
+[       OK ] MyGraphTest.VertexTest3 (10 ms)
 [ RUN      ] MyGraphTest.VerticesTest1
-[       OK ] MyGraphTest.VerticesTest1 (16 ms)
+[       OK ] MyGraphTest.VerticesTest1 (10 ms)
 [ RUN      ] MyGraphTest.VerticesTest2
-[       OK ] MyGraphTest.VerticesTest2 (17 ms)
+[       OK ] MyGraphTest.VerticesTest2 (11 ms)
 [ RUN      ] MyGraphTest.HasCycleTest1
-[       OK ] MyGraphTest.HasCycleTest1 (18 ms)
+[       OK ] MyGraphTest.HasCycleTest1 (11 ms)
 [ RUN      ] MyGraphTest.HasCycleTest2
-[       OK ] MyGraphTest.HasCycleTest2 (62 ms)
+[       OK ] MyGraphTest.HasCycleTest2 (39 ms)
 [ RUN      ] MyGraphTest.HasCycleTest3
-[       OK ] MyGraphTest.HasCycleTest3 (17 ms)
+[       OK ] MyGraphTest.HasCycleTest3 (10 ms)
 [ RUN      ] MyGraphTest.HasCycleTest4
-[       OK ] MyGraphTest.HasCycleTest4 (19 ms)
+[       OK ] MyGraphTest.HasCycleTest4 (12 ms)
 [ RUN      ] MyGraphTest.HasCycleTest5
-[       OK ] MyGraphTest.HasCycleTest5 (29 ms)
+[       OK ] MyGraphTest.HasCycleTest5 (19 ms)
 [ RUN      ] MyGraphTest.TopologicalSortTest1
-[       OK ] MyGraphTest.TopologicalSortTest1 (41 ms)
+[       OK ] MyGraphTest.TopologicalSortTest1 (27 ms)
 [ RUN      ] MyGraphTest.TopologicalSortTest2
-[       OK ] MyGraphTest.TopologicalSortTest2 (161 ms)
+[       OK ] MyGraphTest.TopologicalSortTest2 (105 ms)
 [ RUN      ] MyGraphTest.TopologicalSortTest3
-[       OK ] MyGraphTest.TopologicalSortTest3 (53 ms)
+[       OK ] MyGraphTest.TopologicalSortTest3 (36 ms)
 [ RUN      ] MyGraphTest.TopologicalSortTest4
-[       OK ] MyGraphTest.TopologicalSortTest4 (29 ms)
+[       OK ] MyGraphTest.TopologicalSortTest4 (20 ms)
 [ RUN      ] MyGraphTest.DefaultConstructorTest1
-[       OK ] MyGraphTest.DefaultConstructorTest1 (12 ms)
+[       OK ] MyGraphTest.DefaultConstructorTest1 (8 ms)
 [ RUN      ] MyGraphTest.ValidTest1
-[       OK ] MyGraphTest.ValidTest1 (12 ms)
+[       OK ] MyGraphTest.ValidTest1 (7 ms)
 [ RUN      ] MyGraphTest.HasCycleHelperTest1
-[       OK ] MyGraphTest.HasCycleHelperTest1 (16 ms)
+[       OK ] MyGraphTest.HasCycleHelperTest1 (10 ms)
 [ RUN      ] MyGraphTest.HasCycleHelperTest2
-[       OK ] MyGraphTest.HasCycleHelperTest2 (17 ms)
+[       OK ] MyGraphTest.HasCycleHelperTest2 (12 ms)
 [ RUN      ] MyGraphTest.HasCycleHelperTest3
-[       OK ] MyGraphTest.HasCycleHelperTest3 (14 ms)
+[       OK ] MyGraphTest.HasCycleHelperTest3 (10 ms)
 [ RUN      ] MyGraphTest.DefaultCopyConstructorTest1
-[       OK ] MyGraphTest.DefaultCopyConstructorTest1 (57 ms)
+[       OK ] MyGraphTest.DefaultCopyConstructorTest1 (36 ms)
 [ RUN      ] MyGraphTest.DefualtCopyAssignmentTest1
-[       OK ] MyGraphTest.DefualtCopyAssignmentTest1 (42 ms)
-[----------] 45 tests from MyGraphTest (1433 ms total)
+[       OK ] MyGraphTest.DefualtCopyAssignmentTest1 (26 ms)
+[----------] 45 tests from MyGraphTest (912 ms total)
 
 [----------] Global test environment tear-down
-[==========] 45 tests from 1 test case ran. (1475 ms total)
+[==========] 45 tests from 1 test case ran. (939 ms total)
 [  PASSED  ] 45 tests.
