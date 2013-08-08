@@ -1,0 +1,269 @@
+Running main() from gtest_main.cc
+[==========] Running 84 tests from 3 test cases.
+[----------] Global test environment set-up.
+[----------] 2 tests from ImplementationTest
+[ RUN      ] ImplementationTest.DefaultConstructor
+[       OK ] ImplementationTest.DefaultConstructor (14 ms)
+[ RUN      ] ImplementationTest.HasCycle1
+[       OK ] ImplementationTest.HasCycle1 (34 ms)
+[----------] 2 tests from ImplementationTest (58 ms total)
+
+[----------] 41 tests from InterfaceTest/0, where TypeParam = Graph
+[ RUN      ] InterfaceTest/0.AddVertexTest1
+[       OK ] InterfaceTest/0.AddVertexTest1 (7 ms)
+[ RUN      ] InterfaceTest/0.AddVertexTest2
+[       OK ] InterfaceTest/0.AddVertexTest2 (2 ms)
+[ RUN      ] InterfaceTest/0.AddVertexTest3
+[       OK ] InterfaceTest/0.AddVertexTest3 (3 ms)
+[ RUN      ] InterfaceTest/0.AddVertexTest4
+[       OK ] InterfaceTest/0.AddVertexTest4 (4 ms)
+[ RUN      ] InterfaceTest/0.AddEdgeTest1
+[       OK ] InterfaceTest/0.AddEdgeTest1 (3 ms)
+[ RUN      ] InterfaceTest/0.AddEdgeTest2
+[       OK ] InterfaceTest/0.AddEdgeTest2 (2 ms)
+[ RUN      ] InterfaceTest/0.AdjacentVerticesTest1
+[       OK ] InterfaceTest/0.AdjacentVerticesTest1 (8 ms)
+[ RUN      ] InterfaceTest/0.AdjacentVerticesTest2
+[       OK ] InterfaceTest/0.AdjacentVerticesTest2 (6 ms)
+[ RUN      ] InterfaceTest/0.AdjacentVerticesTest3
+[       OK ] InterfaceTest/0.AdjacentVerticesTest3 (4 ms)
+[ RUN      ] InterfaceTest/0.EdgeTest1
+[       OK ] InterfaceTest/0.EdgeTest1 (5 ms)
+[ RUN      ] InterfaceTest/0.EdgeTest2
+[       OK ] InterfaceTest/0.EdgeTest2 (3 ms)
+[ RUN      ] InterfaceTest/0.EdgeTest3
+[       OK ] InterfaceTest/0.EdgeTest3 (3 ms)
+[ RUN      ] InterfaceTest/0.EdgesTest1
+[       OK ] InterfaceTest/0.EdgesTest1 (5 ms)
+[ RUN      ] InterfaceTest/0.EdgesTest2
+[       OK ] InterfaceTest/0.EdgesTest2 (6 ms)
+[ RUN      ] InterfaceTest/0.EdgesTest3
+[       OK ] InterfaceTest/0.EdgesTest3 (7 ms)
+[ RUN      ] InterfaceTest/0.NumEdges1
+[       OK ] InterfaceTest/0.NumEdges1 (2 ms)
+[ RUN      ] InterfaceTest/0.NumEdges2
+[       OK ] InterfaceTest/0.NumEdges2 (3 ms)
+[ RUN      ] InterfaceTest/0.NumEdges3
+[       OK ] InterfaceTest/0.NumEdges3 (3 ms)
+[ RUN      ] InterfaceTest/0.NumEdges4
+TestGraph.c++:424: Failure
+Value of: num_edges(this->g)
+  Actual: 12
+Expected: 13
+TestGraph.c++:426: Failure
+Value of: num_edges(this->g)
+  Actual: 12
+Expected: 14
+[  FAILED  ] InterfaceTest/0.NumEdges4, where TypeParam = Graph (43 ms)
+[ RUN      ] InterfaceTest/0.NumVertices1
+[       OK ] InterfaceTest/0.NumVertices1 (2 ms)
+[ RUN      ] InterfaceTest/0.NumVertices2
+[       OK ] InterfaceTest/0.NumVertices2 (2 ms)
+[ RUN      ] InterfaceTest/0.NumVertices3
+[       OK ] InterfaceTest/0.NumVertices3 (2 ms)
+[ RUN      ] InterfaceTest/0.NumVertices4
+[       OK ] InterfaceTest/0.NumVertices4 (3 ms)
+[ RUN      ] InterfaceTest/0.NumVertices5
+[       OK ] InterfaceTest/0.NumVertices5 (4 ms)
+[ RUN      ] InterfaceTest/0.Source1
+[       OK ] InterfaceTest/0.Source1 (2 ms)
+[ RUN      ] InterfaceTest/0.Source2
+[       OK ] InterfaceTest/0.Source2 (2 ms)
+[ RUN      ] InterfaceTest/0.Source3
+[       OK ] InterfaceTest/0.Source3 (2 ms)
+[ RUN      ] InterfaceTest/0.Target1
+[       OK ] InterfaceTest/0.Target1 (3 ms)
+[ RUN      ] InterfaceTest/0.Target2
+TestGraph.c++:500: Failure
+Value of: vd
+  Actual: 0
+Expected: this->vdD
+Which is: 3
+[  FAILED  ] InterfaceTest/0.Target2, where TypeParam = Graph (7 ms)
+[ RUN      ] InterfaceTest/0.Target3
+TestGraph.c++:506: Failure
+Value of: vd
+  Actual: 0
+Expected: this->vdH
+Which is: 7
+[  FAILED  ] InterfaceTest/0.Target3, where TypeParam = Graph (4 ms)
+[ RUN      ] InterfaceTest/0.Vertex1
+[       OK ] InterfaceTest/0.Vertex1 (3 ms)
+[ RUN      ] InterfaceTest/0.Vertex2
+[       OK ] InterfaceTest/0.Vertex2 (2 ms)
+[ RUN      ] InterfaceTest/0.Vertex3
+TestGraph.c++:526: Failure
+Value of: vd
+  Actual: 2
+Expected: this->vdB
+Which is: 1
+[  FAILED  ] InterfaceTest/0.Vertex3, where TypeParam = Graph (4 ms)
+[ RUN      ] InterfaceTest/0.Vertex4
+TestGraph.c++:532: Failure
+Value of: vd
+  Actual: 3
+Expected: this->vdB
+Which is: 1
+[  FAILED  ] InterfaceTest/0.Vertex4, where TypeParam = Graph (4 ms)
+[ RUN      ] InterfaceTest/0.Vertex5
+TestGraph.c++:538: Failure
+Value of: vd
+  Actual: 4
+Expected: this->vdB
+Which is: 1
+[  FAILED  ] InterfaceTest/0.Vertex5, where TypeParam = Graph (4 ms)
+[ RUN      ] InterfaceTest/0.Vertex6
+TestGraph.c++:544: Failure
+Value of: vd
+  Actual: 5
+Expected: this->vdB
+Which is: 1
+[  FAILED  ] InterfaceTest/0.Vertex6, where TypeParam = Graph (4 ms)
+[ RUN      ] InterfaceTest/0.Vertices1
+[       OK ] InterfaceTest/0.Vertices1 (5 ms)
+[ RUN      ] InterfaceTest/0.Vertices2
+[       OK ] InterfaceTest/0.Vertices2 (6 ms)
+[ RUN      ] InterfaceTest/0.Vertices3
+[       OK ] InterfaceTest/0.Vertices3 (6 ms)
+[ RUN      ] InterfaceTest/0.HasCycle1
+[       OK ] InterfaceTest/0.HasCycle1 (2 ms)
+[ RUN      ] InterfaceTest/0.TopologicalSort1
+TestGraph.c++:636: Failure
+Value of: false
+  Actual: false
+Expected: true
+[  FAILED  ] InterfaceTest/0.TopologicalSort1, where TypeParam = Graph (8 ms)
+[----------] 41 tests from InterfaceTest/0 (212 ms total)
+
+[----------] 41 tests from InterfaceTest/1, where TypeParam = boost::adjacency_list<boost::setS, boost::vecS, boost::directedS, boost::no_property, boost::no_property, boost::no_property, boost::listS>
+[ RUN      ] InterfaceTest/1.AddVertexTest1
+[       OK ] InterfaceTest/1.AddVertexTest1 (53 ms)
+[ RUN      ] InterfaceTest/1.AddVertexTest2
+[       OK ] InterfaceTest/1.AddVertexTest2 (3 ms)
+[ RUN      ] InterfaceTest/1.AddVertexTest3
+[       OK ] InterfaceTest/1.AddVertexTest3 (4 ms)
+[ RUN      ] InterfaceTest/1.AddVertexTest4
+[       OK ] InterfaceTest/1.AddVertexTest4 (3 ms)
+[ RUN      ] InterfaceTest/1.AddEdgeTest1
+[       OK ] InterfaceTest/1.AddEdgeTest1 (4 ms)
+[ RUN      ] InterfaceTest/1.AddEdgeTest2
+[       OK ] InterfaceTest/1.AddEdgeTest2 (3 ms)
+[ RUN      ] InterfaceTest/1.AdjacentVerticesTest1
+[       OK ] InterfaceTest/1.AdjacentVerticesTest1 (18 ms)
+[ RUN      ] InterfaceTest/1.AdjacentVerticesTest2
+[       OK ] InterfaceTest/1.AdjacentVerticesTest2 (6 ms)
+[ RUN      ] InterfaceTest/1.AdjacentVerticesTest3
+[       OK ] InterfaceTest/1.AdjacentVerticesTest3 (4 ms)
+[ RUN      ] InterfaceTest/1.EdgeTest1
+[       OK ] InterfaceTest/1.EdgeTest1 (9 ms)
+[ RUN      ] InterfaceTest/1.EdgeTest2
+[       OK ] InterfaceTest/1.EdgeTest2 (2 ms)
+[ RUN      ] InterfaceTest/1.EdgeTest3
+[       OK ] InterfaceTest/1.EdgeTest3 (3 ms)
+[ RUN      ] InterfaceTest/1.EdgesTest1
+[       OK ] InterfaceTest/1.EdgesTest1 (20 ms)
+[ RUN      ] InterfaceTest/1.EdgesTest2
+[       OK ] InterfaceTest/1.EdgesTest2 (7 ms)
+[ RUN      ] InterfaceTest/1.EdgesTest3
+[       OK ] InterfaceTest/1.EdgesTest3 (11 ms)
+[ RUN      ] InterfaceTest/1.NumEdges1
+[       OK ] InterfaceTest/1.NumEdges1 (7 ms)
+[ RUN      ] InterfaceTest/1.NumEdges2
+[       OK ] InterfaceTest/1.NumEdges2 (2 ms)
+[ RUN      ] InterfaceTest/1.NumEdges3
+[       OK ] InterfaceTest/1.NumEdges3 (3 ms)
+[ RUN      ] InterfaceTest/1.NumEdges4
+TestGraph.c++:424: Failure
+Value of: num_edges(this->g)
+  Actual: 12
+Expected: 13
+TestGraph.c++:426: Failure
+Value of: num_edges(this->g)
+  Actual: 12
+Expected: 14
+[  FAILED  ] InterfaceTest/1.NumEdges4, where TypeParam = boost::adjacency_list<boost::setS, boost::vecS, boost::directedS, boost::no_property, boost::no_property, boost::no_property, boost::listS> (10 ms)
+[ RUN      ] InterfaceTest/1.NumVertices1
+[       OK ] InterfaceTest/1.NumVertices1 (2 ms)
+[ RUN      ] InterfaceTest/1.NumVertices2
+[       OK ] InterfaceTest/1.NumVertices2 (2 ms)
+[ RUN      ] InterfaceTest/1.NumVertices3
+[       OK ] InterfaceTest/1.NumVertices3 (2 ms)
+[ RUN      ] InterfaceTest/1.NumVertices4
+[       OK ] InterfaceTest/1.NumVertices4 (3 ms)
+[ RUN      ] InterfaceTest/1.NumVertices5
+[       OK ] InterfaceTest/1.NumVertices5 (4 ms)
+[ RUN      ] InterfaceTest/1.Source1
+[       OK ] InterfaceTest/1.Source1 (2 ms)
+[ RUN      ] InterfaceTest/1.Source2
+[       OK ] InterfaceTest/1.Source2 (2 ms)
+[ RUN      ] InterfaceTest/1.Source3
+[       OK ] InterfaceTest/1.Source3 (2 ms)
+[ RUN      ] InterfaceTest/1.Target1
+[       OK ] InterfaceTest/1.Target1 (2 ms)
+[ RUN      ] InterfaceTest/1.Target2
+[       OK ] InterfaceTest/1.Target2 (2 ms)
+[ RUN      ] InterfaceTest/1.Target3
+[       OK ] InterfaceTest/1.Target3 (2 ms)
+[ RUN      ] InterfaceTest/1.Vertex1
+[       OK ] InterfaceTest/1.Vertex1 (2 ms)
+[ RUN      ] InterfaceTest/1.Vertex2
+[       OK ] InterfaceTest/1.Vertex2 (2 ms)
+[ RUN      ] InterfaceTest/1.Vertex3
+TestGraph.c++:526: Failure
+Value of: vd
+  Actual: 2
+Expected: this->vdB
+Which is: 1
+[  FAILED  ] InterfaceTest/1.Vertex3, where TypeParam = boost::adjacency_list<boost::setS, boost::vecS, boost::directedS, boost::no_property, boost::no_property, boost::no_property, boost::listS> (6 ms)
+[ RUN      ] InterfaceTest/1.Vertex4
+TestGraph.c++:532: Failure
+Value of: vd
+  Actual: 3
+Expected: this->vdB
+Which is: 1
+[  FAILED  ] InterfaceTest/1.Vertex4, where TypeParam = boost::adjacency_list<boost::setS, boost::vecS, boost::directedS, boost::no_property, boost::no_property, boost::no_property, boost::listS> (4 ms)
+[ RUN      ] InterfaceTest/1.Vertex5
+TestGraph.c++:538: Failure
+Value of: vd
+  Actual: 4
+Expected: this->vdB
+Which is: 1
+[  FAILED  ] InterfaceTest/1.Vertex5, where TypeParam = boost::adjacency_list<boost::setS, boost::vecS, boost::directedS, boost::no_property, boost::no_property, boost::no_property, boost::listS> (4 ms)
+[ RUN      ] InterfaceTest/1.Vertex6
+TestGraph.c++:544: Failure
+Value of: vd
+  Actual: 5
+Expected: this->vdB
+Which is: 1
+[  FAILED  ] InterfaceTest/1.Vertex6, where TypeParam = boost::adjacency_list<boost::setS, boost::vecS, boost::directedS, boost::no_property, boost::no_property, boost::no_property, boost::listS> (4 ms)
+[ RUN      ] InterfaceTest/1.Vertices1
+[       OK ] InterfaceTest/1.Vertices1 (4 ms)
+[ RUN      ] InterfaceTest/1.Vertices2
+[       OK ] InterfaceTest/1.Vertices2 (6 ms)
+[ RUN      ] InterfaceTest/1.Vertices3
+[       OK ] InterfaceTest/1.Vertices3 (8 ms)
+[ RUN      ] InterfaceTest/1.HasCycle1
+[       OK ] InterfaceTest/1.HasCycle1 (2 ms)
+[ RUN      ] InterfaceTest/1.TopologicalSort1
+[       OK ] InterfaceTest/1.TopologicalSort1 (94 ms)
+[----------] 41 tests from InterfaceTest/1 (343 ms total)
+
+[----------] Global test environment tear-down
+[==========] 84 tests from 3 test cases ran. (637 ms total)
+[  PASSED  ] 71 tests.
+[  FAILED  ] 13 tests, listed below:
+[  FAILED  ] InterfaceTest/0.NumEdges4, where TypeParam = Graph
+[  FAILED  ] InterfaceTest/0.Target2, where TypeParam = Graph
+[  FAILED  ] InterfaceTest/0.Target3, where TypeParam = Graph
+[  FAILED  ] InterfaceTest/0.Vertex3, where TypeParam = Graph
+[  FAILED  ] InterfaceTest/0.Vertex4, where TypeParam = Graph
+[  FAILED  ] InterfaceTest/0.Vertex5, where TypeParam = Graph
+[  FAILED  ] InterfaceTest/0.Vertex6, where TypeParam = Graph
+[  FAILED  ] InterfaceTest/0.TopologicalSort1, where TypeParam = Graph
+[  FAILED  ] InterfaceTest/1.NumEdges4, where TypeParam = boost::adjacency_list<boost::setS, boost::vecS, boost::directedS, boost::no_property, boost::no_property, boost::no_property, boost::listS>
+[  FAILED  ] InterfaceTest/1.Vertex3, where TypeParam = boost::adjacency_list<boost::setS, boost::vecS, boost::directedS, boost::no_property, boost::no_property, boost::no_property, boost::listS>
+[  FAILED  ] InterfaceTest/1.Vertex4, where TypeParam = boost::adjacency_list<boost::setS, boost::vecS, boost::directedS, boost::no_property, boost::no_property, boost::no_property, boost::listS>
+[  FAILED  ] InterfaceTest/1.Vertex5, where TypeParam = boost::adjacency_list<boost::setS, boost::vecS, boost::directedS, boost::no_property, boost::no_property, boost::no_property, boost::listS>
+[  FAILED  ] InterfaceTest/1.Vertex6, where TypeParam = boost::adjacency_list<boost::setS, boost::vecS, boost::directedS, boost::no_property, boost::no_property, boost::no_property, boost::listS>
+
+13 FAILED TESTS
