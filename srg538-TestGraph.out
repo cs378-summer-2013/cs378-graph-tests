@@ -1,0 +1,179 @@
+Running main() from gtest_main.cc
+[==========] Running 80 tests from 4 test cases.
+[----------] Global test environment set-up.
+[----------] 10 tests from OurTests
+[ RUN      ] OurTests.testHasCycle0
+[       OK ] OurTests.testHasCycle0 (0 ms)
+[ RUN      ] OurTests.testHasCycle1
+[       OK ] OurTests.testHasCycle1 (0 ms)
+[ RUN      ] OurTests.testHasCycle2
+[       OK ] OurTests.testHasCycle2 (0 ms)
+[ RUN      ] OurTests.testHasCycle3
+[       OK ] OurTests.testHasCycle3 (0 ms)
+[ RUN      ] OurTests.testHasCycle4
+[       OK ] OurTests.testHasCycle4 (0 ms)
+[ RUN      ] OurTests.testTopSort0
+[       OK ] OurTests.testTopSort0 (0 ms)
+[ RUN      ] OurTests.testTopSort1
+[       OK ] OurTests.testTopSort1 (0 ms)
+[ RUN      ] OurTests.testTopSort2
+[       OK ] OurTests.testTopSort2 (0 ms)
+[ RUN      ] OurTests.testTopSort3
+[       OK ] OurTests.testTopSort3 (0 ms)
+[ RUN      ] OurTests.testTopSort4
+0 1 2 3 4 6 5 7 
+[       OK ] OurTests.testTopSort4 (0 ms)
+[----------] 10 tests from OurTests (0 ms total)
+
+[----------] 10 tests from CycleTests
+[ RUN      ] CycleTests.test_sample_graph_cyclic
+[       OK ] CycleTests.test_sample_graph_cyclic (0 ms)
+[ RUN      ] CycleTests.test_sample_graph
+[       OK ] CycleTests.test_sample_graph (0 ms)
+[ RUN      ] CycleTests.test_sample_graph_1
+[       OK ] CycleTests.test_sample_graph_1 (0 ms)
+[ RUN      ] CycleTests.test_has_cycle_1
+[       OK ] CycleTests.test_has_cycle_1 (0 ms)
+[ RUN      ] CycleTests.test_has_cycle_2
+[       OK ] CycleTests.test_has_cycle_2 (0 ms)
+[ RUN      ] CycleTests.test_has_cycle_3
+[       OK ] CycleTests.test_has_cycle_3 (0 ms)
+[ RUN      ] CycleTests.test_has_cycle_4
+[       OK ] CycleTests.test_has_cycle_4 (0 ms)
+[ RUN      ] CycleTests.test_topological_sort_1
+[       OK ] CycleTests.test_topological_sort_1 (0 ms)
+[ RUN      ] CycleTests.test_topological_sort_2
+[       OK ] CycleTests.test_topological_sort_2 (0 ms)
+[ RUN      ] CycleTests.test_topological_sort_3
+[       OK ] CycleTests.test_topological_sort_3 (0 ms)
+[----------] 10 tests from CycleTests (1 ms total)
+
+[----------] 30 tests from Tests/0, where TypeParam = boost::adjacency_list<boost::setS, boost::vecS, boost::directedS, boost::no_property, boost::no_property, boost::no_property, boost::listS>
+[ RUN      ] Tests/0.add_edge_1
+[       OK ] Tests/0.add_edge_1 (0 ms)
+[ RUN      ] Tests/0.add_edge_2
+[       OK ] Tests/0.add_edge_2 (0 ms)
+[ RUN      ] Tests/0.add_edge_3
+[       OK ] Tests/0.add_edge_3 (0 ms)
+[ RUN      ] Tests/0.adjacent_vertices_1
+[       OK ] Tests/0.adjacent_vertices_1 (0 ms)
+[ RUN      ] Tests/0.adjacent_vertices_2
+[       OK ] Tests/0.adjacent_vertices_2 (0 ms)
+[ RUN      ] Tests/0.adjacent_vertices_3
+[       OK ] Tests/0.adjacent_vertices_3 (0 ms)
+[ RUN      ] Tests/0.test_edge_1
+[       OK ] Tests/0.test_edge_1 (0 ms)
+[ RUN      ] Tests/0.test_edge_2
+[       OK ] Tests/0.test_edge_2 (0 ms)
+[ RUN      ] Tests/0.test_edge_3
+[       OK ] Tests/0.test_edge_3 (0 ms)
+[ RUN      ] Tests/0.test_edges_1
+[       OK ] Tests/0.test_edges_1 (0 ms)
+[ RUN      ] Tests/0.test_edges_2
+[       OK ] Tests/0.test_edges_2 (0 ms)
+[ RUN      ] Tests/0.test_edges_3
+[       OK ] Tests/0.test_edges_3 (0 ms)
+[ RUN      ] Tests/0.test_num_edges_1
+[       OK ] Tests/0.test_num_edges_1 (0 ms)
+[ RUN      ] Tests/0.test_num_edges_2
+[       OK ] Tests/0.test_num_edges_2 (0 ms)
+[ RUN      ] Tests/0.test_num_edges_3
+[       OK ] Tests/0.test_num_edges_3 (0 ms)
+[ RUN      ] Tests/0.test_num_vertices_1
+[       OK ] Tests/0.test_num_vertices_1 (0 ms)
+[ RUN      ] Tests/0.test_num_vertices_2
+[       OK ] Tests/0.test_num_vertices_2 (0 ms)
+[ RUN      ] Tests/0.test_num_vertices_3
+[       OK ] Tests/0.test_num_vertices_3 (0 ms)
+[ RUN      ] Tests/0.test_source_1
+[       OK ] Tests/0.test_source_1 (0 ms)
+[ RUN      ] Tests/0.test_source_2
+[       OK ] Tests/0.test_source_2 (0 ms)
+[ RUN      ] Tests/0.test_source_3
+[       OK ] Tests/0.test_source_3 (0 ms)
+[ RUN      ] Tests/0.test_target_1
+[       OK ] Tests/0.test_target_1 (0 ms)
+[ RUN      ] Tests/0.test_target_2
+[       OK ] Tests/0.test_target_2 (0 ms)
+[ RUN      ] Tests/0.test_target_3
+[       OK ] Tests/0.test_target_3 (0 ms)
+[ RUN      ] Tests/0.test_vertex_1
+[       OK ] Tests/0.test_vertex_1 (0 ms)
+[ RUN      ] Tests/0.test_vertex_2
+[       OK ] Tests/0.test_vertex_2 (0 ms)
+[ RUN      ] Tests/0.test_vertex_3
+[       OK ] Tests/0.test_vertex_3 (0 ms)
+[ RUN      ] Tests/0.test_vertices_1
+[       OK ] Tests/0.test_vertices_1 (0 ms)
+[ RUN      ] Tests/0.test_vertices_2
+[       OK ] Tests/0.test_vertices_2 (0 ms)
+[ RUN      ] Tests/0.test_vertices_3
+[       OK ] Tests/0.test_vertices_3 (0 ms)
+[----------] 30 tests from Tests/0 (0 ms total)
+
+[----------] 30 tests from Tests/1, where TypeParam = Graph
+[ RUN      ] Tests/1.add_edge_1
+[       OK ] Tests/1.add_edge_1 (0 ms)
+[ RUN      ] Tests/1.add_edge_2
+[       OK ] Tests/1.add_edge_2 (0 ms)
+[ RUN      ] Tests/1.add_edge_3
+[       OK ] Tests/1.add_edge_3 (0 ms)
+[ RUN      ] Tests/1.adjacent_vertices_1
+[       OK ] Tests/1.adjacent_vertices_1 (1 ms)
+[ RUN      ] Tests/1.adjacent_vertices_2
+[       OK ] Tests/1.adjacent_vertices_2 (0 ms)
+[ RUN      ] Tests/1.adjacent_vertices_3
+[       OK ] Tests/1.adjacent_vertices_3 (0 ms)
+[ RUN      ] Tests/1.test_edge_1
+[       OK ] Tests/1.test_edge_1 (0 ms)
+[ RUN      ] Tests/1.test_edge_2
+[       OK ] Tests/1.test_edge_2 (0 ms)
+[ RUN      ] Tests/1.test_edge_3
+[       OK ] Tests/1.test_edge_3 (0 ms)
+[ RUN      ] Tests/1.test_edges_1
+[       OK ] Tests/1.test_edges_1 (0 ms)
+[ RUN      ] Tests/1.test_edges_2
+[       OK ] Tests/1.test_edges_2 (0 ms)
+[ RUN      ] Tests/1.test_edges_3
+[       OK ] Tests/1.test_edges_3 (0 ms)
+[ RUN      ] Tests/1.test_num_edges_1
+[       OK ] Tests/1.test_num_edges_1 (0 ms)
+[ RUN      ] Tests/1.test_num_edges_2
+[       OK ] Tests/1.test_num_edges_2 (0 ms)
+[ RUN      ] Tests/1.test_num_edges_3
+[       OK ] Tests/1.test_num_edges_3 (0 ms)
+[ RUN      ] Tests/1.test_num_vertices_1
+[       OK ] Tests/1.test_num_vertices_1 (0 ms)
+[ RUN      ] Tests/1.test_num_vertices_2
+[       OK ] Tests/1.test_num_vertices_2 (0 ms)
+[ RUN      ] Tests/1.test_num_vertices_3
+[       OK ] Tests/1.test_num_vertices_3 (0 ms)
+[ RUN      ] Tests/1.test_source_1
+[       OK ] Tests/1.test_source_1 (0 ms)
+[ RUN      ] Tests/1.test_source_2
+[       OK ] Tests/1.test_source_2 (0 ms)
+[ RUN      ] Tests/1.test_source_3
+[       OK ] Tests/1.test_source_3 (0 ms)
+[ RUN      ] Tests/1.test_target_1
+[       OK ] Tests/1.test_target_1 (0 ms)
+[ RUN      ] Tests/1.test_target_2
+[       OK ] Tests/1.test_target_2 (0 ms)
+[ RUN      ] Tests/1.test_target_3
+[       OK ] Tests/1.test_target_3 (0 ms)
+[ RUN      ] Tests/1.test_vertex_1
+[       OK ] Tests/1.test_vertex_1 (0 ms)
+[ RUN      ] Tests/1.test_vertex_2
+[       OK ] Tests/1.test_vertex_2 (0 ms)
+[ RUN      ] Tests/1.test_vertex_3
+[       OK ] Tests/1.test_vertex_3 (0 ms)
+[ RUN      ] Tests/1.test_vertices_1
+[       OK ] Tests/1.test_vertices_1 (0 ms)
+[ RUN      ] Tests/1.test_vertices_2
+[       OK ] Tests/1.test_vertices_2 (1 ms)
+[ RUN      ] Tests/1.test_vertices_3
+[       OK ] Tests/1.test_vertices_3 (0 ms)
+[----------] 30 tests from Tests/1 (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 80 tests from 4 test cases ran. (3 ms total)
+[  PASSED  ] 80 tests.
