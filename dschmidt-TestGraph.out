@@ -1,0 +1,126 @@
+Running main() from gtest_main.cc
+[==========] Running 54 tests from 4 test cases.
+[----------] Global test environment set-up.
+[----------] 3 tests from constructor
+[ RUN      ] constructor.constructor_1
+[       OK ] constructor.constructor_1 (0 ms)
+[ RUN      ] constructor.constructor_2
+[       OK ] constructor.constructor_2 (0 ms)
+[ RUN      ] constructor.constructor_3
+[       OK ] constructor.constructor_3 (0 ms)
+[----------] 3 tests from constructor (0 ms total)
+
+[----------] 31 tests from GraphTest
+[ RUN      ] GraphTest.add_vertex_1
+[       OK ] GraphTest.add_vertex_1 (0 ms)
+[ RUN      ] GraphTest.add_vertex_2
+[       OK ] GraphTest.add_vertex_2 (0 ms)
+[ RUN      ] GraphTest.add_vertex_3
+[       OK ] GraphTest.add_vertex_3 (0 ms)
+[ RUN      ] GraphTest.add_edge_1
+[       OK ] GraphTest.add_edge_1 (1 ms)
+[ RUN      ] GraphTest.add_edge_2
+[       OK ] GraphTest.add_edge_2 (0 ms)
+[ RUN      ] GraphTest.add_edge_3
+[       OK ] GraphTest.add_edge_3 (0 ms)
+[ RUN      ] GraphTest.adjacent_vertices_1
+[       OK ] GraphTest.adjacent_vertices_1 (0 ms)
+[ RUN      ] GraphTest.adjacent_vertices_2
+[       OK ] GraphTest.adjacent_vertices_2 (0 ms)
+[ RUN      ] GraphTest.adjacent_vertices_3
+[       OK ] GraphTest.adjacent_vertices_3 (0 ms)
+[ RUN      ] GraphTest.edge_1
+[       OK ] GraphTest.edge_1 (0 ms)
+[ RUN      ] GraphTest.edge_2
+[       OK ] GraphTest.edge_2 (0 ms)
+[ RUN      ] GraphTest.edge_3
+[       OK ] GraphTest.edge_3 (0 ms)
+[ RUN      ] GraphTest.edges_1
+[       OK ] GraphTest.edges_1 (0 ms)
+[ RUN      ] GraphTest.edges_2
+[       OK ] GraphTest.edges_2 (0 ms)
+[ RUN      ] GraphTest.edges_3
+[       OK ] GraphTest.edges_3 (1 ms)
+[ RUN      ] GraphTest.num_edges_1
+[       OK ] GraphTest.num_edges_1 (0 ms)
+[ RUN      ] GraphTest.num_edges_2
+[       OK ] GraphTest.num_edges_2 (0 ms)
+[ RUN      ] GraphTest.num_edges_3
+[       OK ] GraphTest.num_edges_3 (0 ms)
+[ RUN      ] GraphTest.num_vertices_1
+[       OK ] GraphTest.num_vertices_1 (0 ms)
+[ RUN      ] GraphTest.num_vertices_2
+[       OK ] GraphTest.num_vertices_2 (0 ms)
+[ RUN      ] GraphTest.num_vertices_3
+[       OK ] GraphTest.num_vertices_3 (1 ms)
+[ RUN      ] GraphTest.source_1
+[       OK ] GraphTest.source_1 (0 ms)
+[ RUN      ] GraphTest.source_2
+[       OK ] GraphTest.source_2 (0 ms)
+[ RUN      ] GraphTest.source_3
+[       OK ] GraphTest.source_3 (3 ms)
+[ RUN      ] GraphTest.target_1
+[       OK ] GraphTest.target_1 (0 ms)
+[ RUN      ] GraphTest.target_2
+[       OK ] GraphTest.target_2 (0 ms)
+[ RUN      ] GraphTest.target_3
+[       OK ] GraphTest.target_3 (2 ms)
+[ RUN      ] GraphTest.vertex_1
+[       OK ] GraphTest.vertex_1 (0 ms)
+[ RUN      ] GraphTest.vertices_1
+[       OK ] GraphTest.vertices_1 (0 ms)
+[ RUN      ] GraphTest.vertices_2
+[       OK ] GraphTest.vertices_2 (0 ms)
+[ RUN      ] GraphTest.vertices_3
+[       OK ] GraphTest.vertices_3 (0 ms)
+[----------] 31 tests from GraphTest (9 ms total)
+
+[----------] 7 tests from GraphSpecialCases
+[ RUN      ] GraphSpecialCases.test_simple_cycle_1
+[       OK ] GraphSpecialCases.test_simple_cycle_1 (0 ms)
+[ RUN      ] GraphSpecialCases.add_edge_without_declared_vertex_1
+[       OK ] GraphSpecialCases.add_edge_without_declared_vertex_1 (0 ms)
+[ RUN      ] GraphSpecialCases.add_edge_without_declared_vertex_2
+[       OK ] GraphSpecialCases.add_edge_without_declared_vertex_2 (1 ms)
+[ RUN      ] GraphSpecialCases.add_edge_without_declared_vertex_3
+[       OK ] GraphSpecialCases.add_edge_without_declared_vertex_3 (0 ms)
+[ RUN      ] GraphSpecialCases.edge_pointing_to_itself_1
+[       OK ] GraphSpecialCases.edge_pointing_to_itself_1 (0 ms)
+[ RUN      ] GraphSpecialCases.edge_pointing_to_itself_2
+[       OK ] GraphSpecialCases.edge_pointing_to_itself_2 (0 ms)
+[ RUN      ] GraphSpecialCases.edge_pointing_to_itself_3
+[       OK ] GraphSpecialCases.edge_pointing_to_itself_3 (0 ms)
+[----------] 7 tests from GraphSpecialCases (1 ms total)
+
+[----------] 13 tests from GraphAlgorithms
+[ RUN      ] GraphAlgorithms.add_vertices_through_edge_1
+[       OK ] GraphAlgorithms.add_vertices_through_edge_1 (1 ms)
+[ RUN      ] GraphAlgorithms.add_vertices_through_edge_2
+[       OK ] GraphAlgorithms.add_vertices_through_edge_2 (0 ms)
+[ RUN      ] GraphAlgorithms.add_vertices_through_edge_3
+[       OK ] GraphAlgorithms.add_vertices_through_edge_3 (0 ms)
+[ RUN      ] GraphAlgorithms.test_simple_cycle_1
+[       OK ] GraphAlgorithms.test_simple_cycle_1 (0 ms)
+[ RUN      ] GraphAlgorithms.test_simple_cycle_2
+[       OK ] GraphAlgorithms.test_simple_cycle_2 (0 ms)
+[ RUN      ] GraphAlgorithms.test_larger_cycle_1
+[       OK ] GraphAlgorithms.test_larger_cycle_1 (1 ms)
+[ RUN      ] GraphAlgorithms.test_larger_cycle_2
+[       OK ] GraphAlgorithms.test_larger_cycle_2 (0 ms)
+[ RUN      ] GraphAlgorithms.self_cycle_1
+[       OK ] GraphAlgorithms.self_cycle_1 (0 ms)
+[ RUN      ] GraphAlgorithms.self_cycle_2
+[       OK ] GraphAlgorithms.self_cycle_2 (0 ms)
+[ RUN      ] GraphAlgorithms.empty_cycle
+[       OK ] GraphAlgorithms.empty_cycle (0 ms)
+[ RUN      ] GraphAlgorithms.large_cycle_true
+[       OK ] GraphAlgorithms.large_cycle_true (15 ms)
+[ RUN      ] GraphAlgorithms.cycle_true_2
+[       OK ] GraphAlgorithms.cycle_true_2 (7 ms)
+[ RUN      ] GraphAlgorithms.large_cycle_false
+[       OK ] GraphAlgorithms.large_cycle_false (15 ms)
+[----------] 13 tests from GraphAlgorithms (39 ms total)
+
+[----------] Global test environment tear-down
+[==========] 54 tests from 4 test cases ran. (49 ms total)
+[  PASSED  ] 54 tests.
