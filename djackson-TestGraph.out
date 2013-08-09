@@ -1,0 +1,144 @@
+Running main() from gtest_main.cc
+[==========] Running 66 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 33 tests from GraphTest/0, where TypeParam = Graph
+[ RUN      ] GraphTest/0.test_add_edge_1
+[       OK ] GraphTest/0.test_add_edge_1 (0 ms)
+[ RUN      ] GraphTest/0.test_add_edge_2
+[       OK ] GraphTest/0.test_add_edge_2 (0 ms)
+[ RUN      ] GraphTest/0.test_add_edge_3
+[       OK ] GraphTest/0.test_add_edge_3 (1 ms)
+[ RUN      ] GraphTest/0.test_adjacent_vertices_1
+[       OK ] GraphTest/0.test_adjacent_vertices_1 (0 ms)
+[ RUN      ] GraphTest/0.test_adjacent_vertices_2
+[       OK ] GraphTest/0.test_adjacent_vertices_2 (0 ms)
+[ RUN      ] GraphTest/0.test_adjacent_vertices_3
+[       OK ] GraphTest/0.test_adjacent_vertices_3 (0 ms)
+[ RUN      ] GraphTest/0.test_edge_1
+[       OK ] GraphTest/0.test_edge_1 (0 ms)
+[ RUN      ] GraphTest/0.test_edge_2
+[       OK ] GraphTest/0.test_edge_2 (0 ms)
+[ RUN      ] GraphTest/0.test_edges_1
+[       OK ] GraphTest/0.test_edges_1 (0 ms)
+[ RUN      ] GraphTest/0.test_edges_2
+[       OK ] GraphTest/0.test_edges_2 (0 ms)
+[ RUN      ] GraphTest/0.test_edges_3
+[       OK ] GraphTest/0.test_edges_3 (0 ms)
+[ RUN      ] GraphTest/0.test_num_edges_1
+[       OK ] GraphTest/0.test_num_edges_1 (0 ms)
+[ RUN      ] GraphTest/0.test_num_edges_2
+[       OK ] GraphTest/0.test_num_edges_2 (0 ms)
+[ RUN      ] GraphTest/0.test_num_edges_3
+[       OK ] GraphTest/0.test_num_edges_3 (0 ms)
+[ RUN      ] GraphTest/0.test_num_edges_4
+[       OK ] GraphTest/0.test_num_edges_4 (1 ms)
+[ RUN      ] GraphTest/0.test_num_vertices_1
+[       OK ] GraphTest/0.test_num_vertices_1 (0 ms)
+[ RUN      ] GraphTest/0.test_num_vertices_2
+[       OK ] GraphTest/0.test_num_vertices_2 (0 ms)
+[ RUN      ] GraphTest/0.test_num_vertices_3
+[       OK ] GraphTest/0.test_num_vertices_3 (0 ms)
+[ RUN      ] GraphTest/0.test_source
+[       OK ] GraphTest/0.test_source (0 ms)
+[ RUN      ] GraphTest/0.test_target
+[       OK ] GraphTest/0.test_target (0 ms)
+[ RUN      ] GraphTest/0.test_vertex_1
+[       OK ] GraphTest/0.test_vertex_1 (0 ms)
+[ RUN      ] GraphTest/0.test_vertex_2
+[       OK ] GraphTest/0.test_vertex_2 (0 ms)
+[ RUN      ] GraphTest/0.test_vertex_3
+[       OK ] GraphTest/0.test_vertex_3 (0 ms)
+[ RUN      ] GraphTest/0.test_vertices_1
+[       OK ] GraphTest/0.test_vertices_1 (0 ms)
+[ RUN      ] GraphTest/0.test_vertices_2
+[       OK ] GraphTest/0.test_vertices_2 (0 ms)
+[ RUN      ] GraphTest/0.test_vertices_3
+[       OK ] GraphTest/0.test_vertices_3 (0 ms)
+[ RUN      ] GraphTest/0.test_has_cycle_1
+[       OK ] GraphTest/0.test_has_cycle_1 (0 ms)
+[ RUN      ] GraphTest/0.test_has_cycle2
+[       OK ] GraphTest/0.test_has_cycle2 (0 ms)
+[ RUN      ] GraphTest/0.test_has_cycle3
+[       OK ] GraphTest/0.test_has_cycle3 (1 ms)
+[ RUN      ] GraphTest/0.test_topological_sort_1
+[       OK ] GraphTest/0.test_topological_sort_1 (0 ms)
+[ RUN      ] GraphTest/0.test_topological_sort_2
+[       OK ] GraphTest/0.test_topological_sort_2 (0 ms)
+[ RUN      ] GraphTest/0.test_topological_sort_3
+[       OK ] GraphTest/0.test_topological_sort_3 (0 ms)
+[ RUN      ] GraphTest/0.test_topological_sort_4
+[       OK ] GraphTest/0.test_topological_sort_4 (0 ms)
+[----------] 33 tests from GraphTest/0 (3 ms total)
+
+[----------] 33 tests from GraphTest/1, where TypeParam = boost::adjacency_list<boost::setS, boost::vecS, boost::directedS, boost::no_property, boost::no_property, boost::no_property, boost::listS>
+[ RUN      ] GraphTest/1.test_add_edge_1
+[       OK ] GraphTest/1.test_add_edge_1 (0 ms)
+[ RUN      ] GraphTest/1.test_add_edge_2
+[       OK ] GraphTest/1.test_add_edge_2 (0 ms)
+[ RUN      ] GraphTest/1.test_add_edge_3
+[       OK ] GraphTest/1.test_add_edge_3 (0 ms)
+[ RUN      ] GraphTest/1.test_adjacent_vertices_1
+[       OK ] GraphTest/1.test_adjacent_vertices_1 (0 ms)
+[ RUN      ] GraphTest/1.test_adjacent_vertices_2
+[       OK ] GraphTest/1.test_adjacent_vertices_2 (0 ms)
+[ RUN      ] GraphTest/1.test_adjacent_vertices_3
+[       OK ] GraphTest/1.test_adjacent_vertices_3 (0 ms)
+[ RUN      ] GraphTest/1.test_edge_1
+[       OK ] GraphTest/1.test_edge_1 (0 ms)
+[ RUN      ] GraphTest/1.test_edge_2
+[       OK ] GraphTest/1.test_edge_2 (1 ms)
+[ RUN      ] GraphTest/1.test_edges_1
+[       OK ] GraphTest/1.test_edges_1 (0 ms)
+[ RUN      ] GraphTest/1.test_edges_2
+[       OK ] GraphTest/1.test_edges_2 (0 ms)
+[ RUN      ] GraphTest/1.test_edges_3
+[       OK ] GraphTest/1.test_edges_3 (0 ms)
+[ RUN      ] GraphTest/1.test_num_edges_1
+[       OK ] GraphTest/1.test_num_edges_1 (0 ms)
+[ RUN      ] GraphTest/1.test_num_edges_2
+[       OK ] GraphTest/1.test_num_edges_2 (0 ms)
+[ RUN      ] GraphTest/1.test_num_edges_3
+[       OK ] GraphTest/1.test_num_edges_3 (0 ms)
+[ RUN      ] GraphTest/1.test_num_edges_4
+[       OK ] GraphTest/1.test_num_edges_4 (0 ms)
+[ RUN      ] GraphTest/1.test_num_vertices_1
+[       OK ] GraphTest/1.test_num_vertices_1 (0 ms)
+[ RUN      ] GraphTest/1.test_num_vertices_2
+[       OK ] GraphTest/1.test_num_vertices_2 (0 ms)
+[ RUN      ] GraphTest/1.test_num_vertices_3
+[       OK ] GraphTest/1.test_num_vertices_3 (0 ms)
+[ RUN      ] GraphTest/1.test_source
+[       OK ] GraphTest/1.test_source (0 ms)
+[ RUN      ] GraphTest/1.test_target
+[       OK ] GraphTest/1.test_target (0 ms)
+[ RUN      ] GraphTest/1.test_vertex_1
+[       OK ] GraphTest/1.test_vertex_1 (0 ms)
+[ RUN      ] GraphTest/1.test_vertex_2
+[       OK ] GraphTest/1.test_vertex_2 (0 ms)
+[ RUN      ] GraphTest/1.test_vertex_3
+[       OK ] GraphTest/1.test_vertex_3 (0 ms)
+[ RUN      ] GraphTest/1.test_vertices_1
+[       OK ] GraphTest/1.test_vertices_1 (0 ms)
+[ RUN      ] GraphTest/1.test_vertices_2
+[       OK ] GraphTest/1.test_vertices_2 (0 ms)
+[ RUN      ] GraphTest/1.test_vertices_3
+[       OK ] GraphTest/1.test_vertices_3 (0 ms)
+[ RUN      ] GraphTest/1.test_has_cycle_1
+[       OK ] GraphTest/1.test_has_cycle_1 (0 ms)
+[ RUN      ] GraphTest/1.test_has_cycle2
+[       OK ] GraphTest/1.test_has_cycle2 (1 ms)
+[ RUN      ] GraphTest/1.test_has_cycle3
+[       OK ] GraphTest/1.test_has_cycle3 (0 ms)
+[ RUN      ] GraphTest/1.test_topological_sort_1
+[       OK ] GraphTest/1.test_topological_sort_1 (0 ms)
+[ RUN      ] GraphTest/1.test_topological_sort_2
+[       OK ] GraphTest/1.test_topological_sort_2 (0 ms)
+[ RUN      ] GraphTest/1.test_topological_sort_3
+[       OK ] GraphTest/1.test_topological_sort_3 (0 ms)
+[ RUN      ] GraphTest/1.test_topological_sort_4
+[       OK ] GraphTest/1.test_topological_sort_4 (0 ms)
+[----------] 33 tests from GraphTest/1 (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 66 tests from 2 test cases ran. (5 ms total)
+[  PASSED  ] 66 tests.
