@@ -1,0 +1,99 @@
+Running main() from gtest_main.cc
+[==========] Running 45 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 45 tests from TestGraph
+[ RUN      ] TestGraph.test_add_edge_1
+[       OK ] TestGraph.test_add_edge_1 (55 ms)
+[ RUN      ] TestGraph.test_add_edge_2
+[       OK ] TestGraph.test_add_edge_2 (18 ms)
+[ RUN      ] TestGraph.test_add_edge_3
+[       OK ] TestGraph.test_add_edge_3 (19 ms)
+[ RUN      ] TestGraph.test_remove_edge_1
+[       OK ] TestGraph.test_remove_edge_1 (11 ms)
+[ RUN      ] TestGraph.test_remove_edge_2
+[       OK ] TestGraph.test_remove_edge_2 (28 ms)
+[ RUN      ] TestGraph.test_remove_edge_3
+[       OK ] TestGraph.test_remove_edge_3 (17 ms)
+[ RUN      ] TestGraph.test_add_vertex_1
+[       OK ] TestGraph.test_add_vertex_1 (2 ms)
+[ RUN      ] TestGraph.test_add_vertex_2
+[       OK ] TestGraph.test_add_vertex_2 (5 ms)
+[ RUN      ] TestGraph.test_add_vertex_3
+[       OK ] TestGraph.test_add_vertex_3 (6 ms)
+[ RUN      ] TestGraph.test_adjacent_vertices_1
+[       OK ] TestGraph.test_adjacent_vertices_1 (5 ms)
+[ RUN      ] TestGraph.test_adjacent_vertices_2
+[       OK ] TestGraph.test_adjacent_vertices_2 (8 ms)
+[ RUN      ] TestGraph.test_adjacent_vertices_3
+[       OK ] TestGraph.test_adjacent_vertices_3 (6 ms)
+[ RUN      ] TestGraph.test_edge_1
+[       OK ] TestGraph.test_edge_1 (3 ms)
+[ RUN      ] TestGraph.test_edge_2
+[       OK ] TestGraph.test_edge_2 (25 ms)
+[ RUN      ] TestGraph.test_edge_3
+[       OK ] TestGraph.test_edge_3 (38 ms)
+[ RUN      ] TestGraph.test_edges_1
+[       OK ] TestGraph.test_edges_1 (4 ms)
+[ RUN      ] TestGraph.test_edges_2
+[       OK ] TestGraph.test_edges_2 (7 ms)
+[ RUN      ] TestGraph.test_edges_3
+[       OK ] TestGraph.test_edges_3 (6 ms)
+[ RUN      ] TestGraph.test_num_edges_1
+[       OK ] TestGraph.test_num_edges_1 (3 ms)
+[ RUN      ] TestGraph.test_num_edges_2
+[       OK ] TestGraph.test_num_edges_2 (12 ms)
+[ RUN      ] TestGraph.test_num_edges_3
+[       OK ] TestGraph.test_num_edges_3 (16 ms)
+[ RUN      ] TestGraph.test_num_vertices_1
+[       OK ] TestGraph.test_num_vertices_1 (2 ms)
+[ RUN      ] TestGraph.test_num_vertices_2
+[       OK ] TestGraph.test_num_vertices_2 (4 ms)
+[ RUN      ] TestGraph.test_num_vertices_3
+[       OK ] TestGraph.test_num_vertices_3 (5 ms)
+[ RUN      ] TestGraph.test_source_1
+[       OK ] TestGraph.test_source_1 (3 ms)
+[ RUN      ] TestGraph.test_source_2
+[       OK ] TestGraph.test_source_2 (15 ms)
+[ RUN      ] TestGraph.test_source_3
+[       OK ] TestGraph.test_source_3 (13 ms)
+[ RUN      ] TestGraph.test_target_1
+[       OK ] TestGraph.test_target_1 (3 ms)
+[ RUN      ] TestGraph.test_target_2
+[       OK ] TestGraph.test_target_2 (16 ms)
+[ RUN      ] TestGraph.test_target_3
+[       OK ] TestGraph.test_target_3 (13 ms)
+[ RUN      ] TestGraph.test_vertex_1
+[       OK ] TestGraph.test_vertex_1 (2 ms)
+[ RUN      ] TestGraph.test_vertex_2
+[       OK ] TestGraph.test_vertex_2 (4 ms)
+[ RUN      ] TestGraph.test_vertex_3
+[       OK ] TestGraph.test_vertex_3 (6 ms)
+[ RUN      ] TestGraph.test_vertices_1
+[       OK ] TestGraph.test_vertices_1 (2 ms)
+[ RUN      ] TestGraph.test_vertices_2
+[       OK ] TestGraph.test_vertices_2 (4 ms)
+[ RUN      ] TestGraph.test_vertices_3
+[       OK ] TestGraph.test_vertices_3 (6 ms)
+[ RUN      ] TestGraph.test_helper_cycle_1
+[       OK ] TestGraph.test_helper_cycle_1 (8 ms)
+[ RUN      ] TestGraph.test_helper_cycle_2
+[       OK ] TestGraph.test_helper_cycle_2 (4 ms)
+[ RUN      ] TestGraph.test_helper_cycle_3
+[       OK ] TestGraph.test_helper_cycle_3 (4 ms)
+[ RUN      ] TestGraph.test_has_cycle_1
+[       OK ] TestGraph.test_has_cycle_1 (6 ms)
+[ RUN      ] TestGraph.test_has_cycle_2
+[       OK ] TestGraph.test_has_cycle_2 (4 ms)
+[ RUN      ] TestGraph.test_has_cycle_3
+[       OK ] TestGraph.test_has_cycle_3 (4 ms)
+[ RUN      ] TestGraph.test_topological_sort_1
+[       OK ] TestGraph.test_topological_sort_1 (44 ms)
+[ RUN      ] TestGraph.test_topological_sort_2
+[       OK ] TestGraph.test_topological_sort_2 (30 ms)
+[ RUN      ] TestGraph.test_topological_sort_3
+[       OK ] TestGraph.test_topological_sort_3 (5 ms)
+[----------] 45 tests from TestGraph (522 ms total)
+
+[----------] Global test environment tear-down
+[==========] 45 tests from 1 test case ran. (549 ms total)
+[  PASSED  ] 45 tests.
