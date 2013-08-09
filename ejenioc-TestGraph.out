@@ -1,0 +1,152 @@
+Running main() from gtest_main.cc
+[==========] Running 70 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 35 tests from TypeTest/0, where TypeParam = Graph
+[ RUN      ] TypeTest/0.test_constructor
+[       OK ] TypeTest/0.test_constructor (0 ms)
+[ RUN      ] TypeTest/0.test_add_edges_1
+[       OK ] TypeTest/0.test_add_edges_1 (0 ms)
+[ RUN      ] TypeTest/0.test_add_edges_2
+[       OK ] TypeTest/0.test_add_edges_2 (0 ms)
+[ RUN      ] TypeTest/0.test_add_edges_3
+[       OK ] TypeTest/0.test_add_edges_3 (0 ms)
+[ RUN      ] TypeTest/0.test_add_edges_4
+[       OK ] TypeTest/0.test_add_edges_4 (0 ms)
+[ RUN      ] TypeTest/0.test_adjacent_vertices_vdA
+[       OK ] TypeTest/0.test_adjacent_vertices_vdA (0 ms)
+[ RUN      ] TypeTest/0.test_adjacent_vertices_vdB
+[       OK ] TypeTest/0.test_adjacent_vertices_vdB (0 ms)
+[ RUN      ] TypeTest/0.test_edge
+[       OK ] TypeTest/0.test_edge (0 ms)
+[ RUN      ] TypeTest/0.test_edge_not_an_edge
+[       OK ] TypeTest/0.test_edge_not_an_edge (0 ms)
+[ RUN      ] TypeTest/0.test_edges
+[       OK ] TypeTest/0.test_edges (0 ms)
+[ RUN      ] TypeTest/0.test_edges_no_edges
+[       OK ] TypeTest/0.test_edges_no_edges (1 ms)
+[ RUN      ] TypeTest/0.test_edges_default
+[       OK ] TypeTest/0.test_edges_default (0 ms)
+[ RUN      ] TypeTest/0.test_num_edges
+[       OK ] TypeTest/0.test_num_edges (0 ms)
+[ RUN      ] TypeTest/0.test_num_edges_no_cycle
+[       OK ] TypeTest/0.test_num_edges_no_cycle (0 ms)
+[ RUN      ] TypeTest/0.test_num_edges_no_edges
+[       OK ] TypeTest/0.test_num_edges_no_edges (0 ms)
+[ RUN      ] TypeTest/0.test_num_edges_after_add
+[       OK ] TypeTest/0.test_num_edges_after_add (0 ms)
+[ RUN      ] TypeTest/0.test_num_edges_default
+[       OK ] TypeTest/0.test_num_edges_default (0 ms)
+[ RUN      ] TypeTest/0.test_num_vertices
+[       OK ] TypeTest/0.test_num_vertices (0 ms)
+[ RUN      ] TypeTest/0.test_num_vertices_after_add
+[       OK ] TypeTest/0.test_num_vertices_after_add (0 ms)
+[ RUN      ] TypeTest/0.test_num_vertices_no_edges
+[       OK ] TypeTest/0.test_num_vertices_no_edges (0 ms)
+[ RUN      ] TypeTest/0.test_num_vertices_default
+[       OK ] TypeTest/0.test_num_vertices_default (0 ms)
+[ RUN      ] TypeTest/0.test_source_no_cycle
+[       OK ] TypeTest/0.test_source_no_cycle (0 ms)
+[ RUN      ] TypeTest/0.test_source_with_cycle
+[       OK ] TypeTest/0.test_source_with_cycle (0 ms)
+[ RUN      ] TypeTest/0.test_target
+[       OK ] TypeTest/0.test_target (0 ms)
+[ RUN      ] TypeTest/0.test_target_no_cycle
+[       OK ] TypeTest/0.test_target_no_cycle (0 ms)
+[ RUN      ] TypeTest/0.test_target_with_cycle
+[       OK ] TypeTest/0.test_target_with_cycle (0 ms)
+[ RUN      ] TypeTest/0.test_vertex
+[       OK ] TypeTest/0.test_vertex (0 ms)
+[ RUN      ] TypeTest/0.test_vertex_no_cyle
+[       OK ] TypeTest/0.test_vertex_no_cyle (0 ms)
+[ RUN      ] TypeTest/0.test_vertices
+[       OK ] TypeTest/0.test_vertices (0 ms)
+[ RUN      ] TypeTest/0.test_vertices_no_edges
+[       OK ] TypeTest/0.test_vertices_no_edges (0 ms)
+[ RUN      ] TypeTest/0.test_vertices_default
+[       OK ] TypeTest/0.test_vertices_default (0 ms)
+[ RUN      ] TypeTest/0.test_has_cycle
+[       OK ] TypeTest/0.test_has_cycle (1 ms)
+[ RUN      ] TypeTest/0.test_has_cycle_no_cycle
+[       OK ] TypeTest/0.test_has_cycle_no_cycle (0 ms)
+[ RUN      ] TypeTest/0.test_has_cycle_no_cycle_no_edges
+[       OK ] TypeTest/0.test_has_cycle_no_cycle_no_edges (0 ms)
+[ RUN      ] TypeTest/0.test_has_cycle_no_cycle_default
+[       OK ] TypeTest/0.test_has_cycle_no_cycle_default (0 ms)
+[----------] 35 tests from TypeTest/0 (2 ms total)
+
+[----------] 35 tests from TypeTest/1, where TypeParam = boost::adjacency_list<boost::setS, boost::vecS, boost::directedS, boost::no_property, boost::no_property, boost::no_property, boost::listS>
+[ RUN      ] TypeTest/1.test_constructor
+[       OK ] TypeTest/1.test_constructor (0 ms)
+[ RUN      ] TypeTest/1.test_add_edges_1
+[       OK ] TypeTest/1.test_add_edges_1 (0 ms)
+[ RUN      ] TypeTest/1.test_add_edges_2
+[       OK ] TypeTest/1.test_add_edges_2 (0 ms)
+[ RUN      ] TypeTest/1.test_add_edges_3
+[       OK ] TypeTest/1.test_add_edges_3 (0 ms)
+[ RUN      ] TypeTest/1.test_add_edges_4
+[       OK ] TypeTest/1.test_add_edges_4 (0 ms)
+[ RUN      ] TypeTest/1.test_adjacent_vertices_vdA
+[       OK ] TypeTest/1.test_adjacent_vertices_vdA (0 ms)
+[ RUN      ] TypeTest/1.test_adjacent_vertices_vdB
+[       OK ] TypeTest/1.test_adjacent_vertices_vdB (0 ms)
+[ RUN      ] TypeTest/1.test_edge
+[       OK ] TypeTest/1.test_edge (0 ms)
+[ RUN      ] TypeTest/1.test_edge_not_an_edge
+[       OK ] TypeTest/1.test_edge_not_an_edge (0 ms)
+[ RUN      ] TypeTest/1.test_edges
+[       OK ] TypeTest/1.test_edges (0 ms)
+[ RUN      ] TypeTest/1.test_edges_no_edges
+[       OK ] TypeTest/1.test_edges_no_edges (0 ms)
+[ RUN      ] TypeTest/1.test_edges_default
+[       OK ] TypeTest/1.test_edges_default (0 ms)
+[ RUN      ] TypeTest/1.test_num_edges
+[       OK ] TypeTest/1.test_num_edges (0 ms)
+[ RUN      ] TypeTest/1.test_num_edges_no_cycle
+[       OK ] TypeTest/1.test_num_edges_no_cycle (0 ms)
+[ RUN      ] TypeTest/1.test_num_edges_no_edges
+[       OK ] TypeTest/1.test_num_edges_no_edges (0 ms)
+[ RUN      ] TypeTest/1.test_num_edges_after_add
+[       OK ] TypeTest/1.test_num_edges_after_add (0 ms)
+[ RUN      ] TypeTest/1.test_num_edges_default
+[       OK ] TypeTest/1.test_num_edges_default (0 ms)
+[ RUN      ] TypeTest/1.test_num_vertices
+[       OK ] TypeTest/1.test_num_vertices (0 ms)
+[ RUN      ] TypeTest/1.test_num_vertices_after_add
+[       OK ] TypeTest/1.test_num_vertices_after_add (0 ms)
+[ RUN      ] TypeTest/1.test_num_vertices_no_edges
+[       OK ] TypeTest/1.test_num_vertices_no_edges (1 ms)
+[ RUN      ] TypeTest/1.test_num_vertices_default
+[       OK ] TypeTest/1.test_num_vertices_default (0 ms)
+[ RUN      ] TypeTest/1.test_source_no_cycle
+[       OK ] TypeTest/1.test_source_no_cycle (0 ms)
+[ RUN      ] TypeTest/1.test_source_with_cycle
+[       OK ] TypeTest/1.test_source_with_cycle (0 ms)
+[ RUN      ] TypeTest/1.test_target
+[       OK ] TypeTest/1.test_target (0 ms)
+[ RUN      ] TypeTest/1.test_target_no_cycle
+[       OK ] TypeTest/1.test_target_no_cycle (0 ms)
+[ RUN      ] TypeTest/1.test_target_with_cycle
+[       OK ] TypeTest/1.test_target_with_cycle (0 ms)
+[ RUN      ] TypeTest/1.test_vertex
+[       OK ] TypeTest/1.test_vertex (0 ms)
+[ RUN      ] TypeTest/1.test_vertex_no_cyle
+[       OK ] TypeTest/1.test_vertex_no_cyle (0 ms)
+[ RUN      ] TypeTest/1.test_vertices
+[       OK ] TypeTest/1.test_vertices (0 ms)
+[ RUN      ] TypeTest/1.test_vertices_no_edges
+[       OK ] TypeTest/1.test_vertices_no_edges (0 ms)
+[ RUN      ] TypeTest/1.test_vertices_default
+[       OK ] TypeTest/1.test_vertices_default (0 ms)
+[ RUN      ] TypeTest/1.test_has_cycle
+[       OK ] TypeTest/1.test_has_cycle (0 ms)
+[ RUN      ] TypeTest/1.test_has_cycle_no_cycle
+[       OK ] TypeTest/1.test_has_cycle_no_cycle (0 ms)
+[ RUN      ] TypeTest/1.test_has_cycle_no_cycle_no_edges
+[       OK ] TypeTest/1.test_has_cycle_no_cycle_no_edges (0 ms)
+[ RUN      ] TypeTest/1.test_has_cycle_no_cycle_default
+[       OK ] TypeTest/1.test_has_cycle_no_cycle_default (0 ms)
+[----------] 35 tests from TypeTest/1 (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 70 tests from 2 test cases ran. (3 ms total)
+[  PASSED  ] 70 tests.
