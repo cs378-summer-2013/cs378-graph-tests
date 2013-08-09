@@ -1,0 +1,216 @@
+Running main() from gtest_main.cc
+[==========] Running 102 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 80 tests from graph
+[ RUN      ] graph.boost_setup
+[       OK ] graph.boost_setup (0 ms)
+[ RUN      ] graph.boost_setup2
+[       OK ] graph.boost_setup2 (1 ms)
+[ RUN      ] graph.setup
+[       OK ] graph.setup (0 ms)
+[ RUN      ] graph.setup2
+[       OK ] graph.setup2 (0 ms)
+[ RUN      ] graph.test_add_edge
+[       OK ] graph.test_add_edge (0 ms)
+[ RUN      ] graph.test_add_edge_2
+[       OK ] graph.test_add_edge_2 (0 ms)
+[ RUN      ] graph.test_add_edge_3
+[       OK ] graph.test_add_edge_3 (0 ms)
+[ RUN      ] graph.test_add_edge_4
+[       OK ] graph.test_add_edge_4 (0 ms)
+[ RUN      ] graph.test_add_edge_5
+[       OK ] graph.test_add_edge_5 (0 ms)
+[ RUN      ] graph.boost_test_add_edge
+[       OK ] graph.boost_test_add_edge (0 ms)
+[ RUN      ] graph.boost_test_add_edge_2
+[       OK ] graph.boost_test_add_edge_2 (0 ms)
+[ RUN      ] graph.boost_test_add_edge_3
+[       OK ] graph.boost_test_add_edge_3 (0 ms)
+[ RUN      ] graph.boost_test_add_edge_4
+[       OK ] graph.boost_test_add_edge_4 (0 ms)
+[ RUN      ] graph.boost_test_add_edge_5
+[       OK ] graph.boost_test_add_edge_5 (0 ms)
+[ RUN      ] graph.test_add_vertex
+[       OK ] graph.test_add_vertex (0 ms)
+[ RUN      ] graph.test_add_vertex_2
+[       OK ] graph.test_add_vertex_2 (0 ms)
+[ RUN      ] graph.test_add_vertex_3
+[       OK ] graph.test_add_vertex_3 (0 ms)
+[ RUN      ] graph.boost_test_add_vertex
+[       OK ] graph.boost_test_add_vertex (0 ms)
+[ RUN      ] graph.boost_test_add_vertex_2
+[       OK ] graph.boost_test_add_vertex_2 (0 ms)
+[ RUN      ] graph.boost_test_add_vertex_3
+[       OK ] graph.boost_test_add_vertex_3 (0 ms)
+[ RUN      ] graph.test_adjacent_vertices
+[       OK ] graph.test_adjacent_vertices (0 ms)
+[ RUN      ] graph.test_adjacent_vertices_2
+[       OK ] graph.test_adjacent_vertices_2 (0 ms)
+[ RUN      ] graph.test_adjacent_vertices_3
+[       OK ] graph.test_adjacent_vertices_3 (0 ms)
+[ RUN      ] graph.boost_test_adjacent_vertices
+[       OK ] graph.boost_test_adjacent_vertices (0 ms)
+[ RUN      ] graph.boost_test_adjacent_vertices_2
+[       OK ] graph.boost_test_adjacent_vertices_2 (0 ms)
+[ RUN      ] graph.boost_test_adjacent_vertices_3
+[       OK ] graph.boost_test_adjacent_vertices_3 (0 ms)
+[ RUN      ] graph.test_edge
+[       OK ] graph.test_edge (0 ms)
+[ RUN      ] graph.test_edge_2
+[       OK ] graph.test_edge_2 (0 ms)
+[ RUN      ] graph.test_edge_3
+[       OK ] graph.test_edge_3 (0 ms)
+[ RUN      ] graph.boost_test_edge
+[       OK ] graph.boost_test_edge (0 ms)
+[ RUN      ] graph.boost_test_edge_3
+[       OK ] graph.boost_test_edge_3 (0 ms)
+[ RUN      ] graph.test_edges
+[       OK ] graph.test_edges (0 ms)
+[ RUN      ] graph.test_edges_2
+[       OK ] graph.test_edges_2 (0 ms)
+[ RUN      ] graph.test_edges_3
+[       OK ] graph.test_edges_3 (0 ms)
+[ RUN      ] graph.boost_test_edges
+[       OK ] graph.boost_test_edges (0 ms)
+[ RUN      ] graph.boost_test_edges_2
+[       OK ] graph.boost_test_edges_2 (0 ms)
+[ RUN      ] graph.boost_test_edges_3
+[       OK ] graph.boost_test_edges_3 (0 ms)
+[ RUN      ] graph.test_num_edges
+[       OK ] graph.test_num_edges (0 ms)
+[ RUN      ] graph.test_num_edges_2
+[       OK ] graph.test_num_edges_2 (0 ms)
+[ RUN      ] graph.test_num_edges_3
+[       OK ] graph.test_num_edges_3 (0 ms)
+[ RUN      ] graph.boost_test_num_edges
+[       OK ] graph.boost_test_num_edges (0 ms)
+[ RUN      ] graph.boost_test_num_edges_2
+[       OK ] graph.boost_test_num_edges_2 (0 ms)
+[ RUN      ] graph.boost_test_num_edges_3
+[       OK ] graph.boost_test_num_edges_3 (0 ms)
+[ RUN      ] graph.test_num_vertices
+[       OK ] graph.test_num_vertices (0 ms)
+[ RUN      ] graph.test_num_vertices_2
+[       OK ] graph.test_num_vertices_2 (0 ms)
+[ RUN      ] graph.test_num_vertices_3
+[       OK ] graph.test_num_vertices_3 (0 ms)
+[ RUN      ] graph.boost_test_num_vertices
+[       OK ] graph.boost_test_num_vertices (0 ms)
+[ RUN      ] graph.boost_test_num_vertices_2
+[       OK ] graph.boost_test_num_vertices_2 (0 ms)
+[ RUN      ] graph.boost_test_num_vertices_3
+[       OK ] graph.boost_test_num_vertices_3 (0 ms)
+[ RUN      ] graph.test_source
+[       OK ] graph.test_source (0 ms)
+[ RUN      ] graph.test_source_2
+[       OK ] graph.test_source_2 (0 ms)
+[ RUN      ] graph.test_source_3
+[       OK ] graph.test_source_3 (0 ms)
+[ RUN      ] graph.boost_test_source
+[       OK ] graph.boost_test_source (0 ms)
+[ RUN      ] graph.boost_test_source_2
+[       OK ] graph.boost_test_source_2 (0 ms)
+[ RUN      ] graph.boost_test_source_3
+[       OK ] graph.boost_test_source_3 (0 ms)
+[ RUN      ] graph.test_target
+[       OK ] graph.test_target (0 ms)
+[ RUN      ] graph.test_target_2
+[       OK ] graph.test_target_2 (0 ms)
+[ RUN      ] graph.test_target_3
+[       OK ] graph.test_target_3 (0 ms)
+[ RUN      ] graph.boost_test_target
+[       OK ] graph.boost_test_target (0 ms)
+[ RUN      ] graph.boost_test_target_2
+[       OK ] graph.boost_test_target_2 (0 ms)
+[ RUN      ] graph.boost_test_target_3
+[       OK ] graph.boost_test_target_3 (0 ms)
+[ RUN      ] graph.test_vertex
+[       OK ] graph.test_vertex (0 ms)
+[ RUN      ] graph.test_vertex_2
+[       OK ] graph.test_vertex_2 (0 ms)
+[ RUN      ] graph.test_vertex_3
+[       OK ] graph.test_vertex_3 (0 ms)
+[ RUN      ] graph.boost_test_vertex
+[       OK ] graph.boost_test_vertex (0 ms)
+[ RUN      ] graph.boost_test_vertex_2
+[       OK ] graph.boost_test_vertex_2 (0 ms)
+[ RUN      ] graph.boost_test_vertex_3
+[       OK ] graph.boost_test_vertex_3 (0 ms)
+[ RUN      ] graph.test_vertices
+[       OK ] graph.test_vertices (0 ms)
+[ RUN      ] graph.test_vertices_2
+[       OK ] graph.test_vertices_2 (0 ms)
+[ RUN      ] graph.test_vertices_3
+[       OK ] graph.test_vertices_3 (0 ms)
+[ RUN      ] graph.boost_test_vertices
+[       OK ] graph.boost_test_vertices (0 ms)
+[ RUN      ] graph.boost_test_vertices_2
+[       OK ] graph.boost_test_vertices_2 (0 ms)
+[ RUN      ] graph.boost_test_vertices_3
+[       OK ] graph.boost_test_vertices_3 (0 ms)
+[ RUN      ] graph.boost_test_has_cycle
+[       OK ] graph.boost_test_has_cycle (0 ms)
+[ RUN      ] graph.boost_test_has_cycle_2
+[       OK ] graph.boost_test_has_cycle_2 (0 ms)
+[ RUN      ] graph.boost_test_has_cycle_3
+[       OK ] graph.boost_test_has_cycle_3 (0 ms)
+[ RUN      ] graph.test_topological_sort
+[       OK ] graph.test_topological_sort (0 ms)
+[ RUN      ] graph.test_topological_sort_2
+[       OK ] graph.test_topological_sort_2 (0 ms)
+[ RUN      ] graph.boost_test_topological_sort
+[       OK ] graph.boost_test_topological_sort (0 ms)
+[ RUN      ] graph.boost_test_topological_sort_2
+[       OK ] graph.boost_test_topological_sort_2 (0 ms)
+[----------] 80 tests from graph (2 ms total)
+
+[----------] 22 tests from iterator
+[ RUN      ] iterator.iterator_constructor_1
+[       OK ] iterator.iterator_constructor_1 (0 ms)
+[ RUN      ] iterator.iterator_constructor_2
+[       OK ] iterator.iterator_constructor_2 (0 ms)
+[ RUN      ] iterator.iterator_constructor_3
+[       OK ] iterator.iterator_constructor_3 (0 ms)
+[ RUN      ] iterator.iterator_equals_1
+[       OK ] iterator.iterator_equals_1 (0 ms)
+[ RUN      ] iterator.iterator_equals_2
+[       OK ] iterator.iterator_equals_2 (0 ms)
+[ RUN      ] iterator.iterator_equals_3
+[       OK ] iterator.iterator_equals_3 (0 ms)
+[ RUN      ] iterator.iterator_not_equals_1
+[       OK ] iterator.iterator_not_equals_1 (0 ms)
+[ RUN      ] iterator.iterator_not_equals_2
+[       OK ] iterator.iterator_not_equals_2 (0 ms)
+[ RUN      ] iterator.iterator_not_equals_3
+[       OK ] iterator.iterator_not_equals_3 (0 ms)
+[ RUN      ] iterator.iterator_reference_1
+[       OK ] iterator.iterator_reference_1 (0 ms)
+[ RUN      ] iterator.iterator_reference_2
+[       OK ] iterator.iterator_reference_2 (0 ms)
+[ RUN      ] iterator.iterator_reference_3
+[       OK ] iterator.iterator_reference_3 (0 ms)
+[ RUN      ] iterator.iterator_increment_1
+[       OK ] iterator.iterator_increment_1 (0 ms)
+[ RUN      ] iterator.iterator_increment_2
+[       OK ] iterator.iterator_increment_2 (0 ms)
+[ RUN      ] iterator.iterator_increment_3
+[       OK ] iterator.iterator_increment_3 (0 ms)
+[ RUN      ] iterator.iterator_increment_4
+[       OK ] iterator.iterator_increment_4 (0 ms)
+[ RUN      ] iterator.iterator_increment_5
+[       OK ] iterator.iterator_increment_5 (0 ms)
+[ RUN      ] iterator.iterator_decrement_1
+[       OK ] iterator.iterator_decrement_1 (0 ms)
+[ RUN      ] iterator.iterator_decrement_2
+[       OK ] iterator.iterator_decrement_2 (0 ms)
+[ RUN      ] iterator.iterator_decrement_3
+[       OK ] iterator.iterator_decrement_3 (0 ms)
+[ RUN      ] iterator.iterator_decrement_4
+[       OK ] iterator.iterator_decrement_4 (0 ms)
+[ RUN      ] iterator.iterator_decrement_5
+[       OK ] iterator.iterator_decrement_5 (0 ms)
+[----------] 22 tests from iterator (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 102 tests from 2 test cases ran. (2 ms total)
+[  PASSED  ] 102 tests.
