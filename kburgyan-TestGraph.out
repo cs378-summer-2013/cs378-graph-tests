@@ -1,99 +1,196 @@
 Running main() from gtest_main.cc
-[==========] Running 45 tests from 1 test case.
+[==========] Running 92 tests from 2 test cases.
 [----------] Global test environment set-up.
-[----------] 45 tests from MyGraphTest
-[ RUN      ] MyGraphTest.AddVertexTest1
-[       OK ] MyGraphTest.AddVertexTest1 (157 ms)
-[ RUN      ] MyGraphTest.AddVertexTest2
-[       OK ] MyGraphTest.AddVertexTest2 (13 ms)
-[ RUN      ] MyGraphTest.NumVerticesTest1
-[       OK ] MyGraphTest.NumVerticesTest1 (7 ms)
-[ RUN      ] MyGraphTest.NumVerticesTest2
-[       OK ] MyGraphTest.NumVerticesTest2 (6 ms)
-[ RUN      ] MyGraphTest.NumEdgesTest1
-[       OK ] MyGraphTest.NumEdgesTest1 (12 ms)
-[ RUN      ] MyGraphTest.NumEdgesTest2
-[       OK ] MyGraphTest.NumEdgesTest2 (8 ms)
-[ RUN      ] MyGraphTest.AddEdgeTest1
-[       OK ] MyGraphTest.AddEdgeTest1 (13 ms)
-[ RUN      ] MyGraphTest.AddEdgeTest2
-[       OK ] MyGraphTest.AddEdgeTest2 (14 ms)
-[ RUN      ] MyGraphTest.AddEdgeTest3
-[       OK ] MyGraphTest.AddEdgeTest3 (14 ms)
-[ RUN      ] MyGraphTest.AddEdgeTest4
-[       OK ] MyGraphTest.AddEdgeTest4 (14 ms)
-[ RUN      ] MyGraphTest.AddEdgeTest5
-[       OK ] MyGraphTest.AddEdgeTest5 (14 ms)
-[ RUN      ] MyGraphTest.AddEdgeTest6
-[       OK ] MyGraphTest.AddEdgeTest6 (14 ms)
-[ RUN      ] MyGraphTest.AddEdgeTest7
-[       OK ] MyGraphTest.AddEdgeTest7 (12 ms)
-[ RUN      ] MyGraphTest.AdjacenctVerticesTest1
-[       OK ] MyGraphTest.AdjacenctVerticesTest1 (25 ms)
-[ RUN      ] MyGraphTest.AdjacenctVerticesTest2
-[       OK ] MyGraphTest.AdjacenctVerticesTest2 (16 ms)
-[ RUN      ] MyGraphTest.EdgeTest1
-[       OK ] MyGraphTest.EdgeTest1 (7 ms)
-[ RUN      ] MyGraphTest.EdgeTest2
-[       OK ] MyGraphTest.EdgeTest2 (30 ms)
-[ RUN      ] MyGraphTest.EdgeTest3
-[       OK ] MyGraphTest.EdgeTest3 (7 ms)
-[ RUN      ] MyGraphTest.EdgesTest1
-[       OK ] MyGraphTest.EdgesTest1 (18 ms)
-[ RUN      ] MyGraphTest.EdgesTest2
-[       OK ] MyGraphTest.EdgesTest2 (18 ms)
-[ RUN      ] MyGraphTest.SourceTest1
-[       OK ] MyGraphTest.SourceTest1 (11 ms)
-[ RUN      ] MyGraphTest.SourceTest2
-[       OK ] MyGraphTest.SourceTest2 (7 ms)
-[ RUN      ] MyGraphTest.TargetTest1
-[       OK ] MyGraphTest.TargetTest1 (10 ms)
-[ RUN      ] MyGraphTest.TargetTest2
-[       OK ] MyGraphTest.TargetTest2 (7 ms)
-[ RUN      ] MyGraphTest.VertexTest1
-[       OK ] MyGraphTest.VertexTest1 (12 ms)
-[ RUN      ] MyGraphTest.VertexTest2
-[       OK ] MyGraphTest.VertexTest2 (7 ms)
-[ RUN      ] MyGraphTest.VertexTest3
-[       OK ] MyGraphTest.VertexTest3 (10 ms)
-[ RUN      ] MyGraphTest.VerticesTest1
-[       OK ] MyGraphTest.VerticesTest1 (10 ms)
-[ RUN      ] MyGraphTest.VerticesTest2
-[       OK ] MyGraphTest.VerticesTest2 (11 ms)
-[ RUN      ] MyGraphTest.HasCycleTest1
-[       OK ] MyGraphTest.HasCycleTest1 (11 ms)
-[ RUN      ] MyGraphTest.HasCycleTest2
-[       OK ] MyGraphTest.HasCycleTest2 (39 ms)
-[ RUN      ] MyGraphTest.HasCycleTest3
-[       OK ] MyGraphTest.HasCycleTest3 (10 ms)
-[ RUN      ] MyGraphTest.HasCycleTest4
-[       OK ] MyGraphTest.HasCycleTest4 (12 ms)
-[ RUN      ] MyGraphTest.HasCycleTest5
-[       OK ] MyGraphTest.HasCycleTest5 (19 ms)
-[ RUN      ] MyGraphTest.TopologicalSortTest1
-[       OK ] MyGraphTest.TopologicalSortTest1 (27 ms)
-[ RUN      ] MyGraphTest.TopologicalSortTest2
-[       OK ] MyGraphTest.TopologicalSortTest2 (105 ms)
-[ RUN      ] MyGraphTest.TopologicalSortTest3
-[       OK ] MyGraphTest.TopologicalSortTest3 (36 ms)
-[ RUN      ] MyGraphTest.TopologicalSortTest4
-[       OK ] MyGraphTest.TopologicalSortTest4 (20 ms)
-[ RUN      ] MyGraphTest.DefaultConstructorTest1
-[       OK ] MyGraphTest.DefaultConstructorTest1 (8 ms)
-[ RUN      ] MyGraphTest.ValidTest1
-[       OK ] MyGraphTest.ValidTest1 (7 ms)
-[ RUN      ] MyGraphTest.HasCycleHelperTest1
-[       OK ] MyGraphTest.HasCycleHelperTest1 (10 ms)
-[ RUN      ] MyGraphTest.HasCycleHelperTest2
-[       OK ] MyGraphTest.HasCycleHelperTest2 (12 ms)
-[ RUN      ] MyGraphTest.HasCycleHelperTest3
-[       OK ] MyGraphTest.HasCycleHelperTest3 (10 ms)
-[ RUN      ] MyGraphTest.DefaultCopyConstructorTest1
-[       OK ] MyGraphTest.DefaultCopyConstructorTest1 (36 ms)
-[ RUN      ] MyGraphTest.DefualtCopyAssignmentTest1
-[       OK ] MyGraphTest.DefualtCopyAssignmentTest1 (26 ms)
-[----------] 45 tests from MyGraphTest (912 ms total)
+[----------] 46 tests from TypeTest/0, where TypeParam = Graph<int, std::allocator<int> >
+[ RUN      ] TypeTest/0.TemplateTypeEquals
+[       OK ] TypeTest/0.TemplateTypeEquals (92 ms)
+[ RUN      ] TypeTest/0.AddVertexTest1
+[       OK ] TypeTest/0.AddVertexTest1 (6 ms)
+[ RUN      ] TypeTest/0.AddVertexTest2
+[       OK ] TypeTest/0.AddVertexTest2 (7 ms)
+[ RUN      ] TypeTest/0.NumVerticesTest1
+[       OK ] TypeTest/0.NumVerticesTest1 (4 ms)
+[ RUN      ] TypeTest/0.NumVerticesTest2
+[       OK ] TypeTest/0.NumVerticesTest2 (4 ms)
+[ RUN      ] TypeTest/0.NumEdgesTest1
+[       OK ] TypeTest/0.NumEdgesTest1 (5 ms)
+[ RUN      ] TypeTest/0.NumEdgesTest2
+[       OK ] TypeTest/0.NumEdgesTest2 (4 ms)
+[ RUN      ] TypeTest/0.AddEdgeTest1
+[       OK ] TypeTest/0.AddEdgeTest1 (8 ms)
+[ RUN      ] TypeTest/0.AddEdgeTest2
+[       OK ] TypeTest/0.AddEdgeTest2 (8 ms)
+[ RUN      ] TypeTest/0.AddEdgeTest3
+[       OK ] TypeTest/0.AddEdgeTest3 (9 ms)
+[ RUN      ] TypeTest/0.AddEdgeTest4
+[       OK ] TypeTest/0.AddEdgeTest4 (9 ms)
+[ RUN      ] TypeTest/0.AddEdgeTest5
+[       OK ] TypeTest/0.AddEdgeTest5 (8 ms)
+[ RUN      ] TypeTest/0.AddEdgeTest6
+[       OK ] TypeTest/0.AddEdgeTest6 (9 ms)
+[ RUN      ] TypeTest/0.AddEdgeTest7
+[       OK ] TypeTest/0.AddEdgeTest7 (6 ms)
+[ RUN      ] TypeTest/0.AdjacenctVerticesTest1
+[       OK ] TypeTest/0.AdjacenctVerticesTest1 (9 ms)
+[ RUN      ] TypeTest/0.AdjacenctVerticesTest2
+[       OK ] TypeTest/0.AdjacenctVerticesTest2 (9 ms)
+[ RUN      ] TypeTest/0.EdgeTest1
+[       OK ] TypeTest/0.EdgeTest1 (5 ms)
+[ RUN      ] TypeTest/0.EdgeTest2
+[       OK ] TypeTest/0.EdgeTest2 (14 ms)
+[ RUN      ] TypeTest/0.EdgeTest3
+[       OK ] TypeTest/0.EdgeTest3 (6 ms)
+[ RUN      ] TypeTest/0.EdgesTest1
+[       OK ] TypeTest/0.EdgesTest1 (6 ms)
+[ RUN      ] TypeTest/0.EdgesTest2
+[       OK ] TypeTest/0.EdgesTest2 (6 ms)
+[ RUN      ] TypeTest/0.SourceTest1
+[       OK ] TypeTest/0.SourceTest1 (6 ms)
+[ RUN      ] TypeTest/0.SourceTest2
+[       OK ] TypeTest/0.SourceTest2 (4 ms)
+[ RUN      ] TypeTest/0.TargetTest1
+[       OK ] TypeTest/0.TargetTest1 (6 ms)
+[ RUN      ] TypeTest/0.TargetTest2
+[       OK ] TypeTest/0.TargetTest2 (4 ms)
+[ RUN      ] TypeTest/0.VertexTest1
+[       OK ] TypeTest/0.VertexTest1 (7 ms)
+[ RUN      ] TypeTest/0.VertexTest2
+[       OK ] TypeTest/0.VertexTest2 (4 ms)
+[ RUN      ] TypeTest/0.VertexTest3
+[       OK ] TypeTest/0.VertexTest3 (6 ms)
+[ RUN      ] TypeTest/0.VerticesTest1
+[       OK ] TypeTest/0.VerticesTest1 (7 ms)
+[ RUN      ] TypeTest/0.VerticesTest2
+[       OK ] TypeTest/0.VerticesTest2 (6 ms)
+[ RUN      ] TypeTest/0.HasCycleTest1
+[       OK ] TypeTest/0.HasCycleTest1 (6 ms)
+[ RUN      ] TypeTest/0.HasCycleTest2
+[       OK ] TypeTest/0.HasCycleTest2 (32 ms)
+[ RUN      ] TypeTest/0.HasCycleTest3
+[       OK ] TypeTest/0.HasCycleTest3 (6 ms)
+[ RUN      ] TypeTest/0.HasCycleTest4
+[       OK ] TypeTest/0.HasCycleTest4 (6 ms)
+[ RUN      ] TypeTest/0.HasCycleTest5
+[       OK ] TypeTest/0.HasCycleTest5 (10 ms)
+[ RUN      ] TypeTest/0.TopologicalSortTest1
+[       OK ] TypeTest/0.TopologicalSortTest1 (21 ms)
+[ RUN      ] TypeTest/0.TopologicalSortTest2
+[       OK ] TypeTest/0.TopologicalSortTest2 (41 ms)
+[ RUN      ] TypeTest/0.TopologicalSortTest3
+[       OK ] TypeTest/0.TopologicalSortTest3 (29 ms)
+[ RUN      ] TypeTest/0.TopologicalSortTest4
+[       OK ] TypeTest/0.TopologicalSortTest4 (14 ms)
+[ RUN      ] TypeTest/0.DefaultConstructorTest1
+[       OK ] TypeTest/0.DefaultConstructorTest1 (5 ms)
+[ RUN      ] TypeTest/0.ValidTest1
+[       OK ] TypeTest/0.ValidTest1 (4 ms)
+[ RUN      ] TypeTest/0.HasCycleHelperTest1
+[       OK ] TypeTest/0.HasCycleHelperTest1 (6 ms)
+[ RUN      ] TypeTest/0.HasCycleHelperTest2
+[       OK ] TypeTest/0.HasCycleHelperTest2 (6 ms)
+[ RUN      ] TypeTest/0.HasCycleHelperTest3
+[       OK ] TypeTest/0.HasCycleHelperTest3 (6 ms)
+[ RUN      ] TypeTest/0.DefaultCopyConstructorTest1
+[       OK ] TypeTest/0.DefaultCopyConstructorTest1 (20 ms)
+[ RUN      ] TypeTest/0.DefualtCopyAssignmentTest1
+[       OK ] TypeTest/0.DefualtCopyAssignmentTest1 (19 ms)
+[----------] 46 tests from TypeTest/0 (534 ms total)
+
+[----------] 46 tests from TypeTest/1, where TypeParam = boost::adjacency_list<boost::setS, boost::vecS, boost::directedS, boost::no_property, boost::no_property, boost::no_property, boost::listS>
+[ RUN      ] TypeTest/1.TemplateTypeEquals
+[       OK ] TypeTest/1.TemplateTypeEquals (63 ms)
+[ RUN      ] TypeTest/1.AddVertexTest1
+[       OK ] TypeTest/1.AddVertexTest1 (5 ms)
+[ RUN      ] TypeTest/1.AddVertexTest2
+[       OK ] TypeTest/1.AddVertexTest2 (6 ms)
+[ RUN      ] TypeTest/1.NumVerticesTest1
+[       OK ] TypeTest/1.NumVerticesTest1 (3 ms)
+[ RUN      ] TypeTest/1.NumVerticesTest2
+[       OK ] TypeTest/1.NumVerticesTest2 (3 ms)
+[ RUN      ] TypeTest/1.NumEdgesTest1
+[       OK ] TypeTest/1.NumEdgesTest1 (8 ms)
+[ RUN      ] TypeTest/1.NumEdgesTest2
+[       OK ] TypeTest/1.NumEdgesTest2 (5 ms)
+[ RUN      ] TypeTest/1.AddEdgeTest1
+[       OK ] TypeTest/1.AddEdgeTest1 (7 ms)
+[ RUN      ] TypeTest/1.AddEdgeTest2
+[       OK ] TypeTest/1.AddEdgeTest2 (7 ms)
+[ RUN      ] TypeTest/1.AddEdgeTest3
+[       OK ] TypeTest/1.AddEdgeTest3 (7 ms)
+[ RUN      ] TypeTest/1.AddEdgeTest4
+[       OK ] TypeTest/1.AddEdgeTest4 (7 ms)
+[ RUN      ] TypeTest/1.AddEdgeTest5
+[       OK ] TypeTest/1.AddEdgeTest5 (6 ms)
+[ RUN      ] TypeTest/1.AddEdgeTest6
+[       OK ] TypeTest/1.AddEdgeTest6 (7 ms)
+[ RUN      ] TypeTest/1.AddEdgeTest7
+[       OK ] TypeTest/1.AddEdgeTest7 (6 ms)
+[ RUN      ] TypeTest/1.AdjacenctVerticesTest1
+[       OK ] TypeTest/1.AdjacenctVerticesTest1 (17 ms)
+[ RUN      ] TypeTest/1.AdjacenctVerticesTest2
+[       OK ] TypeTest/1.AdjacenctVerticesTest2 (8 ms)
+[ RUN      ] TypeTest/1.EdgeTest1
+[       OK ] TypeTest/1.EdgeTest1 (4 ms)
+[ RUN      ] TypeTest/1.EdgeTest2
+[       OK ] TypeTest/1.EdgeTest2 (16 ms)
+[ RUN      ] TypeTest/1.EdgeTest3
+[       OK ] TypeTest/1.EdgeTest3 (5 ms)
+[ RUN      ] TypeTest/1.EdgesTest1
+[       OK ] TypeTest/1.EdgesTest1 (12 ms)
+[ RUN      ] TypeTest/1.EdgesTest2
+[       OK ] TypeTest/1.EdgesTest2 (12 ms)
+[ RUN      ] TypeTest/1.SourceTest1
+[       OK ] TypeTest/1.SourceTest1 (5 ms)
+[ RUN      ] TypeTest/1.SourceTest2
+[       OK ] TypeTest/1.SourceTest2 (3 ms)
+[ RUN      ] TypeTest/1.TargetTest1
+[       OK ] TypeTest/1.TargetTest1 (6 ms)
+[ RUN      ] TypeTest/1.TargetTest2
+[       OK ] TypeTest/1.TargetTest2 (3 ms)
+[ RUN      ] TypeTest/1.VertexTest1
+[       OK ] TypeTest/1.VertexTest1 (6 ms)
+[ RUN      ] TypeTest/1.VertexTest2
+[       OK ] TypeTest/1.VertexTest2 (4 ms)
+[ RUN      ] TypeTest/1.VertexTest3
+[       OK ] TypeTest/1.VertexTest3 (5 ms)
+[ RUN      ] TypeTest/1.VerticesTest1
+[       OK ] TypeTest/1.VerticesTest1 (4 ms)
+[ RUN      ] TypeTest/1.VerticesTest2
+[       OK ] TypeTest/1.VerticesTest2 (5 ms)
+[ RUN      ] TypeTest/1.HasCycleTest1
+[       OK ] TypeTest/1.HasCycleTest1 (6 ms)
+[ RUN      ] TypeTest/1.HasCycleTest2
+[       OK ] TypeTest/1.HasCycleTest2 (8 ms)
+[ RUN      ] TypeTest/1.HasCycleTest3
+[       OK ] TypeTest/1.HasCycleTest3 (6 ms)
+[ RUN      ] TypeTest/1.HasCycleTest4
+[       OK ] TypeTest/1.HasCycleTest4 (7 ms)
+[ RUN      ] TypeTest/1.HasCycleTest5
+[       OK ] TypeTest/1.HasCycleTest5 (10 ms)
+[ RUN      ] TypeTest/1.TopologicalSortTest1
+[       OK ] TypeTest/1.TopologicalSortTest1 (6 ms)
+[ RUN      ] TypeTest/1.TopologicalSortTest2
+[       OK ] TypeTest/1.TopologicalSortTest2 (61 ms)
+[ RUN      ] TypeTest/1.TopologicalSortTest3
+[       OK ] TypeTest/1.TopologicalSortTest3 (6 ms)
+[ RUN      ] TypeTest/1.TopologicalSortTest4
+[       OK ] TypeTest/1.TopologicalSortTest4 (5 ms)
+[ RUN      ] TypeTest/1.DefaultConstructorTest1
+[       OK ] TypeTest/1.DefaultConstructorTest1 (4 ms)
+[ RUN      ] TypeTest/1.ValidTest1
+[       OK ] TypeTest/1.ValidTest1 (3 ms)
+[ RUN      ] TypeTest/1.HasCycleHelperTest1
+[       OK ] TypeTest/1.HasCycleHelperTest1 (5 ms)
+[ RUN      ] TypeTest/1.HasCycleHelperTest2
+[       OK ] TypeTest/1.HasCycleHelperTest2 (5 ms)
+[ RUN      ] TypeTest/1.HasCycleHelperTest3
+[       OK ] TypeTest/1.HasCycleHelperTest3 (5 ms)
+[ RUN      ] TypeTest/1.DefaultCopyConstructorTest1
+[       OK ] TypeTest/1.DefaultCopyConstructorTest1 (17 ms)
+[ RUN      ] TypeTest/1.DefualtCopyAssignmentTest1
+[       OK ] TypeTest/1.DefualtCopyAssignmentTest1 (7 ms)
+[----------] 46 tests from TypeTest/1 (424 ms total)
 
 [----------] Global test environment tear-down
-[==========] 45 tests from 1 test case ran. (939 ms total)
-[  PASSED  ] 45 tests.
+[==========] 92 tests from 2 test cases ran. (984 ms total)
+[  PASSED  ] 92 tests.

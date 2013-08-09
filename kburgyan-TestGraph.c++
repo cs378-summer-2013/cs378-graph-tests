@@ -26,11 +26,22 @@
 #include "gtest/gtest.h"
 
 //g++ -pedantic -std=c++0x -Wall TestStuff.c++ -o TestStuff -lgtest -lgtest_main -pthread
+/*
+template <typename T>
+class TypeTest : public testing::Test {
+	protected:
+		typedef int value_type;
+	
+		T x;
+		T y;
 
+		TypeTest(): x(0), y(0){}
+};*/
 
-class MyGraphTest: public testing::Test{
-protected:
-	typedef typename boost::adjacency_list<boost::setS, boost::vecS, boost::directedS>		graph_type;
+template <typename T>
+class TypeTest : public testing::Test {
+	protected:
+	typedef  T		graph_type;
 	typedef typename graph_type::vertex_descriptor vertex_descriptor;
 	typedef typename graph_type::edge_descriptor edge_descriptor;
 
@@ -128,105 +139,6 @@ protected:
 	edge_descriptor edFFFHHH;
 	edge_descriptor edGGGHHH;
 	
-	//std::deque<int> v3;
-	//######################
-	typedef Graph<int>	graph_type2;
-	typedef typename graph_type2::vertex_descriptor vertex_descriptor2;
-	typedef typename graph_type2::edge_descriptor edge_descriptor2;
-
-	typedef typename graph_type2::vertex_iterator vertex_iterator2;
-	typedef typename graph_type2::edge_iterator edge_iterator2;
-	typedef typename graph_type2::adjacency_iterator adjacency_iterator2;
-
-	typedef typename graph_type2::vertices_size_type vertices_size_type2;
-	typedef typename graph_type2::edges_size_type edges_size_type2;
-	graph_type2 g12;
-	graph_type2 g22;
-	graph_type2 g32;
-	graph_type2 g42;
-	graph_type2 g52;
-	graph_type2 g62;
-	
-	//g12
-	vertex_descriptor2 vdA2;
-	vertex_descriptor2 vdB2;
-	vertex_descriptor2 vdC2;
-	vertex_descriptor2 vdD2;
-	vertex_descriptor2 vdE2;
-	vertex_descriptor2 vdF2;
-	vertex_descriptor2 vdG2;
-	vertex_descriptor2 vdH2;
-	edge_descriptor2 edAB2;
-	edge_descriptor2 edAC2;
-	edge_descriptor2 edAE2;
-	edge_descriptor2 edBD2;
-	edge_descriptor2 edBE2;
-	edge_descriptor2 edCD2;
-	edge_descriptor2 edDE2;
-	edge_descriptor2 edDF2;
-	edge_descriptor2 edFD2;
-	edge_descriptor2 edFH2;
-	edge_descriptor2 edGH2;
-	
-	//g32
-	vertex_descriptor2 vdI2;
-	vertex_descriptor2 vdJ2;
-	vertex_descriptor2 vdK2;
-	vertex_descriptor2 vdL2;
-	vertex_descriptor2 vdM2;
-	vertex_descriptor2 vdN2;
-	vertex_descriptor2 vdO2;
-	vertex_descriptor2 vdP2;
-	edge_descriptor2 edIJ2;
-	edge_descriptor2 edIK2;
-	edge_descriptor2 edIM2;
-	edge_descriptor2 edJL2;
-	edge_descriptor2 edJM2;
-	edge_descriptor2 edKL2;
-	edge_descriptor2 edLM2;
-	edge_descriptor2 edLN2;
-	edge_descriptor2 edNL2;
-	edge_descriptor2 edNP2;
-	edge_descriptor2 edOP2;
-	
-	//g42
-	vertex_descriptor2 vdQ2;
-	vertex_descriptor2 vdR2;
-	edge_descriptor2 edQR2;
-	
-	//g52
-	vertex_descriptor2 vdS2;
-	vertex_descriptor2 vdT2;
-	vertex_descriptor2 vdU2;
-	vertex_descriptor2 vdV2;
-	vertex_descriptor2 vdW2;
-	vertex_descriptor2 vdX2;
-	vertex_descriptor2 vdY2;
-	vertex_descriptor2 vdZ2;
-	vertex_descriptor2 vdAA2;
-	vertex_descriptor2 vdBB2;
-	vertex_descriptor2 vdCC2;
-	edge_descriptor2 edBBCC2;
-	
-	//g62
-	vertex_descriptor2 vdAAA2;
-	vertex_descriptor2 vdBBB2;
-	vertex_descriptor2 vdCCC2;
-	vertex_descriptor2 vdDDD2;
-	vertex_descriptor2 vdEEE2;
-	vertex_descriptor2 vdFFF2;
-	vertex_descriptor2 vdGGG2;
-	vertex_descriptor2 vdHHH2;
-	edge_descriptor2 edAAABBB2;
-	edge_descriptor2 edAAACCC2;
-	edge_descriptor2 edAAAEEE2;
-	edge_descriptor2 edBBBDDD2;
-	edge_descriptor2 edBBBEEE2;
-	edge_descriptor2 edCCCDDD2;
-	edge_descriptor2 edDDDEEE2;
-	edge_descriptor2 edDDDFFF2;
-	edge_descriptor2 edFFFHHH2;
-	edge_descriptor2 edGGGHHH2;
 
 	virtual void SetUp(){     
 	    //g1
@@ -309,920 +221,522 @@ protected:
 	    edDDDFFF = add_edge(vdDDD, vdFFF, g6).first;
 	    edFFFHHH = add_edge(vdFFF, vdHHH, g6).first;
 	    edGGGHHH = add_edge(vdGGG, vdHHH, g6).first;
-
-	    //##############################        
-	    //g12
-	    vdA2 = add_vertex(g12);
-	    vdB2 = add_vertex(g12);
-	    vdC2 = add_vertex(g12);
-	    vdD2 = add_vertex(g12);
-	    vdE2 = add_vertex(g12);
-	    vdF2 = add_vertex(g12);
-	    vdG2 = add_vertex(g12);
-	    vdH2 = add_vertex(g12);
-	    edAB2 = add_edge(vdA2, vdB2, g12).first;
-	    edAC2 = add_edge(vdA2, vdC2, g12).first;
-	    edAE2 = add_edge(vdA2, vdE2, g12).first;
-	    edBD2 = add_edge(vdB2, vdD2, g12).first;
-	    edBE2 = add_edge(vdB2, vdE2, g12).first;
-	    edCD2 = add_edge(vdC2, vdD2, g12).first;
-	    edDE2 = add_edge(vdD2, vdE2, g12).first;
-	    edDF2 = add_edge(vdD2, vdF2, g12).first;
-	    edFD2 = add_edge(vdF2, vdD2, g12).first;
-	    edFH2 = add_edge(vdF2, vdH2, g12).first;
-	    edGH2 = add_edge(vdG2, vdH2, g12).first;
-	    
-	    //g32
-	    vdI2 = add_vertex(g32);
-	    vdJ2 = add_vertex(g32);
-	    vdK2 = add_vertex(g32);
-	    vdL2 = add_vertex(g32);
-	    vdM2 = add_vertex(g32);
-	    vdN2 = add_vertex(g32);
-	    vdO2 = add_vertex(g32);
-	    vdP2 = add_vertex(g32);
-	    edIJ2 = add_edge(vdI2, vdJ2, g32).first;
-	    edIK2 = add_edge(vdI2, vdK2, g32).first;
-	    edIM2 = add_edge(vdI2, vdM2, g32).first;
-	    edJL2 = add_edge(vdJ2, vdL2, g32).first;
-	    edJM2 = add_edge(vdJ2, vdM2, g32).first;
-	    edKL2 = add_edge(vdK2, vdL2, g32).first;
-	    edLM2 = add_edge(vdL2, vdM2, g32).first;
-	    edLN2 = add_edge(vdL2, vdN2, g32).first;
-	    edNL2 = add_edge(vdN2, vdL2, g32).first;
-	    edNP2 = add_edge(vdN2, vdP2, g32).first;
-	    edOP2 = add_edge(vdO2, vdP2, g32).first;
-	    
-	    //g42
-	    vdQ2 = add_vertex(g42);
-	    vdR2 = add_vertex(g42);
-	    edQR2 = add_edge(vdQ2, vdR2, g42).first;
-	    
-	    //g52
-	    vdS2 = add_vertex(g52);
-	    vdT2 = add_vertex(g52);
-	    vdU2 = add_vertex(g52);
-	    vdV2 = add_vertex(g52);
-	    vdW2 = add_vertex(g52);
-	    vdX2 = add_vertex(g52);
-	    vdY2 = add_vertex(g52);
-	    vdZ2 = add_vertex(g52);
-	    vdAA2 = add_vertex(g52);
-	    vdBB2 = add_vertex(g52);
-	    vdCC2 = add_vertex(g52);
-	    edBBCC2 = add_edge(vdBB2, vdCC2, g52).first;
-	    
-	    //g62
-	    vdAAA2 = add_vertex(g62);
-	    vdBBB2 = add_vertex(g62);
-	    vdCCC2 = add_vertex(g62);
-	    vdDDD2 = add_vertex(g62);
-	    vdEEE2 = add_vertex(g62);
-	    vdFFF2 = add_vertex(g62);
-	    vdGGG2 = add_vertex(g62);
-	    vdHHH2 = add_vertex(g62);
-	    edAAABBB2 = add_edge(vdAAA2, vdBBB2, g62).first;
-	    edAAACCC2 = add_edge(vdAAA2, vdCCC2, g62).first;
-	    edAAAEEE2 = add_edge(vdAAA2, vdEEE2, g62).first;
-	    edBBBDDD2 = add_edge(vdBBB2, vdDDD2, g62).first;
-	    edBBBEEE2 = add_edge(vdBBB2, vdEEE2, g62).first;
-	    edCCCDDD2 = add_edge(vdCCC2, vdDDD2, g62).first;
-	    edDDDEEE2 = add_edge(vdDDD2, vdEEE2, g62).first;
-	    edDDDFFF2 = add_edge(vdDDD2, vdFFF2, g62).first;
-	    edFFFHHH2 = add_edge(vdFFF2, vdHHH2, g62).first;
-	    edGGGHHH2 = add_edge(vdGGG2, vdHHH2, g62).first;
-
-
 	}
 	
 	virtual void TearDown() {
 	}
 };
 
-//********************************************
+typedef testing::Types< Graph<int>, boost::adjacency_list<boost::setS, boost::vecS, boost::directedS> > MyTypes;
 
- TEST_F(MyGraphTest, AddVertexTest1) {
-	ASSERT_EQ(0, num_vertices(g2));
-	vertex_descriptor q = 0;
-	ASSERT_EQ(q, add_vertex(g2));
-	ASSERT_EQ(1, num_vertices(g2));
-	//#######################################
-	ASSERT_EQ(0, num_vertices(g22));
-	vertex_descriptor2 q2 = 0;
-	ASSERT_EQ(q2, add_vertex(g22));
-	ASSERT_EQ(1, num_vertices(g22));
-}
 
- TEST_F(MyGraphTest, AddVertexTest2) {
-	ASSERT_EQ(8, num_vertices(g1));
-	vertex_descriptor q = 8;
-	ASSERT_EQ(q, add_vertex(g1));
-	ASSERT_EQ(9, num_vertices(g1));
-	//#######################################
-	ASSERT_EQ(8, num_vertices(g12));
-	vertex_descriptor2 q2 = 8;
-	ASSERT_EQ(q2, add_vertex(g12));
-	ASSERT_EQ(9, num_vertices(g12));
+TYPED_TEST_CASE(TypeTest, MyTypes);
+
+
+TYPED_TEST(TypeTest, TemplateTypeEquals) { //testing the test
+	ASSERT_EQ(1, 1);
 }
 
 //********************************************
 
- TEST_F(MyGraphTest, NumVerticesTest1) {
-	ASSERT_EQ(0, num_vertices(g2));
+ TYPED_TEST(TypeTest, AddVertexTest1) {
+	ASSERT_EQ(0, num_vertices(this->g2));
+	typename TestFixture::vertex_descriptor q = 0;
+	ASSERT_EQ(q, add_vertex(this->g2));
+	ASSERT_EQ(1, num_vertices(this->g2));
 	//#######################################
-	ASSERT_EQ(0, num_vertices(g22));
 }
 
- TEST_F(MyGraphTest, NumVerticesTest2) {
-	ASSERT_EQ(8, num_vertices(g1));
+ TYPED_TEST(TypeTest, AddVertexTest2) {
+	ASSERT_EQ(8, num_vertices(this->g1));
+	typename TestFixture::vertex_descriptor q = 8;
+	ASSERT_EQ(q, add_vertex(this->g1));
+	ASSERT_EQ(9, num_vertices(this->g1));
 	//#######################################
-	ASSERT_EQ(8, num_vertices(g12));
-}
-
-//********************************************
-
- TEST_F(MyGraphTest, NumEdgesTest1) {
-	ASSERT_EQ(0, num_edges(g2));
-	//#######################################
-	ASSERT_EQ(0, num_edges(g22));
-}
-
- TEST_F(MyGraphTest, NumEdgesTest2) {
-	ASSERT_EQ(11, num_edges(g1));
-	//#######################################
-	ASSERT_EQ(11, num_edges(g12));
 }
 
 //********************************************
 
- TEST_F(MyGraphTest, AddEdgeTest1) {
-	ASSERT_EQ(0, num_edges(g2));
-	vertex_descriptor q = add_vertex(g2);
-	vertex_descriptor r = add_vertex(g2);
-	std::pair<edge_descriptor, bool> p2 = add_edge(q, r, g2);
-	ASSERT_EQ(source(edQR, g2), source(p2.first, g2));
-	ASSERT_EQ(target(edQR, g2), target(p2.first, g2));
-	//ASSERT_EQ(edQR, p2.first);
+ TYPED_TEST(TypeTest, NumVerticesTest1) {
+	ASSERT_EQ(0, num_vertices(this->g2));
+	//#######################################
+}
+
+ TYPED_TEST(TypeTest, NumVerticesTest2) {
+	ASSERT_EQ(8, num_vertices(this->g1));
+	//#######################################
+}
+
+//********************************************
+
+ TYPED_TEST(TypeTest, NumEdgesTest1) {
+	ASSERT_EQ(0, num_edges(this->g2));
+	//#######################################
+}
+
+ TYPED_TEST(TypeTest, NumEdgesTest2) {
+	ASSERT_EQ(11, num_edges(this->g1));
+	//#######################################
+}
+
+//********************************************
+
+ TYPED_TEST(TypeTest, AddEdgeTest1) {
+	ASSERT_EQ(0, num_edges(this->g2));
+	typename TestFixture::vertex_descriptor q = add_vertex(this->g2);
+	typename TestFixture::vertex_descriptor r = add_vertex(this->g2);
+	std::pair<typename TestFixture::edge_descriptor, bool> p2 = add_edge(q, r, this->g2);
+	ASSERT_EQ(source(this->edQR, this->g2), source(p2.first, this->g2));
+	ASSERT_EQ(target(this->edQR, this->g2), target(p2.first, this->g2));
 	ASSERT_EQ(true, p2.second);
-	ASSERT_EQ(1, num_edges(g2));
+	ASSERT_EQ(1, num_edges(this->g2));
 	//#######################################
-	ASSERT_EQ(0, num_edges(g22));
-	vertex_descriptor2 q2 = add_vertex(g22);
-	vertex_descriptor2 r2 = add_vertex(g22);
-	std::pair<edge_descriptor2, bool> p22 = add_edge(q2, r2, g22);
-	ASSERT_EQ(source(edQR2, g22), source(p22.first, g22));
-	ASSERT_EQ(target(edQR2, g22), target(p22.first, g22));
-	//ASSERT_EQ(false, p22.first == edQR2);
-	ASSERT_EQ(true, p22.second);
-	ASSERT_EQ(1, num_edges(g22));
 }
 
- TEST_F(MyGraphTest, AddEdgeTest2) {
-	ASSERT_EQ(11, num_edges(g1));
-	std::pair<edge_descriptor, bool> p = add_edge(vdA, vdB, g1);
-	ASSERT_EQ(edAB, p.first);
+ TYPED_TEST(TypeTest, AddEdgeTest2) {
+	ASSERT_EQ(11, num_edges(this->g1));
+	std::pair<typename TestFixture::edge_descriptor, bool> p = add_edge(this->vdA, this->vdB, this->g1);
+	ASSERT_EQ(this->edAB, p.first);
 	ASSERT_EQ(true, p.second == false);
-	ASSERT_EQ(11, num_edges(g1));
+	ASSERT_EQ(11, num_edges(this->g1));
 	//#######################################
-	ASSERT_EQ(11, num_edges(g12));
-	std::pair<edge_descriptor2, bool> p2 = add_edge(vdA2, vdB2, g12);
-	ASSERT_EQ(edAB2, p2.first);
-	ASSERT_EQ(true, p2.second == false);
-	ASSERT_EQ(11, num_edges(g12));
 }
 
- TEST_F(MyGraphTest, AddEdgeTest3) {
-	ASSERT_EQ(0, num_edges(g2));
-	ASSERT_EQ(0, num_vertices(g2));
-	vertex_descriptor q = vertex(100, g2);
-	vertex_descriptor r = vertex(101, g2);
-	ASSERT_EQ(0, num_vertices(g2));
-	std::pair<edge_descriptor, bool> p2 = add_edge(q, r, g2);
-	ASSERT_EQ(1, num_edges(g2));
-	ASSERT_EQ(102, num_vertices(g2));
+ TYPED_TEST(TypeTest, AddEdgeTest3) {
+	ASSERT_EQ(0, num_edges(this->g2));
+	ASSERT_EQ(0, num_vertices(this->g2));
+	typename TestFixture::vertex_descriptor q = vertex(100, this->g2);
+	typename TestFixture::vertex_descriptor r = vertex(101, this->g2);
+	ASSERT_EQ(0, num_vertices(this->g2));
+	std::pair<typename TestFixture::edge_descriptor, bool> p2 = add_edge(q, r, this->g2);
+	ASSERT_EQ(1, num_edges(this->g2));
+	ASSERT_EQ(102, num_vertices(this->g2));
 	//#######################################
-	ASSERT_EQ(0, num_edges(g22));
-	ASSERT_EQ(0, num_vertices(g22));
-	vertex_descriptor2 q2 = vertex(100, g22);
-	vertex_descriptor2 r2 = vertex(101, g22);
-	ASSERT_EQ(0, num_vertices(g22));
-	std::pair<edge_descriptor2, bool> p22 = add_edge(q2, r2, g22);
-	ASSERT_EQ(1, num_edges(g22));
-	ASSERT_EQ(102, num_vertices(g22));
 }
 
- TEST_F(MyGraphTest, AddEdgeTest4) {
-	ASSERT_EQ(11, num_edges(g1));
-	ASSERT_EQ(8, num_vertices(g1));
-	vertex_descriptor q = vertex(100, g1);
-	vertex_descriptor r = 1;
-	ASSERT_EQ(8, num_vertices(g1));
-	std::pair<edge_descriptor, bool> p2 = add_edge(q, r, g1);
-	ASSERT_EQ(12, num_edges(g1));
-	ASSERT_EQ(101, num_vertices(g1));
+ TYPED_TEST(TypeTest, AddEdgeTest4) {
+	ASSERT_EQ(11, num_edges(this->g1));
+	ASSERT_EQ(8, num_vertices(this->g1));
+	typename TestFixture::vertex_descriptor q = vertex(100, this->g1);
+	typename TestFixture::vertex_descriptor r = 1;
+	ASSERT_EQ(8, num_vertices(this->g1));
+	std::pair<typename TestFixture::edge_descriptor, bool> p2 = add_edge(q, r, this->g1);
+	ASSERT_EQ(12, num_edges(this->g1));
+	ASSERT_EQ(101, num_vertices(this->g1));
 	//#######################################
-	ASSERT_EQ(11, num_edges(g12));
-	ASSERT_EQ(8, num_vertices(g12));
-	vertex_descriptor2 q2 = vertex(100, g12);
-	vertex_descriptor2 r2 = 1;
-	ASSERT_EQ(8, num_vertices(g12));
-	std::pair<edge_descriptor2, bool> p22 = add_edge(q2, r2, g12);
-	ASSERT_EQ(12, num_edges(g12));
-	ASSERT_EQ(101, num_vertices(g12));
 }
 
- TEST_F(MyGraphTest, AddEdgeTest5) {
-	ASSERT_EQ(11, num_edges(g1));
-	ASSERT_EQ(8, num_vertices(g1));
-	vertex_descriptor q = vertex(100, g2);
-	vertex_descriptor r = 1;
-	ASSERT_EQ(8, num_vertices(g1));
-	std::pair<edge_descriptor, bool> p2 = add_edge(q, r, g1);
-	ASSERT_EQ(12, num_edges(g1));
-	ASSERT_EQ(101, num_vertices(g1));
+ TYPED_TEST(TypeTest, AddEdgeTest5) {
+	ASSERT_EQ(11, num_edges(this->g1));
+	ASSERT_EQ(8, num_vertices(this->g1));
+	typename TestFixture::vertex_descriptor q = vertex(100, this->g2);
+	typename TestFixture::vertex_descriptor r = 1;
+	ASSERT_EQ(8, num_vertices(this->g1));
+	std::pair<typename TestFixture::edge_descriptor, bool> p2 = add_edge(q, r, this->g1);
+	ASSERT_EQ(12, num_edges(this->g1));
+	ASSERT_EQ(101, num_vertices(this->g1));
 	//#######################################
-	ASSERT_EQ(11, num_edges(g12));
-	ASSERT_EQ(8, num_vertices(g12));
-	vertex_descriptor2 q2 = vertex(100, g22);
-	vertex_descriptor2 r2 = 1;
-	ASSERT_EQ(8, num_vertices(g12));
-	std::pair<edge_descriptor2, bool> p22 = add_edge(q2, r2, g12);
-	ASSERT_EQ(12, num_edges(g12));
-	ASSERT_EQ(101, num_vertices(g12));
 }
 
- TEST_F(MyGraphTest, AddEdgeTest6) {
-	ASSERT_EQ(11, num_edges(g1));
-	ASSERT_EQ(8, num_vertices(g1));
-	vertex_descriptor q = 1;
-	vertex_descriptor r = vertex(100, g2);
-	ASSERT_EQ(8, num_vertices(g1));
-	std::pair<edge_descriptor, bool> p2 = add_edge(q, r, g1);
-	ASSERT_EQ(12, num_edges(g1));
-	ASSERT_EQ(101, num_vertices(g1));
+ TYPED_TEST(TypeTest, AddEdgeTest6) {
+	ASSERT_EQ(11, num_edges(this->g1));
+	ASSERT_EQ(8, num_vertices(this->g1));
+	typename TestFixture::vertex_descriptor q = 1;
+	typename TestFixture::vertex_descriptor r = vertex(100, this->g2);
+	ASSERT_EQ(8, num_vertices(this->g1));
+	std::pair<typename TestFixture::edge_descriptor, bool> p2 = add_edge(q, r, this->g1);
+	ASSERT_EQ(12, num_edges(this->g1));
+	ASSERT_EQ(101, num_vertices(this->g1));
 	//#######################################
-	ASSERT_EQ(11, num_edges(g12));
-	ASSERT_EQ(8, num_vertices(g12));
-	vertex_descriptor2 q2 = 1;
-	vertex_descriptor2 r2 = vertex(100, g22);
-	ASSERT_EQ(8, num_vertices(g12));
-	std::pair<edge_descriptor2, bool> p22 = add_edge(q2, r2, g12);
-	ASSERT_EQ(12, num_edges(g12));
-	ASSERT_EQ(101, num_vertices(g12));
 }
 
- TEST_F(MyGraphTest, AddEdgeTest7) {
-	ASSERT_EQ(11, num_edges(g1));
-	std::pair<edge_descriptor, bool> p = add_edge(vdA, vdA, g1);
-	ASSERT_EQ(0, source(p.first, g1));
-	ASSERT_EQ(0, target(p.first, g1));
+ TYPED_TEST(TypeTest, AddEdgeTest7) {
+	ASSERT_EQ(11, num_edges(this->g1));
+	std::pair<typename TestFixture::edge_descriptor, bool> p = add_edge(this->vdA, this->vdA, this->g1);
+	ASSERT_EQ(0, source(p.first, this->g1));
+	ASSERT_EQ(0, target(p.first, this->g1));
 	ASSERT_EQ(true, p.second == true);
-	ASSERT_EQ(12, num_edges(g1));
+	ASSERT_EQ(12, num_edges(this->g1));
 	//#######################################
-	ASSERT_EQ(11, num_edges(g12));
-	std::pair<edge_descriptor2, bool> p2 = add_edge(vdA2, vdA2, g12);
-	ASSERT_EQ(0, source(p2.first, g12));
-	ASSERT_EQ(0, target(p2.first, g12));
-	ASSERT_EQ(true, p2.second == true);
-	ASSERT_EQ(12, num_edges(g12));
 }
 
 //********************************************
-/*
- TEST_F(MyGraphTest, AdjacenctVerticesTest1) {
-	ASSERT_EQ(0, num_edges(g2));
-	ASSERT_EQ(0, num_vertices(g2));
-	//produces runtime-error
-        //std::pair<adjacency_iterator, adjacency_iterator> p = adjacent_vertices(vdA, g2); //produces runtime-error
-	
-        //adjacency_iterator b = p.first; 
-        //adjacency_iterator e = p.second;
-        //ASSERT_EQ(true, b != e);
-        //if (b != e) {
-            //vertex_descriptor vd = *b;
-            //ASSERT_EQ(true, vd == vdB);}
-        //++b;
-        //if (b != e) {
-            //vertex_descriptor vd = *b;
-            //ASSERT_EQ(true, vd == vdC);}
-	//#######################################
-	ASSERT_EQ(0, num_edges(g22));
-	ASSERT_EQ(0, num_vertices(g22));
-	//produces runtime-error
-        //std::pair<adjacency_iterator2, adjacency_iterator2> p2 = adjacent_vertices(vdA2, g22); //produces runtime-error
-	
-        //adjacency_iterator b2 = p2.first; 
-        //adjacency_iterator e2 = p2.second;
-        //ASSERT_EQ(true, b2 != e2);
-        //if (b2 != e2) {
-            //vertex_descriptor vd2 = *b2;
-            //ASSERT_EQ(true, vd2 == vdB2);}
-        //++b2;
-        //if (b2 != e2) {
-            //vertex_descriptor vd2 = *b2;
-            //ASSERT_EQ(true, vd2 == vdC2);}
-}
-*/
- TEST_F(MyGraphTest, AdjacenctVerticesTest1) {
-        std::pair<adjacency_iterator, adjacency_iterator> p = adjacent_vertices(vdA, g1);
-        adjacency_iterator b = p.first; 
-        adjacency_iterator e = p.second;
+
+ TYPED_TEST(TypeTest, AdjacenctVerticesTest1) {
+        std::pair<typename TestFixture::adjacency_iterator, typename TestFixture::adjacency_iterator> p = adjacent_vertices(this->vdA, this->g1);
+        typename TestFixture::adjacency_iterator b = p.first; 
+        typename TestFixture::adjacency_iterator e = p.second;
         ASSERT_EQ(true, b != e);
         if (b != e) {
-            vertex_descriptor vd = *b;
-            ASSERT_EQ(true, vd == vdB);}
+            typename TestFixture::vertex_descriptor vd = *b;
+            ASSERT_EQ(true, vd == this->vdB);}
         ++b;
         if (b != e) {
-            vertex_descriptor vd = *b;
-            ASSERT_EQ(true, vd == vdC);}
+            typename TestFixture::vertex_descriptor vd = *b;
+            ASSERT_EQ(true, vd == this->vdC);}
 	//#######################################
-        std::pair<adjacency_iterator2, adjacency_iterator2> p2 = adjacent_vertices(vdA2, g12);
-        adjacency_iterator2 b2 = p2.first; 
-        adjacency_iterator2 e2 = p2.second;
-        ASSERT_EQ(true, b2 != e2);
-        if (b2 != e2) {
-            vertex_descriptor2 vd2 = *b2;
-            ASSERT_EQ(true, vd2 == vdB2);}
-        ++b2;
-        if (b2 != e2) {
-            vertex_descriptor2 vd2 = *b2;
-            ASSERT_EQ(true, vd2 == vdC2);}
 }
 
- TEST_F(MyGraphTest, AdjacenctVerticesTest2) {
-        std::pair<adjacency_iterator, adjacency_iterator> p = adjacent_vertices(vdQ, g4);
-        adjacency_iterator b = p.first; 
-        adjacency_iterator e = p.second;
+ TYPED_TEST(TypeTest, AdjacenctVerticesTest2) {
+        std::pair<typename TestFixture::adjacency_iterator, typename TestFixture::adjacency_iterator> p = adjacent_vertices(this->vdQ, this->g4);
+        typename TestFixture::adjacency_iterator b = p.first; 
+        typename TestFixture::adjacency_iterator e = p.second;
         ASSERT_EQ(true, b != e);
-        vertex_descriptor vd = *b;
-        ASSERT_EQ(true, vd == vdR);
+        typename TestFixture::vertex_descriptor vd = *b;
+        ASSERT_EQ(true, vd == this->vdR);
         ++b;
 	ASSERT_EQ(true, b == e);
 	
-	add_edge(vdQ, vdQ, g4);
-        p = adjacent_vertices(vdQ, g4);
+	add_edge(this->vdQ, this->vdQ, this->g4);
+        p = adjacent_vertices(this->vdQ, this->g4);
         b = p.first; 
         e = p.second;
         ASSERT_EQ(true, b != e);
         vd = *b;
-        ASSERT_EQ(true, vd == vdQ);
+        ASSERT_EQ(true, vd == this->vdQ);
         ++b;
         vd = *b;
-        ASSERT_EQ(true, vd == vdR);
+        ASSERT_EQ(true, vd == this->vdR);
 	++b;
 	ASSERT_EQ(true, b == e);
 	
 	//#######################################
-        std::pair<adjacency_iterator2, adjacency_iterator2> p2 = adjacent_vertices(vdQ2, g42);
-        adjacency_iterator2 b2 = p2.first; 
-        adjacency_iterator2 e2 = p2.second;
-        ASSERT_EQ(true, b2 != e2);
-        vertex_descriptor vd2 = *b2;
-        ASSERT_EQ(true, vd2 == vdR2);
-        ++b2;
-	ASSERT_EQ(true, b2 == e2);
-	
-	add_edge(vdQ2, vdQ2, g42);
-        p2 = adjacent_vertices(vdQ2, g42);
-        b2 = p2.first; 
-        e2 = p2.second;
-        ASSERT_EQ(true, b2 != e2);
-        vd2 = *b2;
-        ASSERT_EQ(true, vd2 == vdQ2);
-        ++b2;
-        vd2 = *b2;
-        ASSERT_EQ(true, vd2 == vdR2);
-	++b2;
-	ASSERT_EQ(true, b2 == e2);
 }
 
 //********************************************
 
- TEST_F(MyGraphTest, EdgeTest1) {
-	ASSERT_EQ(0, num_edges(g2));
-	ASSERT_EQ(0, num_vertices(g2));
+ TYPED_TEST(TypeTest, EdgeTest1) {
+	ASSERT_EQ(0, num_edges(this->g2));
+	ASSERT_EQ(0, num_vertices(this->g2));
 	// produces runtime-error
-        //std::pair<edge_descriptor, bool> p = edge(vdA, vdB, g2);
-        //ASSERT_EQ(true, p.first  == edAB);
+        //std::pair<typename TestFixture::edge_descriptor, bool> p = edge(this->vdA, this->vdB, this->g2);
+        //ASSERT_EQ(true, p.first  == this->edAB);
 	//ASSERT_EQ(true, p.second == true);
 	//#######################################
-	ASSERT_EQ(0, num_edges(g2));
-	ASSERT_EQ(0, num_vertices(g2));
-	// produces runtime-error
-        //std::pair<edge_descriptor2, bool> p2 = edge(vdA2, vdB2, g22);
-        //ASSERT_EQ(true, p2.first  == edAB2);
-	//ASSERT_EQ(true, p2.second == true);
 }
 
- TEST_F(MyGraphTest, EdgeTest2) {
-	ASSERT_EQ(0, source(edAB, g1));
-	ASSERT_EQ(1, target(edAB, g1));
-	ASSERT_EQ(11, num_edges(g1));
-	ASSERT_EQ(8, num_vertices(g1));
-        std::pair<edge_descriptor, bool> p = edge(vdA, vdB, g1);
-	ASSERT_EQ(11, num_edges(g1));
-	ASSERT_EQ(8, num_vertices(g1));
-        ASSERT_EQ(source(edAB, g1), source(p.first, g1));
-        ASSERT_EQ(target(edAB, g1), target(p.first, g1));
-	ASSERT_EQ(0, source(edAB, g1));
-	ASSERT_EQ(1, target(edAB, g1));
-        ASSERT_EQ(true, p.first  == edAB);
+ TYPED_TEST(TypeTest, EdgeTest2) {
+	ASSERT_EQ(0, source(this->edAB, this->g1));
+	ASSERT_EQ(1, target(this->edAB, this->g1));
+	ASSERT_EQ(11, num_edges(this->g1));
+	ASSERT_EQ(8, num_vertices(this->g1));
+        std::pair<typename TestFixture::edge_descriptor, bool> p = edge(this->vdA, this->vdB, this->g1);
+	ASSERT_EQ(11, num_edges(this->g1));
+	ASSERT_EQ(8, num_vertices(this->g1));
+        ASSERT_EQ(source(this->edAB, this->g1), source(p.first, this->g1));
+        ASSERT_EQ(target(this->edAB, this->g1), target(p.first, this->g1));
+	ASSERT_EQ(0, source(this->edAB, this->g1));
+	ASSERT_EQ(1, target(this->edAB, this->g1));
+        ASSERT_EQ(true, p.first  == this->edAB);
         ASSERT_EQ(true, p.second == true);
 	//#######################################
-	ASSERT_EQ(0, source(edAB2, g12));
-	ASSERT_EQ(1, target(edAB2, g12));
-	ASSERT_EQ(11, num_edges(g12));
-	ASSERT_EQ(8, num_vertices(g12));
-        std::pair<edge_descriptor2, bool> p2 = edge(vdA2, vdB2, g12);
-	ASSERT_EQ(11, num_edges(g12));
-	ASSERT_EQ(8, num_vertices(g12));
-        ASSERT_EQ(source(edAB2, g12), source(p2.first, g12));
-        ASSERT_EQ(target(edAB2, g12), target(p2.first, g12));
-	ASSERT_EQ(0, source(edAB2, g12));
-	ASSERT_EQ(1, target(edAB2, g12));
-        ASSERT_EQ(true, p2.first  == edAB2);
-        ASSERT_EQ(true, p2.second == true);
 }
 
- TEST_F(MyGraphTest, EdgeTest3) {
-	ASSERT_EQ(11, num_edges(g1));
-	ASSERT_EQ(8, num_vertices(g1));
-	ASSERT_EQ(9, vdBB);
-	ASSERT_EQ(10, vdCC);
-        //std::pair<edge_descriptor, bool> p = edge(vdBB, vdCC, g1);
-	// ___ASSERT_EQ(11, num_edges(g1));
-	//ASSERT_EQ(8, num_vertices(g1));
-        //ASSERT_EQ(source(edBBCC, g1), source(p.first, g1));
-        //ASSERT_EQ(target(edBBCC, g1), target(p.first, g1));
-	//ASSERT_EQ(9, source(edBBCC, g1));
-	//ASSERT_EQ(10, target(edBBCC, g1));
+ TYPED_TEST(TypeTest, EdgeTest3) {
+	ASSERT_EQ(11, num_edges(this->g1));
+	ASSERT_EQ(8, num_vertices(this->g1));
+	ASSERT_EQ(9, this->vdBB);
+	ASSERT_EQ(10, this->vdCC);
+        //std::pair<typename TestFixture::edge_descriptor, bool> p = edge(this->vdBB, this->vdCC, this->g1);
+	// ___ASSERT_EQ(11, num_edges(this->g1));
+	//ASSERT_EQ(8, num_vertices(this->g1));
+        //ASSERT_EQ(source(this->edBBCC, this->g1), source(p.first, this->g1));
+        //ASSERT_EQ(target(this->edBBCC, this->g1), target(p.first, this->g1));
+	//ASSERT_EQ(9, source(this->edBBCC, this->g1));
+	//ASSERT_EQ(10, target(this->edBBCC, this->g1));
 	
 	// extra wrinkle/detail of edge_descriptor: why does/should the ASSERT_EQ below work??
-        //ASSERT_EQ(false, p.first == edBBCC);
+        //ASSERT_EQ(false, p.first == this->edBBCC);
         //ASSERT_EQ(true, p.second == false);^^^
 	//#######################################
-	// ___
-	//ASSERT_EQ(11, num_edges(g12));
-	//ASSERT_EQ(8, num_vertices(g12));
-	//ASSERT_EQ(9, vdBB2);
-	//ASSERT_EQ(10, vdCC2);
-        //std::pair<edge_descriptor2, bool> p2 = edge(vdBB2, vdCC2, g12);
-	//ASSERT_EQ(11, num_edges(g12));
-	//ASSERT_EQ(8, num_vertices(g12));
-        //ASSERT_EQ(source(edBBCC2, g12), source(p2.first, g12));
-        //ASSERT_EQ(target(edBBCC2, g12), target(p2.first, g12));
-	//ASSERT_EQ(9, source(edBBCC2, g12));
-	//ASSERT_EQ(10, target(edBBCC2, g12));
-	// NOTICE: the assertion below fails b/c p2.first == edBBCC2 is true
-        // ASSERT_EQ(false, p2.first == edBBCC2);
-        //ASSERT_EQ(true, p2.second == false);
-        // ^^^
 }
 // ^^^
 //********************************************
 // ___
- TEST_F(MyGraphTest, EdgesTest1) {
-        std::pair<edge_iterator, edge_iterator> p = edges(g2);
-        edge_iterator                           b = p.first;
-        edge_iterator                           e = p.second;
+ TYPED_TEST(TypeTest, EdgesTest1) {
+        std::pair<typename TestFixture::edge_iterator, typename TestFixture::edge_iterator> p = edges(this->g2);
+        typename TestFixture::edge_iterator                           b = p.first;
+        typename TestFixture::edge_iterator                           e = p.second;
         ASSERT_EQ(true, b == e);
 	//#######################################
-        std::pair<edge_iterator2, edge_iterator2> p2 = edges(g22);
-        edge_iterator2                           b2 = p2.first;
-        edge_iterator2                           e2 = p2.second;
-        ASSERT_EQ(true, b2 == e2);
 }
 
- TEST_F(MyGraphTest, EdgesTest2) {
-        std::pair<edge_iterator, edge_iterator> p = edges(g1);
-        edge_iterator                           b = p.first;
-        edge_iterator                           e = p.second;
+ TYPED_TEST(TypeTest, EdgesTest2) {
+        std::pair<typename TestFixture::edge_iterator, typename TestFixture::edge_iterator> p = edges(this->g1);
+        typename TestFixture::edge_iterator                           b = p.first;
+        typename TestFixture::edge_iterator                           e = p.second;
         ASSERT_EQ(true, b != e);
         if (b != e) {
-            edge_descriptor ed = *b;
-            ASSERT_EQ(true, ed == edAB);}
+            typename TestFixture::edge_descriptor ed = *b;
+            ASSERT_EQ(true, ed == this->edAB);}
         ++b;
         if (b != e) {
-            edge_descriptor ed = *b;
-            ASSERT_EQ(true, ed == edAC);}
+            typename TestFixture::edge_descriptor ed = *b;
+            ASSERT_EQ(true, ed == this->edAC);}
 	//#######################################
-        std::pair<edge_iterator2, edge_iterator2> p2 = edges(g12);
-        edge_iterator2                           b2 = p2.first;
-        edge_iterator2                           e2 = p2.second;
-        ASSERT_EQ(true, b2 != e2);
-        if (b2 != e2) {
-            edge_descriptor2 ed2 = *b2;
-            ASSERT_EQ(true, ed2 == edAB2);}
-        ++b2;
-        if (b2 != e2) {
-            edge_descriptor2 ed2 = *b2;
-            ASSERT_EQ(true, ed2 == edAC2);}
 }
 
 //********************************************
 
- TEST_F(MyGraphTest, SourceTest1) {
+ TYPED_TEST(TypeTest, SourceTest1) {
 	// NOTICE: source() doesn't care if the 
 	// edge_descriptor is in the graph that
 	// you give it, so long as the 
 	// edge_descriptor is in scope
-	ASSERT_EQ(0, num_edges(g2));
-	ASSERT_EQ(0, num_vertices(g2));
-        vertex_descriptor vd = source(edAB, g2);
-        ASSERT_EQ(true, vd == vdA);
-	ASSERT_EQ(0, num_edges(g2));
-	ASSERT_EQ(0, num_vertices(g2));
+	ASSERT_EQ(0, num_edges(this->g2));
+	ASSERT_EQ(0, num_vertices(this->g2));
+        typename TestFixture::vertex_descriptor vd = source(this->edAB, this->g2);
+        ASSERT_EQ(true, vd == this->vdA);
+	ASSERT_EQ(0, num_edges(this->g2));
+	ASSERT_EQ(0, num_vertices(this->g2));
 	//#######################################
-	// NOTICE: source() doesn't care if the 
-	// edge_descriptor is in the graph that
-	// you give it, so long as the 
-	// edge_descriptor is in scope
-	ASSERT_EQ(0, num_edges(g22));
-	ASSERT_EQ(0, num_vertices(g22));
-        vertex_descriptor2 vd2 = source(edAB2, g22);
-        ASSERT_EQ(true, vd2 == vdA2);
-	ASSERT_EQ(0, num_edges(g22));
-	ASSERT_EQ(0, num_vertices(g22));
 }
 
- TEST_F(MyGraphTest, SourceTest2) {
-        vertex_descriptor vd = source(edAB, g1);
-        ASSERT_EQ(true, vd == vdA);
+ TYPED_TEST(TypeTest, SourceTest2) {
+        typename TestFixture::vertex_descriptor vd = source(this->edAB, this->g1);
+        ASSERT_EQ(true, vd == this->vdA);
 	//#######################################
-        vertex_descriptor2 vd2 = source(edAB2, g12);
-        ASSERT_EQ(true, vd2 == vdA2);
 }
 
 //********************************************
 
- TEST_F(MyGraphTest, TargetTest1) {
+ TYPED_TEST(TypeTest, TargetTest1) {
 	// NOTICE: target() doesn't care if the 
 	// edge_descriptor is in the graph that
 	// you give it, so long as the 
 	// edge_descriptor is in scope
-	ASSERT_EQ(0, num_edges(g2));
-	ASSERT_EQ(0, num_vertices(g2));
-        vertex_descriptor vd = target(edAB, g2);
-        ASSERT_EQ(true, vd == vdB);
-	ASSERT_EQ(0, num_edges(g2));
-	ASSERT_EQ(0, num_vertices(g2));
+	ASSERT_EQ(0, num_edges(this->g2));
+	ASSERT_EQ(0, num_vertices(this->g2));
+        typename TestFixture::vertex_descriptor vd = target(this->edAB, this->g2);
+        ASSERT_EQ(true, vd == this->vdB);
+	ASSERT_EQ(0, num_edges(this->g2));
+	ASSERT_EQ(0, num_vertices(this->g2));
 	//#######################################
-	// NOTICE: target() doesn't care if the 
-	// edge_descriptor is in the graph that
-	// you give it, so long as the 
-	// edge_descriptor is in scope
-	ASSERT_EQ(0, num_edges(g22));
-	ASSERT_EQ(0, num_vertices(g22));
-        vertex_descriptor2 vd2 = target(edAB2, g22);
-        ASSERT_EQ(true, vd2 == vdB2);
-	ASSERT_EQ(0, num_edges(g22));
-	ASSERT_EQ(0, num_vertices(g22));
 }
 
- TEST_F(MyGraphTest, TargetTest2) {
-        vertex_descriptor vd = target(edAB, g1);
-        ASSERT_EQ(true, vd == vdB);
+ TYPED_TEST(TypeTest, TargetTest2) {
+        typename TestFixture::vertex_descriptor vd = target(this->edAB, this->g1);
+        ASSERT_EQ(true, vd == this->vdB);
 	//#######################################
-        vertex_descriptor2 vd2 = target(edAB2, g12);
-        ASSERT_EQ(true, vd2 == vdB2);
 }
 
 //********************************************
 
- TEST_F(MyGraphTest, VertexTest1) {
+ TYPED_TEST(TypeTest, VertexTest1) {
 	//NOTICE: vertex() doesn't require that
 	// the vertex be in the graph given to
-	// it ie vertex(vertex_descriptor, graph)
+	// it ie vertex(typename TestFixture::vertex_descriptor, graph)
    
-	ASSERT_EQ(0, num_edges(g2));
-	ASSERT_EQ(0, num_vertices(g2));
-        vertex_descriptor vd = vertex(0, g2);
-        ASSERT_EQ(true, vd == vdA);
-        ASSERT_EQ(true, vd == vdI);
-	ASSERT_EQ(0, num_edges(g2));
-	ASSERT_EQ(0, num_vertices(g2));
+	ASSERT_EQ(0, num_edges(this->g2));
+	ASSERT_EQ(0, num_vertices(this->g2));
+        typename TestFixture::vertex_descriptor vd = vertex(0, this->g2);
+        ASSERT_EQ(true, vd == this->vdA);
+        ASSERT_EQ(true, vd == this->vdI);
+	ASSERT_EQ(0, num_edges(this->g2));
+	ASSERT_EQ(0, num_vertices(this->g2));
 	//#######################################
-	//NOTICE: vertex() doesn't require that
-	// the vertex be in the graph given to
-	// it ie vertex(vertex_descriptor, graph)
-   
-	ASSERT_EQ(0, num_edges(g22));
-	ASSERT_EQ(0, num_vertices(g22));
-        vertex_descriptor2 vd2 = vertex(0, g22);
-        ASSERT_EQ(true, vd2 == vdA2);
-        ASSERT_EQ(true, vd2 == vdI2);
-	ASSERT_EQ(0, num_edges(g22));
-	ASSERT_EQ(0, num_vertices(g22));
 }
 
- TEST_F(MyGraphTest, VertexTest2) {
-        vertex_descriptor vd = vertex(0, g1);
-        ASSERT_EQ(true, vd == vdA);
+ TYPED_TEST(TypeTest, VertexTest2) {
+        typename TestFixture::vertex_descriptor vd = vertex(0, this->g1);
+        ASSERT_EQ(true, vd == this->vdA);
 	//#######################################
-        vertex_descriptor2 vd2 = vertex(0, g12);
-        ASSERT_EQ(true, vd2 == vdA2);
 }
 
- TEST_F(MyGraphTest, VertexTest3) {
+ TYPED_TEST(TypeTest, VertexTest3) {
 	// vertex() seems to act like a 
 	// vertex_descriptor constructor
 	int wayOutOfRange = 1000;
-        vertex_descriptor vd = vertex(wayOutOfRange, g1);
+        typename TestFixture::vertex_descriptor vd = vertex(wayOutOfRange, this->g1);
         ASSERT_EQ(true, vd == wayOutOfRange);
-	vertex_descriptor vd1 = vd;
+	typename TestFixture::vertex_descriptor vd1 = vd;
 	vd = 80;
         ASSERT_EQ(true, vd == 80);
         ASSERT_EQ(true, vd != wayOutOfRange);
         ASSERT_EQ(true, vd1 != 80);
         ASSERT_EQ(true, vd1 == wayOutOfRange);
 	//#######################################
-	// vertex() seems to act like a 
-	// vertex_descriptor constructor
-	int wayOutOfRange2 = 1000;
-        vertex_descriptor2 vd2 = vertex(wayOutOfRange2, g12);
-        ASSERT_EQ(true, vd2 == wayOutOfRange2);
-	vertex_descriptor2 vd12 = vd2;
-	vd2 = 80;
-        ASSERT_EQ(true, vd2 == 80);
-        ASSERT_EQ(true, vd2 != wayOutOfRange2);
-        ASSERT_EQ(true, vd12 != 80);
-        ASSERT_EQ(true, vd12 == wayOutOfRange2);
 }
 
 //********************************************
 
- TEST_F(MyGraphTest, VerticesTest1) {
-        std::pair<vertex_iterator, vertex_iterator> p = vertices(g2);
-        vertex_iterator                             b = p.first;
-        vertex_iterator                             e = p.second;
+ TYPED_TEST(TypeTest, VerticesTest1) {
+        std::pair<typename TestFixture::vertex_iterator, typename TestFixture::vertex_iterator> p = vertices(this->g2);
+        typename TestFixture::vertex_iterator                             b = p.first;
+        typename TestFixture::vertex_iterator                             e = p.second;
         ASSERT_EQ(true, b == e);
 	//#######################################
-        std::pair<vertex_iterator2, vertex_iterator2> p2 = vertices(g22);
-        vertex_iterator2                             b2 = p2.first;
-        vertex_iterator2                             e2 = p2.second;
-        ASSERT_EQ(true, b2 == e2);
 }
 
- TEST_F(MyGraphTest, VerticesTest2) {
-        std::pair<vertex_iterator, vertex_iterator> p = vertices(g1);
-        vertex_iterator                             b = p.first;
-        vertex_iterator                             e = p.second;
+ TYPED_TEST(TypeTest, VerticesTest2) {
+        std::pair<typename TestFixture::vertex_iterator, typename TestFixture::vertex_iterator> p = vertices(this->g1);
+        typename TestFixture::vertex_iterator                             b = p.first;
+        typename TestFixture::vertex_iterator                             e = p.second;
         ASSERT_EQ(true, b != e);
         if (b != e) {
-            vertex_descriptor vd = *b;
-            ASSERT_EQ(true, vd == vdA);}
+            typename TestFixture::vertex_descriptor vd = *b;
+            ASSERT_EQ(true, vd == this->vdA);}
         ++b;
         if (b != e) {
-            vertex_descriptor vd = *b;
-            ASSERT_EQ(true, vd == vdB);}
+            typename TestFixture::vertex_descriptor vd = *b;
+            ASSERT_EQ(true, vd == this->vdB);}
 	//#######################################
-        std::pair<vertex_iterator2, vertex_iterator2> p2 = vertices(g12);
-        vertex_iterator2                             b2 = p2.first;
-        vertex_iterator2                             e2 = p2.second;
-        ASSERT_EQ(true, b2 != e2);
-        if (b2 != e2) {
-            vertex_descriptor vd2 = *b2;
-            ASSERT_EQ(true, vd2 == vdA2);}
-        ++b2;
-        if (b2 != e2) {
-            vertex_descriptor vd2 = *b2;
-            ASSERT_EQ(true, vd2 == vdB2);}
 }
 
 //********************************************
 
-  TEST_F(MyGraphTest, HasCycleTest1){
-	ASSERT_EQ(0, num_edges(g2));
-	ASSERT_EQ(0, num_vertices(g2));
-	ASSERT_EQ(false, has_cycle(g2));
-	ASSERT_EQ(0, num_edges(g2));
-	ASSERT_EQ(0, num_vertices(g2));
+  TYPED_TEST(TypeTest, HasCycleTest1){
+	ASSERT_EQ(0, num_edges(this->g2));
+	ASSERT_EQ(0, num_vertices(this->g2));
+	ASSERT_EQ(false, has_cycle(this->g2));
+	ASSERT_EQ(0, num_edges(this->g2));
+	ASSERT_EQ(0, num_vertices(this->g2));
 	//#######################################
-	ASSERT_EQ(0, num_edges(g22));
-	ASSERT_EQ(0, num_vertices(g22));
-	ASSERT_EQ(false, has_cycle(g22));
-	ASSERT_EQ(0, num_edges(g22));
-	ASSERT_EQ(0, num_vertices(g22));
 }
 
- TEST_F(MyGraphTest, HasCycleTest2) {
-	ASSERT_EQ(true, has_cycle(g1));
+ TYPED_TEST(TypeTest, HasCycleTest2) {
+	ASSERT_EQ(true, has_cycle(this->g1));
 	//#######################################
-	ASSERT_EQ(true, has_cycle(g12));
 }
 
-  TEST_F(MyGraphTest, HasCycleTest3){
-	ASSERT_EQ(1, num_edges(g4));
-	ASSERT_EQ(2, num_vertices(g4));
-	ASSERT_EQ(false, has_cycle(g4));
-	ASSERT_EQ(1, num_edges(g4));
-	ASSERT_EQ(2, num_vertices(g4));
+  TYPED_TEST(TypeTest, HasCycleTest3){
+	ASSERT_EQ(1, num_edges(this->g4));
+	ASSERT_EQ(2, num_vertices(this->g4));
+	ASSERT_EQ(false, has_cycle(this->g4));
+	ASSERT_EQ(1, num_edges(this->g4));
+	ASSERT_EQ(2, num_vertices(this->g4));
 	//#######################################
-	ASSERT_EQ(1, num_edges(g42));
-	ASSERT_EQ(2, num_vertices(g42));
-	ASSERT_EQ(false, has_cycle(g42));
-	ASSERT_EQ(1, num_edges(g42));
-	ASSERT_EQ(2, num_vertices(g42));
 }
 
-  TEST_F(MyGraphTest, HasCycleTest4){
-	ASSERT_EQ(10, num_edges(g6));
-	ASSERT_EQ(8, num_vertices(g6));
-	ASSERT_EQ(false, has_cycle(g6));
-	ASSERT_EQ(10, num_edges(g6));
-	ASSERT_EQ(8, num_vertices(g6));
+  TYPED_TEST(TypeTest, HasCycleTest4){
+	ASSERT_EQ(10, num_edges(this->g6));
+	ASSERT_EQ(8, num_vertices(this->g6));
+	ASSERT_EQ(false, has_cycle(this->g6));
+	ASSERT_EQ(10, num_edges(this->g6));
+	ASSERT_EQ(8, num_vertices(this->g6));
 	//#######################################
-	ASSERT_EQ(10, num_edges(g62));
-	ASSERT_EQ(8, num_vertices(g62));
-	ASSERT_EQ(false, has_cycle(g62));
-	ASSERT_EQ(10, num_edges(g62));
-	ASSERT_EQ(8, num_vertices(g62));
 }
 
- TEST_F(MyGraphTest, HasCycleTest5) {
+ TYPED_TEST(TypeTest, HasCycleTest5) {
 	//add self-loop
 	
-	ASSERT_EQ(false, has_cycle(g6));
+	ASSERT_EQ(false, has_cycle(this->g6));
 	
-	ASSERT_EQ(10, num_edges(g6));
-	ASSERT_EQ(8, num_vertices(g6));
-	std::pair<edge_descriptor, bool> p = add_edge(vdAAA, vdAAA, g6);
-	ASSERT_EQ(0, source(p.first, g6));
-	ASSERT_EQ(0, target(p.first, g6));
+	ASSERT_EQ(10, num_edges(this->g6));
+	ASSERT_EQ(8, num_vertices(this->g6));
+	std::pair<typename TestFixture::edge_descriptor, bool> p = add_edge(this->vdAAA, this->vdAAA, this->g6);
+	ASSERT_EQ(0, source(p.first, this->g6));
+	ASSERT_EQ(0, target(p.first, this->g6));
 	ASSERT_EQ(true, p.second == true);
-	ASSERT_EQ(11, num_edges(g6));
-	ASSERT_EQ(8, num_vertices(g6));
+	ASSERT_EQ(11, num_edges(this->g6));
+	ASSERT_EQ(8, num_vertices(this->g6));
 	
-	ASSERT_EQ(true, has_cycle(g6));
+	ASSERT_EQ(true, has_cycle(this->g6));
 	
-	ASSERT_EQ(11, num_edges(g6));
-	ASSERT_EQ(8, num_vertices(g6));
+	ASSERT_EQ(11, num_edges(this->g6));
+	ASSERT_EQ(8, num_vertices(this->g6));
 	//#######################################
-	//add self-loop
-	
-	ASSERT_EQ(false, has_cycle(g62));
-	
-	ASSERT_EQ(10, num_edges(g62));
-	ASSERT_EQ(8, num_vertices(g62));
-	std::pair<edge_descriptor2, bool> p2 = add_edge(vdAAA2, vdAAA2, g62);
-	ASSERT_EQ(0, source(p2.first, g62));
-	ASSERT_EQ(0, target(p2.first, g62));
-	ASSERT_EQ(true, p2.second == true);
-	ASSERT_EQ(11, num_edges(g62));
-	ASSERT_EQ(8, num_vertices(g62));
-	
-	ASSERT_EQ(true, has_cycle(g62));
-	
-	ASSERT_EQ(11, num_edges(g62));
-	ASSERT_EQ(8, num_vertices(g62));
 }
 
 //********************************************
 
-  TEST_F(MyGraphTest, TopologicalSortTest1){
+  TYPED_TEST(TypeTest, TopologicalSortTest1){
         std::ostringstream out;
-        topological_sort(g2, std::ostream_iterator<vertex_descriptor>(out, " "));
+        topological_sort(this->g2, std::ostream_iterator<typename TestFixture::vertex_descriptor>(out, " "));
         ASSERT_EQ(true, out.str() == "");
 	//#######################################
-        std::ostringstream out2;
-        topological_sort(g22, std::ostream_iterator<vertex_descriptor2>(out2, " "));
-        ASSERT_EQ(true, out2.str() == "");
 }
 
- TEST_F(MyGraphTest, TopologicalSortTest2) {
+ TYPED_TEST(TypeTest, TopologicalSortTest2) {
         std::ostringstream out;
 	try {
-	    topological_sort(g1, std::ostream_iterator<vertex_descriptor>(out, " "));
+	    topological_sort(this->g1, std::ostream_iterator<typename TestFixture::vertex_descriptor>(out, " "));
 	    ASSERT_EQ(false, true); // must fail if reaches this point
 	} catch (const boost::not_a_dag& e){
 	    ASSERT_EQ("The graph must be a DAG.",  std::string(e.what()));
 	}
 	//#######################################
-        std::ostringstream out2;
-	try {
-	    topological_sort(g12, std::ostream_iterator<vertex_descriptor2>(out2, " "));
-	    ASSERT_EQ(false, true); // must fail if reaches this point
-	} catch (const boost::not_a_dag& e2){
-	    ASSERT_EQ("The graph must be a DAG.",  std::string(e2.what()));
-	}
 }
 
-  TEST_F(MyGraphTest, TopologicalSortTest3){
+  TYPED_TEST(TypeTest, TopologicalSortTest3){
         std::ostringstream out;
-        topological_sort(g4, std::ostream_iterator<vertex_descriptor>(out, " "));
+        topological_sort(this->g4, std::ostream_iterator<typename TestFixture::vertex_descriptor>(out, " "));
         ASSERT_EQ("1 0 ",out.str());
 	//#######################################
-        std::ostringstream out2;
-        topological_sort(g42, std::ostream_iterator<vertex_descriptor2>(out2, " "));
-        ASSERT_EQ("1 0 ",out2.str());
 }
 
-  TEST_F(MyGraphTest, TopologicalSortTest4){
+  TYPED_TEST(TypeTest, TopologicalSortTest4){
         std::ostringstream out;
-        topological_sort(g6, std::ostream_iterator<vertex_descriptor>(out, " "));
+        topological_sort(this->g6, std::ostream_iterator<typename TestFixture::vertex_descriptor>(out, " "));
         ASSERT_EQ("4 7 5 3 1 2 0 6 ", out.str());
 	//#######################################
-        std::ostringstream out2;
-        topological_sort(g62, std::ostream_iterator<vertex_descriptor2>(out2, " "));
-        ASSERT_EQ("4 7 5 3 1 2 0 6 ", out2.str());
 }
 
 //********************************************
 
-  TEST_F(MyGraphTest, DefaultConstructorTest1){
-      graph_type gr;
+  TYPED_TEST(TypeTest, DefaultConstructorTest1){
+      typename TestFixture::graph_type gr;
       ASSERT_EQ(0, num_vertices(gr));
       ASSERT_EQ(0, num_edges(gr));
       //#######################################
-      graph_type2 gr2;
-      ASSERT_EQ(0, num_vertices(gr2));
-      ASSERT_EQ(0, num_edges(gr2));
   }
 
 //********************************************
 
-  TEST_F(MyGraphTest, ValidTest1){
-      graph_type gr;
+  TYPED_TEST(TypeTest, ValidTest1){
+      typename TestFixture::graph_type gr;
       ASSERT_EQ("the default constructor's assert(valid()) did not fail if this assert runs", "the default constructor's assert(valid()) did not fail if this assert runs");
       //#######################################
-      graph_type2 gr2;
-      ASSERT_EQ("the default constructor's assert(valid()) did not fail if this assert runs", "the default constructor's assert(valid()) did not fail if this assert runs");
   }
 
 //********************************************
 
-  TEST_F(MyGraphTest, HasCycleHelperTest1){
+  TYPED_TEST(TypeTest, HasCycleHelperTest1){
     std::vector<bool> explored;
-    for (int i = 0; i < num_vertices(g1); ++i){
+    for (int i = 0; i < num_vertices(this->g1); ++i){
 	explored.push_back(false);
     }
     bool result = false;
-    ASSERT_EQ(true, has_cycle_helper(g1, 0, explored, result));
+    ASSERT_EQ(true, has_cycle_helper(this->g1, 0, explored, result));
     //#######################################
-    std::vector<bool> explored2;
-    for (int i = 0; i < num_vertices(g12); ++i){
-	explored2.push_back(false);
-    }
-    bool result2 = false;
-    ASSERT_EQ(true, has_cycle_helper(g12, 0, explored, result2));
   }
 
-  TEST_F(MyGraphTest, HasCycleHelperTest2){
+  TYPED_TEST(TypeTest, HasCycleHelperTest2){
     std::vector<bool> explored;
-    for (int i = 0; i < num_vertices(g6); ++i){
+    for (int i = 0; i < num_vertices(this->g6); ++i){
 	explored.push_back(false);
     }
     bool result = false;
-    ASSERT_EQ(false, has_cycle_helper(g6, 0, explored, result));
+    ASSERT_EQ(false, has_cycle_helper(this->g6, 0, explored, result));
     //#######################################
-    std::vector<bool> explored2;
-    for (int i = 0; i < num_vertices(g62); ++i){
-	explored2.push_back(false);
-    }
-    bool result2 = false;
-    ASSERT_EQ(false, has_cycle_helper(g62, 0, explored, result2));
   }
 
-  TEST_F(MyGraphTest, HasCycleHelperTest3){
+  TYPED_TEST(TypeTest, HasCycleHelperTest3){
     std::vector<bool> explored;
-    for (int i = 0; i < num_vertices(g5); ++i){
+    for (int i = 0; i < num_vertices(this->g5); ++i){
 	explored.push_back(false);
     }
     bool result = false;
-    ASSERT_EQ(false, has_cycle_helper(g5, 0, explored, result));
+    ASSERT_EQ(false, has_cycle_helper(this->g5, 0, explored, result));
     //#######################################
-    std::vector<bool> explored2;
-    for (int i = 0; i < num_vertices(g52); ++i){
-	explored2.push_back(false);
-    }
-    bool result2 = false;
-    ASSERT_EQ(false, has_cycle_helper(g52, 0, explored, result2));
   }
 
 //********************************************
 
-  TEST_F(MyGraphTest, DefaultCopyConstructorTest1){
-      graph_type gr(g4);
+  TYPED_TEST(TypeTest, DefaultCopyConstructorTest1){
+      typename TestFixture::graph_type gr(this->g4);
       ASSERT_EQ(2, num_vertices(gr));
       ASSERT_EQ(1, num_edges(gr));
-      ASSERT_EQ(true, edge(vdQ, vdR, gr).second);
+      ASSERT_EQ(true, edge(this->vdQ, this->vdR, gr).second);
       //#######################################
-      graph_type2 gr2(g42);
-      ASSERT_EQ(2, num_vertices(gr2));
-      ASSERT_EQ(1, num_edges(gr2));
-      ASSERT_EQ(true, edge(vdQ2, vdR2, gr2).second);
   }
 
 //********************************************
 
-  TEST_F(MyGraphTest, DefualtCopyAssignmentTest1){
-      g1 = g4;
-      ASSERT_EQ(2, num_vertices(g1));
-      ASSERT_EQ(1, num_edges(g1));
-      ASSERT_EQ(true, edge(vdQ, vdR, g1).second);
+  TYPED_TEST(TypeTest, DefualtCopyAssignmentTest1){
+      this->g1 = this->g4;
+      ASSERT_EQ(2, num_vertices(this->g1));
+      ASSERT_EQ(1, num_edges(this->g1));
+      ASSERT_EQ(true, edge(this->vdQ, this->vdR, this->g1).second);
       //#######################################
-      g12 = g42;
-      ASSERT_EQ(2, num_vertices(g12));
-      ASSERT_EQ(1, num_edges(g12));
-      ASSERT_EQ(true, edge(vdQ2, vdR2, g12).second);
   }
