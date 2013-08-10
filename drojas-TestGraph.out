@@ -1,0 +1,19 @@
+Running main() from gtest_main.cc
+[==========] Running 5 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 5 tests from g_tests/0, where TypeParam = Graph
+[ RUN      ] g_tests/0.test_sort
+[       OK ] g_tests/0.test_sort (371 ms)
+[ RUN      ] g_tests/0.test_num_edges
+[       OK ] g_tests/0.test_num_edges (43 ms)
+[ RUN      ] g_tests/0.test_num_vertices
+[       OK ] g_tests/0.test_num_vertices (44 ms)
+[ RUN      ] g_tests/0.test_source
+[       OK ] g_tests/0.test_source (46 ms)
+[ RUN      ] g_tests/0.test_target
+[       OK ] g_tests/0.test_target (44 ms)
+[----------] 5 tests from g_tests/0 (561 ms total)
+
+[----------] Global test environment tear-down
+[==========] 5 tests from 1 test case ran. (585 ms total)
+[  PASSED  ] 5 tests.
