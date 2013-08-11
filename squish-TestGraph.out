@@ -1,0 +1,190 @@
+Running main() from gtest_main.cc
+[==========] Running 80 tests from 8 test cases.
+[----------] Global test environment set-up.
+[----------] 12 tests from SuppliedTest/0, where TypeParam = Graph
+[ RUN      ] SuppliedTest/0.test_add_edge
+[       OK ] SuppliedTest/0.test_add_edge (73 ms)
+[ RUN      ] SuppliedTest/0.test_adjacent_vertices
+[       OK ] SuppliedTest/0.test_adjacent_vertices (8 ms)
+[ RUN      ] SuppliedTest/0.test_edge
+[       OK ] SuppliedTest/0.test_edge (6 ms)
+[ RUN      ] SuppliedTest/0.test_edges
+[       OK ] SuppliedTest/0.test_edges (7 ms)
+[ RUN      ] SuppliedTest/0.test_num_edges
+[       OK ] SuppliedTest/0.test_num_edges (5 ms)
+[ RUN      ] SuppliedTest/0.test_num_vertices
+[       OK ] SuppliedTest/0.test_num_vertices (2 ms)
+[ RUN      ] SuppliedTest/0.test_source
+[       OK ] SuppliedTest/0.test_source (2 ms)
+[ RUN      ] SuppliedTest/0.test_target
+[       OK ] SuppliedTest/0.test_target (3 ms)
+[ RUN      ] SuppliedTest/0.test_vertex
+[       OK ] SuppliedTest/0.test_vertex (2 ms)
+[ RUN      ] SuppliedTest/0.test_vertices
+[       OK ] SuppliedTest/0.test_vertices (7 ms)
+[ RUN      ] SuppliedTest/0.test_has_cycle
+[       OK ] SuppliedTest/0.test_has_cycle (18 ms)
+[ RUN      ] SuppliedTest/0.test_topological_sort
+[       OK ] SuppliedTest/0.test_topological_sort (47 ms)
+[----------] 12 tests from SuppliedTest/0 (191 ms total)
+
+[----------] 12 tests from SuppliedTest/1, where TypeParam = boost::adjacency_list<boost::setS, boost::vecS, boost::directedS, boost::no_property, boost::no_property, boost::no_property, boost::listS>
+[ RUN      ] SuppliedTest/1.test_add_edge
+[       OK ] SuppliedTest/1.test_add_edge (52 ms)
+[ RUN      ] SuppliedTest/1.test_adjacent_vertices
+[       OK ] SuppliedTest/1.test_adjacent_vertices (17 ms)
+[ RUN      ] SuppliedTest/1.test_edge
+[       OK ] SuppliedTest/1.test_edge (9 ms)
+[ RUN      ] SuppliedTest/1.test_edges
+[       OK ] SuppliedTest/1.test_edges (20 ms)
+[ RUN      ] SuppliedTest/1.test_num_edges
+[       OK ] SuppliedTest/1.test_num_edges (7 ms)
+[ RUN      ] SuppliedTest/1.test_num_vertices
+[       OK ] SuppliedTest/1.test_num_vertices (2 ms)
+[ RUN      ] SuppliedTest/1.test_source
+[       OK ] SuppliedTest/1.test_source (2 ms)
+[ RUN      ] SuppliedTest/1.test_target
+[       OK ] SuppliedTest/1.test_target (2 ms)
+[ RUN      ] SuppliedTest/1.test_vertex
+[       OK ] SuppliedTest/1.test_vertex (2 ms)
+[ RUN      ] SuppliedTest/1.test_vertices
+[       OK ] SuppliedTest/1.test_vertices (4 ms)
+[ RUN      ] SuppliedTest/1.test_has_cycle
+[       OK ] SuppliedTest/1.test_has_cycle (8 ms)
+[ RUN      ] SuppliedTest/1.test_topological_sort
+[       OK ] SuppliedTest/1.test_topological_sort (58 ms)
+[----------] 12 tests from SuppliedTest/1 (185 ms total)
+
+[----------] 15 tests from InterfaceTest_nocycle/0, where TypeParam = Graph
+[ RUN      ] InterfaceTest_nocycle/0.test_add_edge
+[       OK ] InterfaceTest_nocycle/0.test_add_edge (9 ms)
+[ RUN      ] InterfaceTest_nocycle/0.test_adjacent_vertices
+[       OK ] InterfaceTest_nocycle/0.test_adjacent_vertices (4 ms)
+[ RUN      ] InterfaceTest_nocycle/0.test_edge
+[       OK ] InterfaceTest_nocycle/0.test_edge (3 ms)
+[ RUN      ] InterfaceTest_nocycle/0.test_edges
+[       OK ] InterfaceTest_nocycle/0.test_edges (4 ms)
+[ RUN      ] InterfaceTest_nocycle/0.test_num_edges
+[       OK ] InterfaceTest_nocycle/0.test_num_edges (2 ms)
+[ RUN      ] InterfaceTest_nocycle/0.test_num_vertices
+[       OK ] InterfaceTest_nocycle/0.test_num_vertices (2 ms)
+[ RUN      ] InterfaceTest_nocycle/0.test_source
+[       OK ] InterfaceTest_nocycle/0.test_source (2 ms)
+[ RUN      ] InterfaceTest_nocycle/0.test_target
+[       OK ] InterfaceTest_nocycle/0.test_target (2 ms)
+[ RUN      ] InterfaceTest_nocycle/0.test_vertex
+[       OK ] InterfaceTest_nocycle/0.test_vertex (2 ms)
+[ RUN      ] InterfaceTest_nocycle/0.test_vertices
+[       OK ] InterfaceTest_nocycle/0.test_vertices (4 ms)
+[ RUN      ] InterfaceTest_nocycle/0.test_has_cycle
+[       OK ] InterfaceTest_nocycle/0.test_has_cycle (2 ms)
+[ RUN      ] InterfaceTest_nocycle/0.num_vertices_01
+[       OK ] InterfaceTest_nocycle/0.num_vertices_01 (2 ms)
+[ RUN      ] InterfaceTest_nocycle/0.test_num_edges01
+[       OK ] InterfaceTest_nocycle/0.test_num_edges01 (2 ms)
+[ RUN      ] InterfaceTest_nocycle/0.test_adjacent_vertices_01
+[       OK ] InterfaceTest_nocycle/0.test_adjacent_vertices_01 (11 ms)
+[ RUN      ] InterfaceTest_nocycle/0.test_topological_sort_01
+[       OK ] InterfaceTest_nocycle/0.test_topological_sort_01 (5 ms)
+[----------] 15 tests from InterfaceTest_nocycle/0 (59 ms total)
+
+[----------] 15 tests from InterfaceTest_nocycle/1, where TypeParam = boost::adjacency_list<boost::setS, boost::vecS, boost::directedS, boost::no_property, boost::no_property, boost::no_property, boost::listS>
+[ RUN      ] InterfaceTest_nocycle/1.test_add_edge
+[       OK ] InterfaceTest_nocycle/1.test_add_edge (7 ms)
+[ RUN      ] InterfaceTest_nocycle/1.test_adjacent_vertices
+[       OK ] InterfaceTest_nocycle/1.test_adjacent_vertices (5 ms)
+[ RUN      ] InterfaceTest_nocycle/1.test_edge
+[       OK ] InterfaceTest_nocycle/1.test_edge (3 ms)
+[ RUN      ] InterfaceTest_nocycle/1.test_edges
+[       OK ] InterfaceTest_nocycle/1.test_edges (5 ms)
+[ RUN      ] InterfaceTest_nocycle/1.test_num_edges
+[       OK ] InterfaceTest_nocycle/1.test_num_edges (2 ms)
+[ RUN      ] InterfaceTest_nocycle/1.test_num_vertices
+[       OK ] InterfaceTest_nocycle/1.test_num_vertices (2 ms)
+[ RUN      ] InterfaceTest_nocycle/1.test_source
+[       OK ] InterfaceTest_nocycle/1.test_source (2 ms)
+[ RUN      ] InterfaceTest_nocycle/1.test_target
+[       OK ] InterfaceTest_nocycle/1.test_target (2 ms)
+[ RUN      ] InterfaceTest_nocycle/1.test_vertex
+[       OK ] InterfaceTest_nocycle/1.test_vertex (2 ms)
+[ RUN      ] InterfaceTest_nocycle/1.test_vertices
+[       OK ] InterfaceTest_nocycle/1.test_vertices (3 ms)
+[ RUN      ] InterfaceTest_nocycle/1.test_has_cycle
+[       OK ] InterfaceTest_nocycle/1.test_has_cycle (3 ms)
+[ RUN      ] InterfaceTest_nocycle/1.num_vertices_01
+[       OK ] InterfaceTest_nocycle/1.num_vertices_01 (2 ms)
+[ RUN      ] InterfaceTest_nocycle/1.test_num_edges01
+[       OK ] InterfaceTest_nocycle/1.test_num_edges01 (2 ms)
+[ RUN      ] InterfaceTest_nocycle/1.test_adjacent_vertices_01
+[       OK ] InterfaceTest_nocycle/1.test_adjacent_vertices_01 (11 ms)
+[ RUN      ] InterfaceTest_nocycle/1.test_topological_sort_01
+[       OK ] InterfaceTest_nocycle/1.test_topological_sort_01 (5 ms)
+[----------] 15 tests from InterfaceTest_nocycle/1 (58 ms total)
+
+[----------] 12 tests from InterfaceTest_unconnected/0, where TypeParam = Graph
+[ RUN      ] InterfaceTest_unconnected/0.test_add_edge
+[       OK ] InterfaceTest_unconnected/0.test_add_edge (6 ms)
+[ RUN      ] InterfaceTest_unconnected/0.test_adjacent_vertices
+[       OK ] InterfaceTest_unconnected/0.test_adjacent_vertices (2 ms)
+[ RUN      ] InterfaceTest_unconnected/0.test_edge
+[       OK ] InterfaceTest_unconnected/0.test_edge (2 ms)
+[ RUN      ] InterfaceTest_unconnected/0.test_edges
+[       OK ] InterfaceTest_unconnected/0.test_edges (7 ms)
+[ RUN      ] InterfaceTest_unconnected/0.test_num_edges
+[       OK ] InterfaceTest_unconnected/0.test_num_edges (2 ms)
+[ RUN      ] InterfaceTest_unconnected/0.test_num_vertices
+[       OK ] InterfaceTest_unconnected/0.test_num_vertices (2 ms)
+[ RUN      ] InterfaceTest_unconnected/0.test_source
+[       OK ] InterfaceTest_unconnected/0.test_source (1 ms)
+[ RUN      ] InterfaceTest_unconnected/0.test_target
+[       OK ] InterfaceTest_unconnected/0.test_target (1 ms)
+[ RUN      ] InterfaceTest_unconnected/0.test_vertex
+[       OK ] InterfaceTest_unconnected/0.test_vertex (2 ms)
+[ RUN      ] InterfaceTest_unconnected/0.test_vertices
+[       OK ] InterfaceTest_unconnected/0.test_vertices (11 ms)
+[ RUN      ] InterfaceTest_unconnected/0.test_has_cycle
+[       OK ] InterfaceTest_unconnected/0.test_has_cycle (2 ms)
+[ RUN      ] InterfaceTest_unconnected/0.test_topological_sort_01
+[       OK ] InterfaceTest_unconnected/0.test_topological_sort_01 (3 ms)
+[----------] 12 tests from InterfaceTest_unconnected/0 (46 ms total)
+
+[----------] 12 tests from InterfaceTest_unconnected/1, where TypeParam = boost::adjacency_list<boost::setS, boost::vecS, boost::directedS, boost::no_property, boost::no_property, boost::no_property, boost::listS>
+[ RUN      ] InterfaceTest_unconnected/1.test_add_edge
+[       OK ] InterfaceTest_unconnected/1.test_add_edge (6 ms)
+[ RUN      ] InterfaceTest_unconnected/1.test_adjacent_vertices
+[       OK ] InterfaceTest_unconnected/1.test_adjacent_vertices (3 ms)
+[ RUN      ] InterfaceTest_unconnected/1.test_edge
+[       OK ] InterfaceTest_unconnected/1.test_edge (2 ms)
+[ RUN      ] InterfaceTest_unconnected/1.test_edges
+[       OK ] InterfaceTest_unconnected/1.test_edges (13 ms)
+[ RUN      ] InterfaceTest_unconnected/1.test_num_edges
+[       OK ] InterfaceTest_unconnected/1.test_num_edges (2 ms)
+[ RUN      ] InterfaceTest_unconnected/1.test_num_vertices
+[       OK ] InterfaceTest_unconnected/1.test_num_vertices (2 ms)
+[ RUN      ] InterfaceTest_unconnected/1.test_source
+[       OK ] InterfaceTest_unconnected/1.test_source (2 ms)
+[ RUN      ] InterfaceTest_unconnected/1.test_target
+[       OK ] InterfaceTest_unconnected/1.test_target (2 ms)
+[ RUN      ] InterfaceTest_unconnected/1.test_vertex
+[       OK ] InterfaceTest_unconnected/1.test_vertex (1 ms)
+[ RUN      ] InterfaceTest_unconnected/1.test_vertices
+[       OK ] InterfaceTest_unconnected/1.test_vertices (10 ms)
+[ RUN      ] InterfaceTest_unconnected/1.test_has_cycle
+[       OK ] InterfaceTest_unconnected/1.test_has_cycle (2 ms)
+[ RUN      ] InterfaceTest_unconnected/1.test_topological_sort_01
+[       OK ] InterfaceTest_unconnected/1.test_topological_sort_01 (3 ms)
+[----------] 12 tests from InterfaceTest_unconnected/1 (49 ms total)
+
+[----------] 1 test from Topological/0, where TypeParam = Graph
+[ RUN      ] Topological/0.test_topological_sort
+[       OK ] Topological/0.test_topological_sort (12 ms)
+[----------] 1 test from Topological/0 (12 ms total)
+
+[----------] 1 test from Topological/1, where TypeParam = boost::adjacency_list<boost::setS, boost::vecS, boost::directedS, boost::no_property, boost::no_property, boost::no_property, boost::listS>
+[ RUN      ] Topological/1.test_topological_sort
+[       OK ] Topological/1.test_topological_sort (10 ms)
+[----------] 1 test from Topological/1 (10 ms total)
+
+[----------] Global test environment tear-down
+[==========] 80 tests from 8 test cases ran. (636 ms total)
+[  PASSED  ] 80 tests.
